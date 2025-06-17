@@ -1,15 +1,13 @@
 import { Route, Routes } from "react-router";
 import "../styles/App.scss";
 import { routes } from "../routes/routesConfig";
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
+import { HomePage } from "../pages/Home/HomePage";
 
 function App() {
   return (
     <>
       <div>
-        <Header />
-        <Footer />
+       <HomePage/>
         <Routes>
           {routes.map((route) => (
             <Route key={route.path} path={route.path} element={route.element} />

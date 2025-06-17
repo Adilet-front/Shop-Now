@@ -1,18 +1,18 @@
-import { SignIn } from "../pages/Auth/SignIn/SignIn";
-import { SignUp } from "../pages/Auth/SignUp/SignUp";
-import { Home } from "../pages/Home";
+import { Login } from "../pages/Auth/LogIn/LogIn";
+import { Signup } from "../pages/Auth/SignUp/SignUp";
+import { HomePage } from "../pages/Home/HomePage";
 
 export const routes = [
   {
     path: "/",
-    element: <Home />,
+    element: <HomePage />,
   },
   {
-    path: "/sign-in",
-    element: <SignIn />,
+    path: "/login",
+    element: <Login />,
   },
   {
     path: "/sign-up",
-    element: <SignUp />,
+    element: <Signup />,
   },
 ];
