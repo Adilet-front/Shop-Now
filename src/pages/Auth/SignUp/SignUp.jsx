@@ -1,6 +1,6 @@
-import styles from "../SignUp/SignUp.module.scss"
+import styles from "../SignUp/Signup.module.scss"
 
-export const SignUp = () =>{
+export const Signup = () =>{
   return(
     <div className={styles.SignUpWrapper}>
       SignUp
