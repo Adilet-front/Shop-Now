@@ -1,13 +1,16 @@
-import { StrictMode } from "react";
+import { StrictMode, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles/index.scss";
 import App from "./app/App.jsx";
 import { BrowserRouter } from "react-router";
-import "../firebase.js"
+import "../firebase.js";
+import "./i18n";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <Suspense fallback={<div>Loading...</div>}>
+        <App />
+      </Suspense>
     </BrowserRouter>
   </StrictMode>
 );
