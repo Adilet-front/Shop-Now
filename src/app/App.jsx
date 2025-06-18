@@ -5,6 +5,7 @@ import { Header } from "../modules/Header/Header";
 import { Footer } from "../modules/Footer/Footer";
 
 function App() {
+
   return (
     <>
       <div className="App">

@@ -15,16 +15,39 @@ header {
       font-weight: 400;
       display: flex;
       color: white;
+      justify-content: center;
+      align-items: center;
       gap: 231px;
-      .enSvg {
-        display: flex;
-     gap: 11px;
+
+      .text {
+        .text1 {
+          display: flex;
+          gap: 11px;
+          a {
+            color: white;
+            display: flex;
+          }
+        }
       }
-      p {
-        display: flex;
-        gap: 8px;
-        a {
+      .languageSelector {
+        .enSvg {
+          width: 78px;
+          height: 24px;
+          display: flex;
+          background-color: black;
           color: white;
+          cursor: pointer;
+          gap: 10px;
+        }
+        .langDropDown {
+          button {
+            width: 78px;
+            height: 24px;
+            display: flex;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+          }
         }
       }
     }
