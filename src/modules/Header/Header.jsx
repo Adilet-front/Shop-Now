@@ -21,6 +21,7 @@ export const Header = () => {
           </div>
 
           <div className={styles.languageSelector}>
+
             <button
               onClick={() => changeLanguage("en")}
               className={styles.enSvg}
@@ -36,6 +37,7 @@ export const Header = () => {
                 {t("start_block.button_Ru")}
               </button>
             </div>
+
           </div>
         </div>
         <div className={styles.downHeader}></div>
