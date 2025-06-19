@@ -21,7 +21,6 @@ export const Header = () => {
           </div>
 
           <div className={styles.languageSelector}>
-
             <button
               onClick={() => changeLanguage("en")}
               className={styles.enSvg}
@@ -37,11 +36,48 @@ export const Header = () => {
                 {t("start_block.button_Ru")}
               </button>
             </div>
-
           </div>
         </div>
-        <div className={styles.downHeader}></div>
       </div>
+      <div className={styles.downHeader}>
+        <h2>Exclusive</h2>
+        <nav>
+          <li>
+            <NavLink>Home</NavLink>
+          </li>
+          <li>
+            <NavLink>Contact</NavLink>
+          </li>
+          <li>
+            <NavLink>About</NavLink>
+          </li>
+          <li>
+            <NavLink>Sign Up</NavLink>
+          </li>
+        </nav>
+        <div className={styles.inputWrapper}>
+          <div className={styles.InInputWrapper}>
+            <input type="text" placeholder="What are you looking for?" />
+            <NavLink>
+              <img
+                className={styles.searchSvg}
+                src="/public/images/Search.svg"
+                alt=""
+              />
+            </NavLink>
+          </div>
+
+          <div className={styles.LastImages}>
+            <NavLink>
+              <img src="/public/images/Wishlist.svg" alt="" />
+            </NavLink>
+            <NavLink>
+              <img src="/public/images/Cart1.svg" alt="" />
+            </NavLink>
+          </div>
+        </div>
+      </div>
+      <div className={styles.line}></div>
     </header>
   );
 };
