@@ -25,8 +25,6 @@ export const Login = () => {
       return;
     }
 
-    console.log("Вход пользователя:", formData);
-
   };
 
   return (

@@ -7,17 +7,13 @@
   font-family: 'Inter', sans-serif;
   background-color: #f9fafb; 
  
-
-
-
 .imageSection {
   margin-top: 90px;
   flex: 1;
   background-color: #CBE4E8; 
-  display: none; 
   overflow: hidden; 
   height: 580px;
-}
+
 
 @media (min-width: 768px) { 
   .imageSection {
@@ -31,6 +27,7 @@
   object-fit: contain; 
   border-radius: 1rem;
 }
+}
 
 .formSection {
   flex: 1;
@@ -41,7 +38,7 @@
   align-items: center; 
   text-align: center; 
   margin-right: 50px; 
-}
+
 
 @media (min-width: 768px) {
   .formSection {
@@ -177,5 +174,6 @@
 
 .loginText a:hover {
   text-decoration: underline; 
+}
 }
 }
