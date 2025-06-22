@@ -1,12 +1,10 @@
 import { useTranslation } from "react-i18next";
-import { NavLink } from "react-router";
+
 import styles from "./Footer.module.scss";
 export const Footer = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  const changeLanguage = (Language) => {
-    i18n.changeLanguage(Language);
-  };
+
   return (
     <footer>
       <div className={styles.WrapperFooter}>
