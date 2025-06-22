@@ -33,5 +33,34 @@
     "downloadApp": "Download App",
     "save": "Save $3 with App New User Only",
     "copyright": "Copyright Rimel 2022. All right reserved"
-  }
+  },
+
+  "sign-up": {
+    "account": "Create an account",
+      "enter": "Enter your details below"
+      ,"name": "Name",
+      "email":"Email or Phone Number",
+      "password":"Password",
+      "create":"Create Account",
+       "google":"Sign up with Google",
+       "all":"Already have account?",
+       "login":"Log In"
+  },
+
+
+
+
+  
+"login":{
+  "title":"Log in to Exclusive",
+  "subtitle":"Enter your details below",
+  "emailOrPhonePlaceholder":"Email or Phone Number",
+"passwordPlaceholder":"Password",
+"logInButton":"Log In",
+"forgotPasswordLink":"Forget Password?"
+}
+  
+
+
+
 }
