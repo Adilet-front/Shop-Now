@@ -1,13 +1,36 @@
 {
   "start_block": {
     "text1": "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!",
-    "BuyNow": "ShopNow",
-    "Exclusive": "Exclusive",
-    "main": "Home",
-    "Contact": "Contact",
-    "About": "About",
-    "SignUp": "Sign Up",
-    "lookFor":"What are you looking for?"
+    "button_En": "English",
+    "button_Ru": "Русский"
+  },
 
-  }
+  "sign-up": {
+    "account": "Create an account",
+      "enter": "Enter your details below"
+      ,"name": "Name",
+      "email":"Email or Phone Number",
+      "password":"Password",
+      "create":"Create Account",
+       "google":"Sign up with Google",
+       "all":"Already have account?",
+       "login":"Log In"
+  },
+
+
+
+
+  
+"login":{
+  "title":"Log in to Exclusive",
+  "subtitle":"Enter your details below",
+  "emailOrPhonePlaceholder":"Email or Phone Number",
+"passwordPlaceholder":"Password",
+"logInButton":"Log In",
+"forgotPasswordLink":"Forget Password?"
+}
+  
+
+
+
 }
