@@ -7,10 +7,8 @@
     "Contact": "Contact",
     "About": "About",
     "SignUp": "Sign Up",
-    "lookFor":"What are you looking for?",
-    "sales":"Up to 10%<br /> off Voucher"
-
-
+    "lookFor": "What are you looking for?",
+    "sales": "Up to 10%<br /> off Voucher"
   },
   "footer": {
     "exclusive": "Exclusive",
@@ -37,30 +35,22 @@
 
   "sign-up": {
     "account": "Create an account",
-      "enter": "Enter your details below"
-      ,"name": "Name",
-      "email":"Email or Phone Number",
-      "password":"Password",
-      "create":"Create Account",
-       "google":"Sign up with Google",
-       "all":"Already have account?",
-       "login":"Log In"
+    "enter": "Enter your details below",
+    "name": "Name",
+    "email": "Email or Phone Number",
+    "password": "Password",
+    "create": "Create Account",
+    "google": "Sign up with Google",
+    "all": "Already have account?",
+    "login": "Log In"
   },
 
-
-
-
-  
-"login":{
-  "title":"Log in to Exclusive",
-  "subtitle":"Enter your details below",
-  "emailOrPhonePlaceholder":"Email or Phone Number",
-"passwordPlaceholder":"Password",
-"logInButton":"Log In",
-"forgotPasswordLink":"Forget Password?"
-}
-  
-
-
-
+  "login": {
+    "title": "Log in to Exclusive",
+    "subtitle": "Enter your details below",
+    "emailOrPhonePlaceholder": "Email or Phone Number",
+    "passwordPlaceholder": "Password",
+    "logInButton": "Log In",
+    "forgotPasswordLink": "Forget Password?"
+  }
 }
