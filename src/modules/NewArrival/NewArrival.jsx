@@ -69,3 +69,10 @@ export const NewArrival = () => {
     </>
   );
 };
+
+
+
+
+
+
+// 
