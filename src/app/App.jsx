@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router";
-import "../styles/App.scss";
+import styles from "../styles/App..module.scss";
 import { routes } from "../routes/routesConfig";
 import { Header } from "../modules/Header/Header";
 import { Footer } from "../modules/Footer/Footer";
@@ -8,7 +8,7 @@ import { HomePage } from "../pages/Home/HomePage";
 function App() {
   return (
     <>
-      <div className="App">
+      <div className={styles.App}>
         <Header />
         <Routes>
           {routes.map((route) => (
