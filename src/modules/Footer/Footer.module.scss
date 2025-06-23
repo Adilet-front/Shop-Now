@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  max-width: 1440px;
+  max-height: 440px;
+}
+
+.foter {
+  background-color: black;
+  margin-top: 200px;
+  width: 1440px;
+  height: 440px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Montserrat";
+  .foterNavigation {
+    display: flex;
+    margin: 80px 135px 60px 136px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 87px;
+    .foterNavigationFirst {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 217px;
+      gap: 16px;
+      h2 {
+        font-weight: 700;
+        font-size: 24px;
+        color: #fafafa;
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #fafafa;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        color: #fafafa;
+      }
+      .foterNavigationFirstInput {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        input {
+          width: 217px;
+          height: 48px;
+          gap: 32px;
+          border: solid #fafafa;
+          border-width: 1.5px;
+          border-radius: 4px;
+          padding-top: 12px;
+          padding-bottom: 12px;
+          padding-left: 16px;
+          background-color: black;
+          color: gray;
+          font-weight: 400;
+          font-size: 16px;
+        }
+        button {
+          position: absolute;
+          right: 12px;
+          width: 24px;
+          height: 24px;
+          background-color: black;
+        }
+      }
+    }
+    .foterNavigationTwo {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 175px;
+      gap: 24px;
+      h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #fafafa;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        color: #fafafa;
+      }
+    }
+    .foterNavigationThree {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 123px;
+      gap: 24px;
+      h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #fafafa;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+      }
+      li {
+        font-weight: 400;
+        font-size: 16px;
+        list-style: none;
+        color: #fafafa;
+      }
+    }
+    .foterNavigationFour {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 123px;
+      gap: 24px;
+      h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #fafafa;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+      }
+      li {
+        font-weight: 400;
+        font-size: 16px;
+        list-style: none;
+        color: #fafafa;
+      }
+    }
+    .foterNavigationFive {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 198px;
+      gap: 24px;
+      h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #fafafa;
+      }
+      .foterNavigationFivePrice {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        flex-direction: column;
+        p {
+          font-weight: 500;
+          font-size: 12px;
+          color: gray;
+        }
+        .foterNavigationFiveQr {
+          display: flex;
+          gap: 8px;
+          .foterNavigationFiveDovland {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 4px;
+          }
+        }
+      }
+      .foterNavigationFiveSoshelMedia {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+    }
+  }
+  .copyright {
+    width: 1440px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    gap: 6px;
+    img {
+      fill: gray;
+    }
+    p {
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      color: gray;
+    }
+  }
+}

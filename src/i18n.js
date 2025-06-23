@@ -1,18 +1,18 @@
 import i18n from "i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
-import I18NextHttpBackend from "i18next-http-backend";
 import { initReactI18next } from "react-i18next";
 
-i18n.use(I18NextHttpBackend).use(LanguageDetector).use(initReactI18next).init({
-    fallbackLng: "en",
-    debugL: true,
-    detection: {
-      order: ["queryString", "Cookie"],
-      cache: ["cookie"],
-    },
-    interpolation: {
-      escapeValue: false,
-    },
-  });
+import en from "./locales/en/translation.json";
+import ru from "./locales/ru/translation.json";
+
+i18n.use(initReactI18next).init({
+  resources: {
+    en: { translation: en },
+    ru: { translation: ru },
+  },
+  fallbackLng: "en",
+  interpolation: {
+    escapeValue: false,
+  },
+});
 
 export default i18n;

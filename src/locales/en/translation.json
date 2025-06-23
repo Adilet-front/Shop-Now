@@ -1,6 +1,7 @@
 {
   "start_block": {
     "text1": "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!",
+
     "button_En": "English",
     "button_Ru": "Русский"
   },
@@ -24,5 +25,56 @@
     "Bonjour_Two_p": "Friendly 24/7 customer support",
     "Bonjour_Three_h1": "MONEY BACK GUARANTEE",
     "Bonjour_Three_p": "We reurn money within 30 days"
+    "BuyNow": "ShopNow",
+    "Exclusive": "Exclusive",
+    "main": "Home",
+    "Contact": "Contact",
+    "About": "About",
+    "SignUp": "Sign Up",
+    "lookFor":"What are you looking for?",
+    "sales":"Up to 10%<br /> off Voucher"
+  },
+  "footer": {
+    "exclusive": "Exclusive",
+    "subscribe": "Subscribe",
+    "get": "Get 10% off your first order",
+    "enter_email": "Enter your email",
+    "support": "Support",
+    "bijoy": " 111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.",
+    "account": "Account",
+    "myAccount": "My Account",
+    "login/Register": "Login / Register",
+    "cart": "Cart",
+    "wishlist": "Wishlist",
+    "shop": "Shop",
+    "quickLink": "Quick Link",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms Of Use",
+    "fAQ": "FAQ",
+    "contact": "Contact",
+    "downloadApp": "Download App",
+    "save": "Save $3 with App New User Only",
+    "copyright": "Copyright Rimel 2022. All right reserved"
+  },
+
+  "sign-up": {
+    "account": "Create an account",
+    "enter": "Enter your details below",
+    "name": "Name",
+    "email": "Email or Phone Number",
+    "password": "Password",
+    "create": "Create Account",
+    "google": "Sign up with Google",
+    "all": "Already have account?",
+    "login": "Log In"
+  },
+
+  "login": {
+    "title": "Log in to Exclusive",
+    "subtitle": "Enter your details below",
+    "emailOrPhonePlaceholder": "Email or Phone Number",
+    "passwordPlaceholder": "Password",
+    "logInButton": "Log In",
+    "forgotPasswordLink": "Forget Password?"
   }
 }
