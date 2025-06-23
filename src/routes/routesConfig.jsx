@@ -1,4 +1,6 @@
 
+import { NewArrival } from "../modules/NewArrival/NewArrival";
+
 import { BabyToys } from "../pages/AllCategory/Baby’s & Toys/BadyToys";
 import { Electronics } from "../pages/AllCategory/Electronics/Electronics";
 import { Health } from "../pages/AllCategory/Health/Health";
@@ -24,6 +26,10 @@ export const routes = [
   {
     path: "/sign-up",
     element: <Signup />,
+  },
+  {
+    path: "/new_arrival",
+    element: <NewArrival />,
   },
 
   // all category

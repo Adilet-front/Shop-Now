@@ -1,6 +1,31 @@
 {
   "start_block": {
     "text1": "Летняя распродажа всех купальников и бесплатная экспресс-доставка — СКИДКА 50%!",
+    "button_En": "English",
+    "button_Ru": "Русский"
+  },
+
+  "new_arrival":{
+    "New_Arrival" :"Новинки",
+    "Play_station5": "Черно-белая версия PS5 поступает в продажу.",
+    "shop_now": "Купить сейчас",
+    "womens_collection": "Женская коллекция",
+  "womens_collection_text": "Избранные женские коллекции, создающие особую атмосферу.",
+  "speakers": "Колонки",
+  "speakers_text": "Беспроводные колонки Amazon",
+  "Perfume": "Парфюм",
+  "Perfume_text": "GUCCI INTENSE OUD EDP"
+  },
+  
+  "bonjour": {
+  "Bonjour_One_h1": "БЕСПЛАТНАЯ И БЫСТРАЯ ДОСТАВКА",
+  "Bonjour_One_p": "Бесплатная доставка для всех заказов свыше $140",
+  "Bonjour_Two_h1": "КРУГЛОСУТОЧНАЯ ПОДДЕРЖКА",
+  "Bonjour_Two_p": "Дружелюбная поддержка 24/7",
+  "Bonjour_Three_h1": "ГАРАНТИЯ ВОЗВРАТА ДЕНЕГ",
+  "Bonjour_Three_p": "Мы возвращаем деньги в течение 30 дней"
+}
+
 
     "BuyNow": "КупитьCейчас",
     "Exclusive": "Эксклюзивный",
