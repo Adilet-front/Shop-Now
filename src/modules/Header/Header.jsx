@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import styles from "./Header.module.scss";
 import { useTranslation } from "react-i18next";
 
+
+
 export const Header = () => {
   const { t, i18n } = useTranslation();
 
