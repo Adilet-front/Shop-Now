@@ -48,7 +48,7 @@ export const routes = [
   },
   {
     path: "/women",
-    element: <Women/>
+    element: <Women />,
   },
   {
     path: "/mens",
