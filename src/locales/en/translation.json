@@ -1,0 +1,28 @@
+{
+  "start_block": {
+    "text1": "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!",
+    "button_En": "English",
+    "button_Ru": "Русский"
+  },
+
+  "new_arrival": {
+    "New_Arrival": "New Arrival",
+    "New_Arrival_text": "Black and White version of the PS5 coming out on sale.",
+    "shop_now": "Shop Now",
+    "womens_collection": "Women’s Collections",
+    "womens_collection_text": "Featured woman collections that give you another vibe.",
+    "speakers": "Speakers",
+    "speakers_text": "Amazon wireless speakers",
+    "Perfume": "Perfume",
+    "Perfume_text": "GUCCI INTENSE OUD EDP"
+  },
+
+  "bonjour": {
+    "Bonjour_One_h1": "FREE AND FAST DELIVERY",
+    "Bonjour_One_p": "Free delivery for all orders over $140",
+    "Bonjour_Two_h1": "24/7 CUSTOMER SERVICE",
+    "Bonjour_Two_p": "Friendly 24/7 customer support",
+    "Bonjour_Three_h1": "MONEY BACK GUARANTEE",
+    "Bonjour_Three_p": "We reurn money within 30 days"
+  }
+}
