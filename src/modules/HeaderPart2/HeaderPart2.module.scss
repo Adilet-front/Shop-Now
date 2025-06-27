@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-// Montserrat
+:global(.swiper-pagination-bullet-active) {
+  border: 2px solid white;
+}
 
 .HeaderPart2 {
   display: flex;
@@ -7,6 +8,16 @@
   font-family: "Montserrat";
 
   .HeadersLeft {
+    width: 250px;
+    margin-right: 40px;
+    margin-left: 70px;
+    height: 344px;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    font-family: "Montserrat";
+    background-color: white;
+
     nav {
       ul {
         list-style: none;
@@ -14,7 +25,7 @@
         margin: 0;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 21px;
       }
 
       li {
@@ -42,9 +53,11 @@
   }
 
   .HeadersMostRight {
+    margin-left: 45px;
     background-color: black;
     color: white;
-    width: 975px;
+    width: 100%;
+    max-width: 950px;
     position: relative;
     height: 344px;
     display: flex;
@@ -58,7 +71,7 @@
 
       .HeadersLogoApple {
         display: flex;
-        margin-right: 60px;
+        margin-left: 20px;
         align-items: center;
 
         img {
@@ -67,7 +80,7 @@
           font-size: 16px;
         }
       }
-      h1 {
+      .headertext2H1 {
         font-size: 48px;
         padding: 20px;
       }
@@ -88,8 +101,5 @@
         top: 16px;
       }
     }
-  }
-
-  .headerDownCounter {
   }
 }

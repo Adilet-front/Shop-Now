@@ -9,9 +9,16 @@
     "Contact": "Контакты",
     "About": "О нас",
     "SignUp": "Регистрация",
-    "lookFor": "Что вы ищете?",
-    "sales": "До 10%<br /> на купоны <br />"
+    "lookFor": "Что вы ищете?"
+
   },
+  "HeaderPart2":{
+    "iphoneTitle": "iPhone 14 Series",
+    "samsungTitle": "Samsung Galaxy S23",
+    "pixelTitle": "Google Pixel 8",
+    "sales": "До 10%<br /> на купоны <br />"
+
+},
 
   "new_arrival": {
     "New_Arrival": "Новинки",
