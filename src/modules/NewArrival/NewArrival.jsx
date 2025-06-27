@@ -17,7 +17,6 @@ export const NewArrival = () => {
 
         <div className={styles.NewArrivalGen}>
           
-
           <div className={styles.NewArrivalLeft}>
             <div className={styles.NewArrivalLeftImg}>
               <img src="/public/images/playstation.png" alt="фотка плойки" />

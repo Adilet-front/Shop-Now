@@ -9,8 +9,14 @@
     "Contact": "Contact",
     "About": "About",
     "SignUp": "Sign Up",
-    "lookFor":"What are you looking for?",
+    "lookFor":"What are you looking for?"
+  },
+  "HeaderPart2":{
+      "iphoneTitle": "iPhone 14 Series",
+      "samsungTitle": "Samsung Galaxy S23",
+      "pixelTitle": "Google Pixel 8",
     "sales":"Up to 10%<br /> off Voucher"
+
   },
 
   "new_arrival": {

@@ -1,6 +1,6 @@
 import { StrictMode, Suspense } from "react";
 import { createRoot } from "react-dom/client";
-import styles from "./styles/index.module.scss";
+import styles from "./index.module.scss";
 import App from "./app/App.jsx";
 import { BrowserRouter } from "react-router";
 import "../firebase.js";
