@@ -1,9 +1,13 @@
-import styles from "./Form.module.scss"
+import React from "react";
+import styles from "./Form.module.scss";
 
-export const Form = () => {
-  return(
-    <div className={styles.formWrapper}>
-      Тут должны быт inputы для sign in sign up 
+export const Form = ({ children, imageSrc, imageAlt }) => {
+  return (
+    <div className={styles.container}>
+      <div className={styles.imageSection}>
+        <img src={imageSrc} alt={imageAlt} className={styles.image} />
+      </div>
+      <div className={styles.formSection}>{children}</div>
     </div>
-  )
-}
+  );
+};

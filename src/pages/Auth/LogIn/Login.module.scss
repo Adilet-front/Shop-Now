@@ -1,146 +1,26 @@
- @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
+@use "../../../modules/Form/Form.module.scss" as form_styles;
 
-.container {
-  display: flex;
-  min-height: 100vh;
-  width: 100%;
-  font-family: 'Inter', sans-serif;
-  background-color: #ffffff;
-  overflow: hidden;
-
-
-
-.imageSection {
-  margin-top: 90px;
-  flex: 1;          
-  background-color: #CBE4E8; 
-  overflow: hidden; 
-  height: 580px;
-
-
-@media (min-width: 768px) { 
-  .imageSection {
-    display: flex; 
-  }
-}
-
-.image {
-  width: 805px; 
-  height: 650px;
-  object-fit: contain; 
-  border-radius: 1rem;
-}
-}
-
-.formSection {
-  flex: 1;
-  padding: 3rem 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  @media (min-width: 768px) {
-    padding: 7rem;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-
-.formHeader {
-  text-align: left;
-  margin-bottom: 2rem;
-  width: 100%;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  @media (min-width: 768px) {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  h2 {
-    font-size: 2.25rem;
-    font-weight: bold;
-    color: #1a202c;
-    margin-bottom: 0;
-  }
-
-  p {
-    font-size: 1rem;
-    color: #4a5568;
-    margin-top: 0.5rem;
-  }
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin-top: 1.5rem;
-  width: 100%;
-  max-width: 400px;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.input {
-  padding: 10px 0;
-  font-size: 1rem;
-  border: none;
-  border-bottom: 1px solid #d1d5db;
-  outline: none;
-  color: #333;
-  background-color: transparent;
-  width: 100%;
-  box-sizing: border-box;
-  transition: border-color 0.2s;
-
-  &::placeholder {
-    color: #999;
-  }
-
-  &:focus {
-    border-color: #3182ce;
-    box-shadow: none;
-  }
-}
-
-.button {
-  padding: 0.8rem 1.5rem;
-  background-color: #ef4444;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-  width: 240px;
-  align-self: flex-start;
-}
-
-.login {
+.loginActions {
   display: flex;
   flex-direction: row;
   gap: 130px;
   margin-top: 50px;
-}
-
-.button:hover {
-  background-color: #dc2626;
-}
-
-.forgetPasswordText {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  text-align: left;
   width: 100%;
   max-width: 400px;
+  justify-content: space-between;
+  align-items: center;
 
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.forgotPasswordText {
+  font-size: 0.9rem;
+  text-align: left;
+  
   a {
     color: #ef4444;
     font-weight: 600;
@@ -150,6 +30,4 @@
       text-decoration: underline;
     }
   }
-}
-}
 }

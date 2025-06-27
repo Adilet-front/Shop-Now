@@ -1,0 +1,21 @@
+
+.button {
+  padding: 0.8rem 1.5rem;
+  background-color: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  width: 240px;
+  align-self: flex-start;
+
+  &:hover {
+    background-color: #dc2626;
+  }
+
+  &.fullWidth {
+    width: 100%;
+  }
+}

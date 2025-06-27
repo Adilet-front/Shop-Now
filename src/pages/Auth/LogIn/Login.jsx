@@ -1,88 +1,87 @@
-  
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import styles from "../LogIn/Login.module.scss"
+import { useNavigate } from "react-router-dom";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../../../firebase";
+
+import { Form } from "../../../modules/Form/Form";
+import { InputField } from "../../../modules/Form/components/InputField/InputField";
+import { AuthButton } from "../../../modules/Form/components/AuthButton/AuthButton";
+import styles from "../LogIn/Login.module.scss";
 
 export const Login = () => {
   const { t } = useTranslation();
-
-  const [formData, setFormData] = useState({
-    emailOrPhone: "",
-    password: "",
-  });
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({ emailOrPhone: "", password: "" });
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const { emailOrPhone, password } = formData;
 
-   
-    if (!formData.emailOrPhone || !formData.password) {
-      console.log("Пожалуйста, заполните все поля.");
+    if (!emailOrPhone || !password) {
+      alert(t("login.fillAllFields"));
       return;
     }
 
+    try {
+      setIsLoading(true);
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        emailOrPhone,
+        password
+      );
+      console.log("Successful login:", userCredential.user);
+      navigate("/");
+    } catch (error) {
+      console.error("Login error:", error);
+      alert(t("login.error") + error.message);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
-    <div className={styles.container}>
-    
-      <div className={styles.imageSection}>
-        <img
-          src="https://img.freepik.com/premium-photo/empty-black-smartphone-with-cart-bags-light-background-online-shopping-purchase-concept-mock-up-3d-rendering_670147-9890.jpg?w=360"
-          alt="Online Shopping Illustration"
-          className={styles.image}
+    <Form
+      imageSrc="https://img.freepik.com/premium-photo/empty-black-smartphone-with-cart-bags-light-background-online-shopping-purchase-concept-mock-up-3d-rendering_670147-9890.jpg?w=360"
+      imageAlt={t("login.imageAlt")}
+    >
+      <div className={styles.formHeader}>
+        <h2>{t("login.title")}</h2>
+        <p>{t("login.subtitle")}</p>
+      </div>
+
+      <form onSubmit={handleSubmit} className={styles.authForm}>
+        <InputField
+          type="text"
+          name="emailOrPhone"
+          placeholder={t("login.emailOrPhonePlaceholder")}
+          value={formData.emailOrPhone}
+          onChange={handleChange}
+          disabled={isLoading}
         />
-      </div>
-
-   
-      <div className={styles.formSection}>
-        <div className={styles.formHeader}>
-        
-          <h2>{t("login.title")}</h2>
-        
-          <p>{t("login.subtitle")}</p>
-        </div>
-
-        <form onSubmit={handleSubmit} className={styles.form}>
-         
-          <input
-            type="text"
-            name="emailOrPhone"
-            placeholder={t("login.emailOrPhonePlaceholder")}
-            value={formData.emailOrPhone}
-            onChange={handleChange}
-            className={styles.input}
-          />
-      
-          <input
-            type="password"
-            name="password"
-            placeholder={t("login.passwordPlaceholder")}
-            value={formData.password}
-            onChange={handleChange}
-            className={styles.input}
-          />
-      
-        </form>
-
-        <div className={styles.login}>
-           
-          <button type="submit" className={styles.button}>
+        <InputField
+          type="password"
+          name="password"
+          placeholder={t("login.passwordPlaceholder")}
+          value={formData.password}
+          onChange={handleChange}
+          disabled={isLoading}
+        />
+        <div className={styles.loginActions}>
+          <AuthButton type="submit" disabled={isLoading}>
             {t("login.logInButton")}
-          </button>
-        
-      
-        <p className={styles.forgetPasswordText}>
-          <a href="/forgot-password">{t("login.forgotPasswordLink")}</a>
-        </p>
-        </div> 
- 
-      </div>
-    </div>
+          </AuthButton>
+          <p className={styles.forgotPasswordText}>
+            <a href="/forgot-password">{t("login.forgotPasswordLink")}</a>
+          </p>
+        </div>
+      </form>
+    </Form>
   );
 };
-

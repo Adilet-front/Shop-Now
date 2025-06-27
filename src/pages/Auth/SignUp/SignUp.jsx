@@ -1,96 +1,204 @@
-import styles from "../SignUp/Signup.module.scss"
 import React, { useState } from "react";
-
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+import { Form } from "../../../modules/Form/Form";
+import { InputField } from "../../../modules/Form/components/InputField/InputField";
+import { AuthButton } from "../../../modules/Form/components/AuthButton/AuthButton";
+import { GoogleAuthButton } from "../../../modules/Form/components/GoogleAuthButton/GoogleAuthButton";
+import styles from "./Signup.module.scss";
+
+import {
+  auth,
+  googleProvider,
+  db,
+  signInWithPopup,
+  createUserWithEmailAndPassword,
+  updateProfile,
+  collection,
+  addDoc,
+} from "../../../../firebase";
 
 export const Signup = () => {
-
-
-      const { t, i18n } = useTranslation();
-       const changeLanguage = (Language) => {
-         i18n.changeLanguage(Language);
-       };
-
+  const { t } = useTranslation();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     emailOrPhone: "",
     password: "",
   });
+  const [isLoadingForm, setIsLoadingForm] = useState(false);
+  const [isLoadingGoogleAuth, setIsLoadingGoogleAuth] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoadingForm(true);
+    const { name, emailOrPhone, password } = formData;
 
-    if (!formData.name || !formData.emailOrPhone || !formData.password) {
-      alert("Please fill in all fields.");
+    if (!name || !emailOrPhone || !password) {
+      alert(t("sign-up.fillAllFields"));
+      setIsLoadingForm(false);
       return;
     }
 
-    console.log("Registering user:", formData);
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(emailOrPhone)) {
+      alert(t("sign-up.invalidEmail"));
+      setIsLoadingForm(false);
+      return;
+    }
+
+    if (password.length < 6) {
+      alert(t("sign-up.passwordLength"));
+      setIsLoadingForm(false);
+      return;
+    }
+
+    try {
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        emailOrPhone,
+        password
+      );
+      const user = userCredential.user;
+
+      await updateProfile(user, { displayName: name });
+
+      await addDoc(collection(db, "mail"), {
+        to: user.email,
+        message: {
+          subject: t("sign-up.welcomeSubject"),
+          html: `<h3>${t("sign-up.greeting")}, ${
+            name || user.email
+          }!</h3><p>${t("sign-up.created")}</p>`,
+        },
+      });
+
+      alert(
+        `${t("sign-up.successTitle")}, ${name || user.email}! ${t(
+          "sign-up.successMessage"
+        )}`
+      );
+      setFormData({ name: "", emailOrPhone: "", password: "" });
+      navigate("/dashboard");
+    } catch (error) {
+      console.error("Ошибка регистрации:", error);
+      let message = t("sign-up.errorGeneric");
+      if (error.code === "auth/email-already-in-use")
+        message = t("sign-up.errorEmailUsed");
+      else if (error.code === "auth/invalid-email")
+        message = t("sign-up.errorInvalidEmail");
+      else if (error.code === "auth/weak-password")
+        message = t("sign-up.errorWeakPassword");
+      alert(message);
+    } finally {
+      setIsLoadingForm(false);
+    }
+  };
+
+  const handleGoogleSignInRegister = async () => {
+    setIsLoadingGoogleAuth(true);
+    try {
+      const result = await signInWithPopup(auth, googleProvider);
+      const user = result.user;
+
+      await addDoc(collection(db, "mail"), {
+        to: user.email,
+        message: {
+          subject: t("sign-up.welcomeSubject"),
+          html: `<h3>${t("sign-up.greeting")}, ${
+            user.displayName || user.email
+          }!</h3><p>${t("sign-up.created")}</p>`,
+        },
+      });
+
+      alert(`${t("sign-up.welcomeTitle")}, ${user.displayName || user.email}!`);
+      navigate("/dashboard");
+
+      await fetch("/api/user-profile", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          uid: user.uid,
+          email: user.email,
+          name: user.displayName,
+        }),
+      });
+    } catch (error) {
+      console.error("Ошибка входа через Google:", error);
+      let message = t("sign-up.googleError");
+      if (error.code === "auth/popup-closed-by-user")
+        message = t("sign-up.popupClosed");
+      else if (error.code === "auth/cancelled-popup-request")
+        message = t("sign-up.popupCancelled");
+      else if (error.code === "auth/account-exists-with-different-credential")
+        message = t("sign-up.credentialConflict");
+      else if (error.code === "auth/auth-domain-config-error")
+        message = t("sign-up.domainError");
+      alert(message);
+    } finally {
+      setIsLoadingGoogleAuth(false);
+    }
   };
 
   return (
-    <div className={styles.container}>
-      <div className={styles.imageSection}>
-        <img
-          src="https://img.freepik.com/premium-photo/empty-black-smartphone-with-cart-bags-light-background-online-shopping-purchase-concept-mock-up-3d-rendering_670147-9890.jpg?w=360"
-          alt="Sign Up Illustration"
-          className={styles.image}
+    <Form
+      imageSrc="https://img.freepik.com/premium-photo/empty-black-smartphone-with-cart-bags-light-background-online-shopping-purchase-concept-mock-up-3d-rendering_670147-9890.jpg?w=360"
+      imageAlt="Иллюстрация регистрации"
+    >
+      <div className={styles.formHeader}>
+        <h1 style={{ color: "black" }}>{t("sign-up.account")}</h1>
+        <p>{t("sign-up.enter")}</p>
+      </div>
+
+      <form onSubmit={handleSubmit} className={styles.authForm}>
+        <InputField
+          type="text"
+          name="name"
+          placeholder={t("sign-up.name")}
+          value={formData.name}
+          onChange={handleChange}
+          disabled={isLoadingForm || isLoadingGoogleAuth}
         />
-      </div>
+        <InputField
+          type="text"
+          name="emailOrPhone"
+          placeholder={t("sign-up.email")}
+          value={formData.emailOrPhone}
+          onChange={handleChange}
+          disabled={isLoadingForm || isLoadingGoogleAuth}
+        />
+        <InputField
+          type="password"
+          name="password"
+          placeholder={t("sign-up.password")}
+          value={formData.password}
+          onChange={handleChange}
+          disabled={isLoadingForm || isLoadingGoogleAuth}
+        />
+        <AuthButton
+          type="submit"
+          fullWidth
+          disabled={isLoadingForm || isLoadingGoogleAuth}
+        >
+          {isLoadingForm ? t("sign-up.creating") : t("sign-up.create")}
+        </AuthButton>
+      </form>
 
-      <div className={styles.formSection}>
-        <div className={styles.formHeader}>
-          <h1 style={{ fontSize: "36px" }}> {t("sign-up.account")}</h1>
-          <p>{t("sign-up.enter")}</p>
-        </div>
+      <GoogleAuthButton
+        onClick={handleGoogleSignInRegister}
+        disabled={isLoadingGoogleAuth || isLoadingForm}
+      >
+        {isLoadingGoogleAuth ? t("sign-up.loading") : t("sign-up.google")}
+      </GoogleAuthButton>
 
-        <form onSubmit={handleSubmit} className={styles.form}>
-          <input
-            type="text"
-            name="name"
-            placeholder={t('sign-up.name')}
-            value={formData.name}
-            onChange={handleChange}
-            className={styles.input}
-          />
-          <input
-            type="text"
-            name="emailOrPhone"
-            placeholder={t('sign-up.email')}
-            value={formData.emailOrPhone}
-            onChange={handleChange}
-            className={styles.input}
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder={t('sign-up.password')}
-            value={formData.password}
-            onChange={handleChange}
-            className={styles.input}
-          />
-          <button type="submit" className={styles.button}>
-           {t('sign-up.create')}
-          </button>
-        </form>
-
-        <button className={styles.googleButton}>
-          <img
-            src="https://img.icons8.com/color/18/000000/google-logo.png"
-            alt="Google"
-          />
-        {t('sign-up.google')}
-        </button>
-
-        <p className={styles.loginText}>
-          {t('sign-up.all')} <a href="/login">{t('sign-up.login')}</a>
-        </p>
-      </div>
-    </div>
+      <p className={styles.loginText}>
+        {t("sign-up.all")} <a href="/login">{t("sign-up.login")}</a>
+      </p>
+    </Form>
   );
 };
