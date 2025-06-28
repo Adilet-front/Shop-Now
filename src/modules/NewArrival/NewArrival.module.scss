@@ -1,12 +1,35 @@
-
-
 .NewArrivalGen {
   display: flex;
   flex-direction: row;
   width: 100%;
+  max-width: 1440px;
   justify-content: center;
   align-items: center;
   gap: 2%;
+
+  h1 {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 3%;
+    color: white;
+  }
+  p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+  }
+
+  a {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+  }
 }
 
 .NewArrivalUp {
@@ -58,7 +81,6 @@
     z-index: 1;
     margin-top: 90px;
   }
-
 
   .NewArrivalLeftText {
     width: 300px;
@@ -118,8 +140,6 @@
       border-radius: 4px;
       .NewArrivalRightOneImg {
         position: absolute;
-        width: 100%;
-        height: 100%;
         object-fit: cover;
         z-index: 1;
         margin-top: 3%;
@@ -145,8 +165,7 @@
     background: #0d0d0d;
     .NewArrivalRightTwoImg {
       position: absolute;
-      width: 100%;
-      height: 100%;
+
       object-fit: cover;
       z-index: 1;
       margin-top: 3%;
