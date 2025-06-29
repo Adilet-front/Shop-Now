@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export const ProductCard = () => {
-  const [products, setProducts] = useState([]);
+  const [ setProducts] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:3001/products?_limit=90")
@@ -12,14 +12,8 @@ export const ProductCard = () => {
 
   return (
     <div>
-      <h2>Список продуктов</h2>
-      <ul>
-        {products.map((product) => (
-          <li key={product.id}>
-            {product.name} – ${product.price}
-          </li>
-        ))}
-      </ul>
+
+      
     </div>
 
 

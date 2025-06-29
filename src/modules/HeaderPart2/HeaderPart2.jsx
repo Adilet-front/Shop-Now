@@ -20,20 +20,37 @@ const phones = [
   },
   {
     id: 2,
-    title: "Samsung Galaxy S23",
-    description: "Order Today",
-    logo: "/images/samsungLogo.svg",
+    title: "iPhone 14 Series",
+    description: "Buy Now",
+    logo: "/images/appleLogo.svg",
     arrow: "/images/lineInright.svg",
-    image: "/images/samsungPhone.png",
+    image: "/images/largeIphone.svg",
   },
   {
     id: 3,
-    title: "Google Pixel 8",
-    description: "Check Offers",
-    logo: "/images/googleLogo.svg",
+    title: "iPhone 14 Series",
+    description: "Buy Now",
+    logo: "/images/appleLogo.svg",
     arrow: "/images/lineInright.svg",
-    image: "/images/pixelPhone.png",
+    image: "/images/largeIphone.svg",
   },
+  {
+    id: 4,
+    title: "iPhone 14 Series",
+    description: "Buy Now",
+    logo: "/images/appleLogo.svg",
+    arrow: "/images/lineInright.svg",
+    image: "/images/largeIphone.svg",
+  },
+  {
+    id: 5,
+    title: "iPhone 14 Series",
+    description: "Buy Now",
+    logo: "/images/appleLogo.svg",
+    arrow: "/images/lineInright.svg",
+    image: "/images/largeIphone.svg",
+  },
+
   // Добавь ещё по необходимости
 ];
 
@@ -43,7 +60,7 @@ export const HeaderPart2 = () => {
   return (
     <section className={styles.HeaderPart2}>
       <div className={styles.HeadersLeft}>
-        <nav>
+        <nav className={styles.HeaderNav}>
           <ul>
             <li>
               <NavLink to={"/women"}>Women's Fashion</NavLink>
@@ -77,7 +94,7 @@ export const HeaderPart2 = () => {
       </div>
 
       <div className={styles.line2}></div>
-
+      <div className={styles.emptySpace}></div>
       <Swiper
         modules={[Navigation, Pagination, A11y]}
         direction="horizontal"
@@ -125,6 +142,7 @@ export const HeaderPart2 = () => {
                 <img src={phone.image} alt={phone.title} />
               </div>
             </div>
+            <div className={styles.emptyRight}></div>
           </SwiperSlide>
         ))}
       </Swiper>
