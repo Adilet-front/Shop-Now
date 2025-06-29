@@ -2,30 +2,27 @@
   border: 2px solid white;
 }
 
+.HeadersLeft,
+.HeadersMostRight,
+.HeaderText,
+.HeadersMostRightRight img {
+  transition: all 0.3s ease-in-out;
+}
 .HeaderPart2 {
   display: flex;
   padding: 40px 45px;
   font-family: "Montserrat";
 
-
   .HeadersLeft {
-    width: 250px;
-    margin-right: 40px;
-    margin-left: 70px;
-    height: 344px;
-    display: flex;
-    align-items: start;
-    justify-content: end;
-    font-family: "Montserrat";
-    background-color: white;
-
-    nav {
+    .HeaderNav {
+      padding-left: 47%;
       ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
         display: flex;
+        justify-content: space-evenly;
         flex-direction: column;
+        font-family: "Montserrat";
+        width: 227px;
+        list-style: none;
         gap: 21px;
       }
 
@@ -51,55 +48,57 @@
     height: 384px;
     margin-top: -40px;
     background-color: black;
+    margin-left: 75px;
+  }
+
+  .emptySpace {
+    width: 215px;
   }
 
   .HeadersMostRight {
-    margin-left: 45px;
     background-color: black;
     color: white;
-    width: 100%;
-    max-width: 950px;
+    width: 892px;
     position: relative;
     height: 344px;
+
     display: flex;
-    justify-content: start;
-    flex-direction: column;
+    justify-content: space-between; // текст слева, картинка справа
+    align-items: center;
+    padding: 40px 60px;
 
     .HeaderText {
-      position: absolute;
-      top: 58px;
-      left: 58px;
-
+      position: static; // УБИРАЕМ абсолют
+      width: 45%;
       .HeadersLogoApple {
         display: flex;
-        margin-left: 20px;
         align-items: center;
+        gap: 10px;
 
-        img {
-        }
         p {
           font-size: 16px;
         }
       }
+
       .headertext2H1 {
         font-size: 48px;
-        padding: 20px;
+        margin: 20px 0;
       }
+
       p {
         font-size: 16px;
-        margin-left: 23px;
-
-        img {
-          margin-left: 5px;
-        }
+        display: flex;
+        align-items: center;
+        gap: 6px;
       }
     }
+
     .HeadersMostRightRight {
       img {
-        position: absolute;
-        background-color: black;
-        right: 0;
-        top: 16px;
+        position: static; // УБРАТЬ абсолют
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
       }
     }
   }
