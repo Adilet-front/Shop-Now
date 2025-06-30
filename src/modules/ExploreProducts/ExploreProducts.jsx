@@ -85,7 +85,10 @@ const ExploreProducts = () => {
                {product.isNew && <span className={`${styles.tag} ${styles.tagNew}`}>NEW</span>}
                <div className={styles.icons}>
                 <button className={styles.iconBtn}><FaRegHeart /></button>
+                <a href="/src/modules/Detailwatch">
                 <button className={styles.iconBtn}><FaRegEye /></button>
+
+                </a>
               </div>
               <img src={product.imageUrl} alt={product.name} className={styles.productImage}/>
               <button className={styles.addToCart}>Add To Cart</button>
