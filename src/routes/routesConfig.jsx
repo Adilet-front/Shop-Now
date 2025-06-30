@@ -17,6 +17,7 @@ export const routes = [
     path: "/",
     element: <HomePage />,
   },
+  
   {
     path: "/login",
     element: <Login />,
