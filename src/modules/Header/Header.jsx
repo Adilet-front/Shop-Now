@@ -2,8 +2,6 @@ import { NavLink } from "react-router-dom";
 import styles from "./Header.module.scss";
 import { useTranslation } from "react-i18next";
 
-
-
 export const Header = () => {
   const { t, i18n } = useTranslation();
 
@@ -37,16 +35,16 @@ export const Header = () => {
         <h2>{t("start_block.Exclusive")}</h2>
         <nav>
           <li>
-            <NavLink>{t("start_block.main")}</NavLink>
+            <NavLink to="/">{t("start_block.main")}</NavLink>
           </li>
           <li>
-            <NavLink>{t("start_block.Contact")}</NavLink>
+            <NavLink to="contact">{t("start_block.Contact")}</NavLink>
           </li>
           <li>
             <NavLink>{t("start_block.About")}</NavLink>
           </li>
           <li>
-            <NavLink>{t("start_block.SignUp")}</NavLink>
+            <NavLink to="sign-up">{t("start_block.SignUp")}</NavLink>
           </li>
         </nav>
         <div className={styles.inputWrapper}>
