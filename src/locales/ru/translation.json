@@ -10,15 +10,13 @@
     "About": "О нас",
     "SignUp": "Регистрация",
     "lookFor": "Что вы ищете?"
-
   },
-  "HeaderPart2":{
+  "HeaderPart2": {
     "iphoneTitle": "iPhone 14 Series",
     "samsungTitle": "Samsung Galaxy S23",
     "pixelTitle": "Google Pixel 8",
     "sales": "До 10%<br /> на купоны <br />"
-
-},
+  },
 
   "new_arrival": {
     "New_Arrival": "Новинки",
@@ -65,23 +63,62 @@
   },
 
   "sign-up": {
-    "account": "Создать аккаунт",
-    "enter": "Введите ваши данные ниже",
+    "account": "Создание аккаунта",
+    "enter": "Введите данные, чтобы создать аккаунт",
     "name": "Имя",
-    "email": "Имаил или Номер телефона ",
+    "email": "Email",
     "password": "Пароль",
     "create": "Создать аккаунт",
-    "google": "Регистрация через Google",
+    "creating": "Создание...",
+    "loading": "Загрузка...",
+    "google": "Продолжить с Google",
     "all": "Уже есть аккаунт?",
-    "login": "Войти"
+    "login": "Войти",
+    "fillAllFields": "Пожалуйста, заполните все поля.",
+    "invalidEmail": "Пожалуйста, введите корректный email.",
+    "passwordLength": "Пароль должен быть не менее 6 символов.",
+    "successTitle": "Поздравляем",
+    "successMessage": "Вы успешно зарегистрированы. Письмо отправлено на почту.",
+    "welcomeSubject": "Добро пожаловать в наше приложение!",
+    "greeting": "Привет",
+    "created": "Ваш аккаунт успешно создан. Мы рады вас видеть!",
+    "welcomeTitle": "Добро пожаловать",
+    "errorGeneric": "Произошла ошибка при регистрации.",
+    "errorEmailUsed": "Этот email уже используется. Попробуйте войти или используйте другой email.",
+    "errorInvalidEmail": "Некорректный формат email.",
+    "errorWeakPassword": "Пароль слишком слабый. Пожалуйста, используйте более сложный пароль.",
+    "googleError": "Ошибка входа/регистрации через Google.",
+    "popupClosed": "Вход отменен пользователем.",
+    "popupCancelled": "Повторный запрос отменен. Возможно, окно уже открыто.",
+    "credentialConflict": "Аккаунт с этим email уже существует с другими учетными данными.",
+    "domainError": "Ошибка конфигурации домена аутентификации."
   },
 
   "login": {
-    "title": "Войти в Exclusive",
-    "subtitle": "Введите свои данные ниже",
-    "emailOrPhonePlaceholder": "Электронная почта или номер телефона",
+    "title": "Вход в аккаунт",
+    "subtitle": "Введите свои данные ниже для входа",
+    "emailOrPhonePlaceholder": "Email или номер телефона",
     "passwordPlaceholder": "Пароль",
     "logInButton": "Войти",
-    "forgotPasswordLink": "Забыли пароль?"
+    "forgotPasswordLink": "Забыли пароль?",
+    "fillAllFields": "Пожалуйста, заполните все поля.",
+    "error": "Ошибка входа: "
+  },
+  "contact": {
+    "home": "Главная",
+    "contact": "Контакты",
+    "formSubmitMessage": "Ваше сообщение успешно отправлено!",
+    "callToUsTitle": "Позвоните нам",
+    "callToUsText1": "Мы доступны 24/7, 7 дней в неделю.",
+    "callToUsText2": "Телефон: +996500191142",
+    "writeToUsTitle": "Напишите нам",
+    "writeToUsText1": "Заполните нашу форму, и мы свяжемся с вами в течение 24 часов.",
+    "writeToUsEmail1": "Электронная почта: customer@exclusive.com",
+    "writeToUsEmail2": "Электронная почта: support@exclusive.com",
+    "yourNamePlaceholder": "Ваше имя",
+    "yourEmailPlaceholder": "Ваш Email",
+    "yourPhonePlaceholder": "Ваш телефон",
+    "yourMessagePlaceholder": "Ваше сообщение",
+    "sendMessageButton": "Отправить сообщение"
   }
 }

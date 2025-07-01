@@ -1,5 +1,3 @@
 export const Electronics = () => {
-  return(
-    <div>Elecronics</div>
-  )
-}
+  return <div>Elecronics</div>;
+};

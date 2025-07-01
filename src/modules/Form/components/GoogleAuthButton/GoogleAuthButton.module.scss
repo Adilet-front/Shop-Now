@@ -1,0 +1,27 @@
+
+.googleButton {
+  margin-top: 1rem;
+  padding: 0.80rem;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-weight: 500;
+  width: 400px;
+
+
+
+  &:hover {
+    background-color: #f9fafb;
+  }
+
+  img {
+    width: 18px;
+    height: 18px;
+  }
+}

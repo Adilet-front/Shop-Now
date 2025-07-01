@@ -15,3 +15,19 @@ const firebaseConfig = {
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig); 
+
+
+
+import {
+  getAuth,
+  GoogleAuthProvider,
+  signInWithPopup,
+  createUserWithEmailAndPassword,
+  updateProfile,
+} from "firebase/auth";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
+export const auth = getAuth(app);
+export const googleProvider = new GoogleAuthProvider();
+export { signInWithPopup, createUserWithEmailAndPassword, updateProfile };
+export const db = getFirestore(app);
+export { collection, addDoc };
