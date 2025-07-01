@@ -101,5 +101,25 @@
     "forgotPasswordLink": "Forgot password?",
     "fillAllFields": "Please fill in all fields.",
     "error": "Login error: "
-  }
+  },
+
+
+"contact":{
+  "home": "Home",
+  "contact": "Contact",
+  "formSubmitMessage": "Your message has been sent!",
+  "callToUsTitle": "Call Us",
+  "callToUsText1": "We’re available 24/7 to answer your questions.",
+  "callToUsText2": "Phone: +1 (800) 123-4567",
+  "writeToUsTitle": "Write to Us",
+  "writeToUsText1": "For general inquiries, reach us at:",
+  "writeToUsEmail1": "support@example.com",
+  "writeToUsEmail2": "info@example.com",
+  "yourNamePlaceholder": "Your name",
+  "yourEmailPlaceholder": "Your email",
+  "yourPhonePlaceholder": "Your phone number",
+  "yourMessagePlaceholder": "Your message",
+  "sendMessageButton": "Send Message"
+}
+
 }

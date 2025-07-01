@@ -8,9 +8,12 @@ import { Mens } from "../pages/AllCategory/Men’s/Mens";
 import { Pets } from "../pages/AllCategory/Pets/Pets";
 import { Sport } from "../pages/AllCategory/Sports & Outdoor/Sport";
 import { Women } from "../pages/AllCategory/Women’s Fashion/Women";
-import { Login } from "../pages/Auth/LogIn/LogIn";
+
+import { Login } from "../pages/Auth/LogIn/Login";
 import { Signup } from "../pages/Auth/SignUp/SignUp";
+import { ContactsPage } from "../pages/Auth/Contact/ContactsPage";
 import { HomePage } from "../pages/Home/HomePage";
+
 
 export const routes = [
   {
@@ -25,6 +28,12 @@ export const routes = [
     path: "/sign-up",
     element: <Signup />,
   },
+
+  {
+    path: "/contact", 
+    element: <ContactsPage />,
+  },
+
   {
     path: "/new_arrival",
     element: <NewArrival />,
@@ -69,3 +78,5 @@ export const routes = [
   },
   // end all category
 ];
+
+

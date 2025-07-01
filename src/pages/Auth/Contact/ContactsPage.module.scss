@@ -1,0 +1,181 @@
+.contactsPage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+
+  .languageSwitch {
+    margin-bottom: 20px;
+    text-align: right;
+
+    button {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 8px 15px;
+      cursor: pointer;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    }
+  }
+
+  .breadcrumb {
+    margin-bottom: 40px;
+    color: #888;
+
+    span:first-child {
+      color: #555;
+    }
+
+    span:last-child {
+      font-weight: bold;
+      color: #333;
+    }
+  }
+
+  .contentWrapper {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  .infoSection {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
+    .callUs,
+    .writeUs {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+
+      .iconContainer {
+        background-color: #db4444;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .icon {
+          fill: white;
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      p {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 5px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 30px 0;
+    }
+  }
+
+  .formSection {
+    flex: 2;
+    min-width: 400px;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .formRow {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+
+      .formInput {
+        flex: 1;
+        min-width: 180px;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 0.95rem;
+        background-color: #F5F5F5;
+
+        &:focus {
+          outline: none;
+          border-color: #db4444;
+        }
+
+        &::placeholder {
+          color: #aaa;
+        }
+      }
+    }
+
+    .messageTextarea {
+      width: 100%;
+      min-height: 207px;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      resize: vertical;
+      background-color: #F5F5F5;
+
+      &:focus {
+        outline: none;
+        border-color: #db4444;
+      }
+
+      &::placeholder {
+        color: #aaa;
+      }
+    }
+
+    .sendMessageButton {
+      align-self: flex-end;
+      padding: 12px 30px;
+      background-color: #db4444;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken(#db4444, 10%);
+      }
+    }
+  }
+}
