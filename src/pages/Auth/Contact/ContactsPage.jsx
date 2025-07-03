@@ -1,15 +1,12 @@
-// ContactsPage.jsx
-
 import React, { useState } from "react";
 import styles from "./ContactsPage.module.scss";
 import { useTranslation } from "react-i18next";
+import emailjs from "emailjs-com";
+import { useNavigate } from "react-router-dom";
 
 export const ContactsPage = () => {
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+  const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -17,6 +14,9 @@ export const ContactsPage = () => {
     phone: "",
     message: "",
   });
+
+  const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,33 +26,66 @@ export const ContactsPage = () => {
     }));
   };
 
+  const validate = () => {
+    const newErrors = {};
+    if (!formData.name.trim()) newErrors.name = t("contact.errors.name");
+    if (!formData.email.trim()) {
+      newErrors.email = t("contact.errors.emailRequired");
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = t("contact.errors.emailInvalid");
+    }
+    if (!formData.message.trim()) {
+      newErrors.message = t("contact.errors.message");
+    }
+    return newErrors;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
-    alert(t("contact.formSubmitMessage"));
+
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+
+    setIsSubmitting(true);
+    setErrors({});
+    const submittedData = { ...formData };
     setFormData({ name: "", email: "", phone: "", message: "" });
+
+    emailjs
+      .send(
+        "your_service_id",
+        "your_template_id",
+        submittedData,
+        "your_public_key"
+      )
+      .then(() => {
+        alert(t("contact.formSubmitMessage"));
+      })
+      .catch((error) => {
+        console.error("EmailJS Error:", error);
+        alert(t("contact.formErrorMessage"));
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   };
 
   return (
     <div className={styles.contactsPage}>
       <div className={styles.breadcrumb}>
-        <span>{t("contact.home")} / </span>
-        <span>{t("contact.contact")}</span>
+        <span className={styles.link} onClick={() => navigate("/")}>
+          {t("contact.home")}
+        </span>
+        <span> / {t("contact.contact")}</span>
       </div>
 
       <div className={styles.contentWrapper}>
         <div className={styles.infoSection}>
           <div className={styles.callUs}>
-            <div className={styles.iconContainer}>
-              <svg
-                className={styles.icon}
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path d="M20 15.5c-1.25 0-2.45-.25-3.57-.79-.66-.33-1.42-.18-1.93.31l-2.73 2.73c-3.57-2.73-6.26-5.42-9-9l2.73-2.73c.49-.51.65-1.27.31-1.93C8.75 4.45 8.5 3.25 8.5 2c0-1.1.9-2 2-2h3c1.1 0 2 .9 2 2 0 1.1-.9 2-2 2h-3v10c0 1.1.9 2 2 2h3v-2.5c0-1.1.9-2 2-2s2 .9 2 2v2.5c0 1.1-.9 2-2 2h-3c-1.1 0-2-.9-2-2v-10c0-1.1-.9-2-2-2z" />
-              </svg>
-            </div>
+            <div className={styles.iconContainer}>📞</div>
             <h3>{t("contact.callToUsTitle")}</h3>
             <p>{t("contact.callToUsText1")}</p>
             <p>{t("contact.callToUsText2")}</p>
@@ -61,16 +94,7 @@ export const ContactsPage = () => {
           <hr className={styles.divider} />
 
           <div className={styles.writeUs}>
-            <div className={styles.iconContainer}>
-              <svg
-                className={styles.icon}
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-              </svg>
-            </div>
+            <div className={styles.iconContainer}>✉️</div>
             <h3>{t("contact.writeToUsTitle")}</h3>
             <p>{t("contact.writeToUsText1")}</p>
             <p>{t("contact.writeToUsEmail1")}</p>
@@ -89,6 +113,8 @@ export const ContactsPage = () => {
               onChange={handleChange}
               required
             />
+            {errors.name && <span className={styles.error}>{errors.name}</span>}
+
             <input
               type="email"
               name="email"
@@ -98,6 +124,10 @@ export const ContactsPage = () => {
               onChange={handleChange}
               required
             />
+            {errors.email && (
+              <span className={styles.error}>{errors.email}</span>
+            )}
+
             <input
               type="tel"
               name="phone"
@@ -107,6 +137,7 @@ export const ContactsPage = () => {
               onChange={handleChange}
             />
           </div>
+
           <textarea
             name="message"
             placeholder={t("contact.yourMessagePlaceholder")}
@@ -115,8 +146,18 @@ export const ContactsPage = () => {
             onChange={handleChange}
             required
           ></textarea>
-          <button type="submit" className={styles.sendMessageButton}>
-            {t("contact.sendMessageButton")}
+          {errors.message && (
+            <span className={styles.error}>{errors.message}</span>
+          )}
+
+          <button
+            type="submit"
+            className={styles.sendMessageButton}
+            disabled={isSubmitting}
+          >
+            {isSubmitting
+              ? t("contact.sending")
+              : t("contact.sendMessageButton")}
           </button>
         </form>
       </div>
