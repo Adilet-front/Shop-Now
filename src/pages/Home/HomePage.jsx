@@ -6,25 +6,26 @@ import { NewArrival } from "../../modules/NewArrival/NewArrival";
 import { HeaderPart2 } from "../../modules/HeaderPart2/HeaderPart2";
 import { ThisMonth } from "../../modules/iBlock1/ThisMonth";
 import ExploreProducts from "../../modules/ExploreProducts/ExploreProducts.jsx";
+import FlashSales from "../../modules/FlashSales/FlashSales.jsx";
 
 // 👇 Мы импортируем стили для контейнера
-import "./HomePage.scss"; 
+import "./HomePage.scss";
 
 export const HomePage = () => {
-    return (
-        <div className="homePageWrapper">
-            <HeaderPart2 />
+  return (
+    <div className="homePageWrapper">
+      <HeaderPart2 />
+      {/* 👇 ВОТ ГЛАВНЫЙ КОНТЕЙНЕР ДЛЯ ВСЕГО КОНТЕНТА 👇 */}
+      {/* Все, что внутри него, будет идеально ровным по бокам */}
+      <main className="container">
+        <FlashSales />
+        <ThisMonth />
+        <ExploreProducts />
+        <NewArrival />
+        <Bonjour />
+      </main>
 
-            {/* 👇 ВОТ ГЛАВНЫЙ КОНТЕЙНЕР ДЛЯ ВСЕГО КОНТЕНТА 👇 */}
-            {/* Все, что внутри него, будет идеально ровным по бокам */}
-            <main className="container">
-                <ThisMonth />
-                <ExploreProducts />
-                <NewArrival />
-                <Bonjour />
-            </main>
-
-            {/* Футер, если он есть, обычно идет после main */}
-        </div>
-    );
+      {/* Футер, если он есть, обычно идет после main */}
+    </div>
+  );
 };
