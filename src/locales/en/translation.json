@@ -103,23 +103,35 @@
     "error": "Login error: "
   },
 
+  "contact": {
+    "home": "Home",
+    "contact": "Contact",
 
-"contact":{
-  "home": "Home",
-  "contact": "Contact",
-  "formSubmitMessage": "Your message has been sent!",
-  "callToUsTitle": "Call Us",
-  "callToUsText1": "We’re available 24/7 to answer your questions.",
-  "callToUsText2": "Phone: +1 (800) 123-4567",
-  "writeToUsTitle": "Write to Us",
-  "writeToUsText1": "For general inquiries, reach us at:",
-  "writeToUsEmail1": "support@example.com",
-  "writeToUsEmail2": "info@example.com",
-  "yourNamePlaceholder": "Your name",
-  "yourEmailPlaceholder": "Your email",
-  "yourPhonePlaceholder": "Your phone number",
-  "yourMessagePlaceholder": "Your message",
-  "sendMessageButton": "Send Message"
-}
+    "callToUsTitle": "Call to Us",
+    "callToUsText1": "We’re available from 10 AM to 10 PM every day.",
+    "callToUsText2": "Phone: +996-500-19-11-42",
 
+    "writeToUsTitle": "Write to Us",
+    "writeToUsText1": "Feel free to email us anytime.",
+    "writeToUsEmail1": "support@example.com",
+    "writeToUsEmail2": "info@example.com",
+
+    "yourNamePlaceholder": "Your name",
+    "yourEmailPlaceholder": "Your email",
+    "yourPhonePlaceholder": "Your phone (optional)",
+    "yourMessagePlaceholder": "Your message",
+
+    "sendMessageButton": "Send Message",
+    "sending": "Sending...",
+
+    "formSubmitMessage": "✅ Your message has been sent successfully!",
+    "formErrorMessage": "❌ Failed to send message. Please try again later.",
+
+    "errors": {
+      "name": "Please enter your name.",
+      "emailRequired": "Please enter your email.",
+      "emailInvalid": "Invalid email format.",
+      "message": "Please enter your message."
+    }
+  }
 }

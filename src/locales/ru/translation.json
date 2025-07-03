@@ -107,18 +107,32 @@
   "contact": {
     "home": "Главная",
     "contact": "Контакты",
-    "formSubmitMessage": "Ваше сообщение успешно отправлено!",
+
     "callToUsTitle": "Позвоните нам",
-    "callToUsText1": "Мы доступны 24/7, 7 дней в неделю.",
-    "callToUsText2": "Телефон: +996500191142",
+    "callToUsText1": "Мы доступны с 10:00 до 22:00 каждый день.",
+    "callToUsText2": "Телефон: +996-500-19-11-42",
+
     "writeToUsTitle": "Напишите нам",
-    "writeToUsText1": "Заполните нашу форму, и мы свяжемся с вами в течение 24 часов.",
-    "writeToUsEmail1": "Электронная почта: customer@exclusive.com",
-    "writeToUsEmail2": "Электронная почта: support@exclusive.com",
+    "writeToUsText1": "Вы можете написать нам в любое время.",
+    "writeToUsEmail1": "support@example.com",
+    "writeToUsEmail2": "info@example.com",
+
     "yourNamePlaceholder": "Ваше имя",
-    "yourEmailPlaceholder": "Ваш Email",
-    "yourPhonePlaceholder": "Ваш телефон",
+    "yourEmailPlaceholder": "Ваш email",
+    "yourPhonePlaceholder": "Ваш телефон (необязательно)",
     "yourMessagePlaceholder": "Ваше сообщение",
-    "sendMessageButton": "Отправить сообщение"
+
+    "sendMessageButton": "Отправить сообщение",
+    "sending": "Отправка...",
+
+    "formSubmitMessage": "✅ Ваше сообщение успешно отправлено!",
+    "formErrorMessage": "❌ Ошибка при отправке сообщения. Повторите попытку позже.",
+
+    "errors": {
+      "name": "Пожалуйста, введите ваше имя.",
+      "emailRequired": "Пожалуйста, введите ваш email.",
+      "emailInvalid": "Некорректный формат email.",
+      "message": "Пожалуйста, введите сообщение."
+    }
   }
 }
