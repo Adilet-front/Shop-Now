@@ -13,6 +13,7 @@ import { Login } from "../pages/Auth/LogIn/Login";
 import { Signup } from "../pages/Auth/SignUp/SignUp";
 import { ContactsPage } from "../pages/Auth/Contact/ContactsPage";
 import { HomePage } from "../pages/Home/HomePage";
+import { ResultPage } from "../pages/ResultPage/ResultPage";
 
 
 export const routes = [
@@ -20,7 +21,10 @@ export const routes = [
     path: "/",
     element: <HomePage />,
   },
-  
+  {
+    path: "/search",
+    element: <ResultPage />,
+  },
   {
     path: "/login",
     element: <Login />,
