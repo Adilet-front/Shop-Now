@@ -11,13 +11,17 @@ import { Women } from "../pages/AllCategory/Women’s Fashion/Women";
 import { Login } from "../pages/Auth/LogIn/LogIn";
 import { Signup } from "../pages/Auth/SignUp/SignUp";
 import { HomePage } from "../pages/Home/HomePage";
+import { ResultPage } from "../pages/ResultPage/ResultPage";
 
 export const routes = [
   {
     path: "/",
     element: <HomePage />,
   },
-  
+  {
+    path: "/search",
+    element: <ResultPage />,
+  },
   {
     path: "/login",
     element: <Login />,

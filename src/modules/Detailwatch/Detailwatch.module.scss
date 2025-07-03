@@ -4,13 +4,16 @@
   grid-template-rows: repeat(0, 1fr);
   gap: 16px;
   border: 1px solid red;
+  height: 921px;
 }
 
 .DetailwatchDiv1 {
   grid-column-start: 2;
+  width: 170px;
 }
 
 .DetailwatchDiv2 {
+  width: 170px;
   grid-column-start: 2;
   grid-row-start: 2;
 }
@@ -18,14 +21,18 @@
 .DetailwatchDiv3 {
   grid-column-start: 2;
   grid-row-start: 3;
+  width: 170px;
 }
 
 .DetailwatchDiv4 {
+  width: 170px;
   grid-column-start: 2;
   grid-row-start: 4;
 }
 
 .DetailwatchDiv5 {
+  width: 500px;
+  height: 600px;
   grid-column: span 2 / span 2;
   grid-row: span 4 / span 4;
   grid-column-start: 3;
@@ -33,6 +40,8 @@
 }
 
 .DetailwatchDiv6 {
+  width: 500px;
+  height: 600px;
   grid-column: span 2 / span 2;
   grid-row: span 4 / span 4;
   grid-column-start: 5;
