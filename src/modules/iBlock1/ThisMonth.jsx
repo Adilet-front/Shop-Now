@@ -77,6 +77,7 @@ export const ThisMonth = () => {
               ? `translateX(-${page * 100}%)`
               : "translateX(0)",
             width: showAll ? "100%" : "auto",
+            
           }}
         >
           {visibleProducts.map((product) => (
