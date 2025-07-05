@@ -10,6 +10,7 @@ import {
   FaStar,
   FaRegStar,
 } from "react-icons/fa";
+import FlashSalesTimer from "./components/FlashSalesTimer";
 
 // Компонент рейтинга, он работает правильно
 const StarRating = ({ rating, reviews }) => {
@@ -80,7 +81,11 @@ const FlashSales = () => {
         </div>
       </div>
       <div className={styles.titleRow}>
-        <h2 className={styles.title}>Flash Sales</h2>
+        <h2 className={styles.title1}>
+          Flash Sales
+          <FlashSalesTimer />
+        </h2>
+
         {/* 👇 СТРЕЛКИ ПОКАЗЫВАЮТСЯ, ТОЛЬКО КОГДА `showAll` ВЫКЛЮЧЕН 👇 */}
         {!showAll && (
           <div className={styles.navigationArrows}>
@@ -101,6 +106,7 @@ const FlashSales = () => {
           </div>
         )}
       </div>
+
       <div className={styles.productGrid}>
         {visibleProducts.map((product) => (
           <div key={product.id} className={styles.productCard}>

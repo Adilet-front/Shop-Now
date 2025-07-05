@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router";
-import styles from "./App..module.scss";
+import styles from "./App.module.scss";
 import { routes } from "../routes/routesConfig";
 import { Header } from "../modules/Header/Header";
 import { Footer } from "../modules/Footer/Footer";
