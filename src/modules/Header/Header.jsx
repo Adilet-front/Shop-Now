@@ -2,6 +2,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import styles from "./Header.module.scss";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import UserMenu from "./components/UserMenu/UserMenu";
 
 export const Header = () => {
   const { t, i18n } = useTranslation();
@@ -9,7 +10,7 @@ export const Header = () => {
   const changeLanguage = (Language) => {
     i18n.changeLanguage(Language);
   };
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
   const navigate = useNavigate();
 
   const handleSearch = () => {
@@ -19,7 +20,7 @@ export const Header = () => {
   };
 
   const handleKeyDown = (e) => {
-    if (e.key === 'Enter') handleSearch();
+    if (e.key === "Enter") handleSearch();
   };
 
   return (
@@ -61,22 +62,22 @@ export const Header = () => {
           </li>
         </nav>
         <div className={styles.inputWrapper}>
-         <div className={styles.InInputWrapper}>
-        <input
-          type="text"
-          placeholder={t("start_block.lookFor")}
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          onKeyDown={handleKeyDown}
-        />
-        <button onClick={handleSearch} className={styles.searchButton}>
-          <img
-            className={styles.searchSvg}
-            src="/images/Search.svg" // не нужно писать `/public` в пути
-            alt="Search"
-          />
-        </button>
-      </div>
+          <div className={styles.InInputWrapper}>
+            <input
+              type="text"
+              placeholder={t("start_block.lookFor")}
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={handleKeyDown}
+            />
+            <button onClick={handleSearch} className={styles.searchButton}>
+              <img
+                className={styles.searchSvg}
+                src="/images/Search.svg"
+                alt="Search"
+              />
+            </button>
+          </div>
 
           <div className={styles.LastImages}>
             <NavLink>
@@ -85,6 +86,7 @@ export const Header = () => {
             <NavLink>
               <img src="/public/images/Cart1.svg" alt="" />
             </NavLink>
+            <UserMenu />
           </div>
         </div>
       </div>
