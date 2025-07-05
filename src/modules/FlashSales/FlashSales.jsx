@@ -10,6 +10,8 @@ import {
   FaStar,
   FaRegStar,
 } from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { addFavorites } from "../../store/features/favoritesSlice";
 
 // Компонент рейтинга, он работает правильно
 const StarRating = ({ rating, reviews }) => {
@@ -37,6 +39,7 @@ const FlashSales = () => {
   const [showAll, setShowAll] = useState(false); // Состояние для кнопки View All
   const itemsPerPage = 4;
   const sectionRef = useRef(null); // Для плавного скролла
+  const dispatch = useDispatch();
 
   useEffect(() => {
     fetch("http://localhost:3001/products")
@@ -114,7 +117,10 @@ const FlashSales = () => {
                 <span className={`${styles.tag} ${styles.tagNew}`}>NEW</span>
               )}
               <div className={styles.icons}>
-                <button className={styles.iconBtn}>
+                <button
+                  onClick={() => dispatch(addFavorites(product))}
+                  className={styles.iconBtn}
+                >
                   <FaRegHeart />
                 </button>
                 <a href="/src/modules/Detailwatch">

@@ -3,9 +3,11 @@ import styles from "./Header.module.scss";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import UserMenu from "./components/UserMenu/UserMenu";
+import { useSelector } from "react-redux";
 
 export const Header = () => {
   const { t, i18n } = useTranslation();
+  const { data } = useSelector((s) => s.favorites);
 
   const changeLanguage = (Language) => {
     i18n.changeLanguage(Language);
@@ -80,8 +82,9 @@ export const Header = () => {
           </div>
 
           <div className={styles.LastImages}>
-            <NavLink>
+            <NavLink className={styles.wrapperFav} to={"favorites"}>
               <img src="/public/images/Wishlist.svg" alt="" />
+              <p className={styles.countFav}>{data?.length}</p>
             </NavLink>
             <NavLink>
               <img src="/public/images/Cart1.svg" alt="" />
