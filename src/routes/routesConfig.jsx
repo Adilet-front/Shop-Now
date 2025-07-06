@@ -14,6 +14,7 @@ import { Signup } from "../pages/Auth/SignUp/SignUp";
 import { ContactsPage } from "../pages/Auth/Contact/ContactsPage";
 import { HomePage } from "../pages/Home/HomePage";
 import { ResultPage } from "../pages/ResultPage/ResultPage";
+import { Favorites } from "../pages/Favorites/Favorites";
 
 
 export const routes = [
@@ -80,6 +81,10 @@ export const routes = [
   {
     path: "/sport",
     element: <Sport />,
+  },
+  {
+    path: "/favorites",
+    element: <Favorites />,
   },
   // end all category
 ];
