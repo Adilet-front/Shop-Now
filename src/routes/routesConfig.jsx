@@ -15,12 +15,17 @@ import { ContactsPage } from "../pages/Auth/Contact/ContactsPage";
 import { HomePage } from "../pages/Home/HomePage";
 import { ResultPage } from "../pages/ResultPage/ResultPage";
 import { Favorites } from "../pages/Favorites/Favorites";
+import { NotFound } from "../modules/NotFound/NotFound";
 
 
 export const routes = [
   {
     path: "/",
     element: <HomePage />,
+  },
+  {
+    path: "*",
+    element: <NotFound />
   },
   {
     path: "/search",

@@ -102,11 +102,11 @@ export const Header = () => {
 
           <div className={styles.LastImages}>
             <NavLink className={styles.wrapperFav} to={"favorites"}>
-              <img src="/public/images/Wishlist.svg" alt="" />
+              <img src="/public/images/Wishlist.svg" alt="wish" />
               <p className={styles.countFav}>{data?.length}</p>
             </NavLink>
             <NavLink>
-              <img src="/public/images/Cart1.svg" alt="" />
+              <img src="/public/images/Cart1.svg" alt="cart" />
             </NavLink>
           </div>
           <UserMenu />
