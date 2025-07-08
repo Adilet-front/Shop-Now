@@ -49,7 +49,7 @@ export const Header = () => {
         <h2>{t("start_block.Exclusive")}</h2>
         <nav>
           <li>
-            <NavLink to="/">{t("start_block.main")}</NavLink>
+            <NavLink to="/home">{t("start_block.main")}</NavLink>
           </li>
           <li>
             <NavLink to="contact">{t("start_block.Contact")}</NavLink>

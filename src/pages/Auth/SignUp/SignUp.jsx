@@ -65,7 +65,6 @@ export const Signup = () => {
         password
       );
       const user = userCredential.user;
-
       await updateProfile(user, { displayName: name });
 
       await addDoc(collection(db, "mail"), {
@@ -84,7 +83,7 @@ export const Signup = () => {
         )}`
       );
       setFormData({ name: "", emailOrPhone: "", password: "" });
-      navigate("/dashboard");
+      navigate("/home");
     } catch (error) {
       console.error("Ошибка регистрации:", error);
       let message = t("sign-up.errorGeneric");
@@ -117,17 +116,8 @@ export const Signup = () => {
       });
 
       alert(`${t("sign-up.welcomeTitle")}, ${user.displayName || user.email}!`);
-      navigate("/dashboard");
-
-      await fetch("/api/user-profile", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          uid: user.uid,
-          email: user.email,
-          name: user.displayName,
-        }),
-      });
+      setFormData({ name: "", emailOrPhone: "", password: "" });
+      navigate("/home");
     } catch (error) {
       console.error("Ошибка входа через Google:", error);
       let message = t("sign-up.googleError");
@@ -151,7 +141,7 @@ export const Signup = () => {
       imageAlt="Иллюстрация регистрации"
     >
       <div className={styles.formHeader}>
-        <h1 style={{ color: "black" }}>{t("sign-up.account")}</h1>
+        <h1>{t("sign-up.account")}</h1>
         <p>{t("sign-up.enter")}</p>
       </div>
 
