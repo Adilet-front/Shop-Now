@@ -46,13 +46,9 @@ export const FavoritesProducts = () => {
                   onClick={() => dispatch(addFavorites(product))}
                   className={styles.iconBtn}
                 >
-                  <FaRegHeart />
+                 <img src="images/icon-delete.svg" alt="" />
                 </button>
-                <a href="/src/modules/Detailwatch">
-                  <button className={styles.iconBtn}>
-                    <FaRegEye />
-                  </button>
-                </a>
+           
               </div>
               <img
                 src={product.imageUrl}
@@ -69,7 +65,6 @@ export const FavoritesProducts = () => {
                   <span className={styles.oldPrice}>${product.oldPrice}</span>
                 )}
               </div>
-              <StarRating rating={product.rating} reviews={product.Reviews} />
             </div>
           </div>
         ))}

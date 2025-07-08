@@ -61,6 +61,9 @@ header {
     height: 84px;
     align-items: center;
     justify-content: space-evenly;
+    margin-right: auto;
+    max-width: 1440px;
+    margin-left: auto;
     font-family: "Montserrat";
     margin-top: 10px;
     background-color: white;
@@ -81,8 +84,23 @@ header {
           text-decoration: none;
           color: black;
         }
+        .activeLink {
+          position: relative;
+          display: inline-block;
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -4px; // регулируй отступ вниз
+            height: 0.8px;
+            background-color: #000000; // или нужный цвет
+          }
+        }
       }
     }
+
     .inputWrapper {
       display: flex;
       gap: 24px;
