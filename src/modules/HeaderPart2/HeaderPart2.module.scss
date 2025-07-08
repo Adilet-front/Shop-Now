@@ -9,14 +9,22 @@
   transition: all 0.3s ease-in-out;
 }
 .HeaderPart2 {
-  display: flex;
-  padding: 40px 45px;
-  width: 100%;
   font-family: "Montserrat";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 45px;
+  .headerInner {
+    max-width: 1170px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .HeadersLeft {
     .HeaderNav {
-      padding-left: 47%;
       ul {
         display: flex;
         justify-content: space-evenly;

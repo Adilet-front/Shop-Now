@@ -1,14 +1,6 @@
 // components/UserMenu.js
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./UserMenu.module.scss"; // SCSS стили, опишем ниже
-import {
-  FaUser,
-  FaShoppingBag,
-  FaTimesCircle,
-  FaStar,
-  FaSignOutAlt,
-  FaUserCircle,
-} from "react-icons/fa";
 
 const UserMenu = () => {
   const [open, setOpen] = useState(false);
@@ -27,25 +19,29 @@ const UserMenu = () => {
   return (
     <div className={styles.userMenuWrapper} ref={menuRef}>
       <div onClick={() => setOpen(!open)} className={styles.iconButton}>
-        <img src="/public/images/user.svg" alt="" />
+        <img
+          src={open ? "/images/userYellow.svg" : "/images/userWhite.svg"}
+          alt="user"
+        />
       </div>
       {open && (
         <div className={styles.dropdown}>
           <ul>
             <li>
-              <FaUser /> Manage My Account
+              <img src="images/userElseWhite.svg" alt="user" /> Manage My
+              Account
             </li>
             <li>
-              <FaShoppingBag /> My Order
+              <img src="images/icon-mallbag.svg" alt="mallbag" /> My Order
             </li>
             <li>
-              <FaTimesCircle /> My Cancellations
+              <img src="images/icon-cancel.svg" alt="icon-cancel" /> My Cancellations
             </li>
             <li>
-              <FaStar /> My Reviews
+              <img src="images/Icon-Reviews.svg" alt="" />My Reviews
             </li>
             <li>
-              <FaSignOutAlt /> Logout
+              <img src="images/Icon-logout.svg" alt="" /> Logout
             </li>
           </ul>
         </div>

@@ -51,16 +51,35 @@ export const Header = () => {
         <h2>{t("start_block.Exclusive")}</h2>
         <nav>
           <li>
-            <NavLink to="/">{t("start_block.main")}</NavLink>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? styles.activeLink : "")}
+            >
+              {t("start_block.main")}
+            </NavLink>
           </li>
           <li>
-            <NavLink to="contact">{t("start_block.Contact")}</NavLink>
+            <NavLink
+              to="contact"
+              className={({ isActive }) => (isActive ? styles.activeLink : "")}
+            >
+              {t("start_block.Contact")}
+            </NavLink>
           </li>
           <li>
-            <NavLink>{t("start_block.About")}</NavLink>
+            <NavLink
+            //to="about"
+            >
+              {t("start_block.About")}
+            </NavLink>
           </li>
           <li>
-            <NavLink to="sign-up">{t("start_block.SignUp")}</NavLink>
+            <NavLink
+              to="sign-up"
+              className={({ isActive }) => (isActive ? styles.activeLink : "")}
+            >
+              {t("start_block.SignUp")}
+            </NavLink>
           </li>
         </nav>
         <div className={styles.inputWrapper}>
@@ -89,8 +108,8 @@ export const Header = () => {
             <NavLink>
               <img src="/public/images/Cart1.svg" alt="" />
             </NavLink>
-            <UserMenu />
           </div>
+          <UserMenu />
         </div>
       </div>
       <div className={styles.line}></div>
