@@ -19,16 +19,10 @@ import { Pets } from "../pages/AllCategory/Pets/Pets";
 import { Sport } from "../pages/AllCategory/Sports & Outdoor/Sport";
 import { Women } from "../pages/AllCategory/Women’s Fashion/Women";
 
-import { Login } from "../pages/Auth/LogIn/Login";
-import { Signup } from "../pages/Auth/SignUp/SignUp";
-import { ContactsPage } from "../pages/Auth/Contact/ContactsPage";
-import { HomePage } from "../pages/Home/HomePage";
-import { ResultPage } from "../pages/ResultPage/ResultPage";
 import { Favorites } from "../pages/Favorites/Favorites";
 import { NotFound } from "../modules/NotFound/NotFound";
 
 export const routes = [
- 
   {
     path: "/",
     element: <Navigate to="/sign-up" replace />,
@@ -36,19 +30,11 @@ export const routes = [
   {
     path: "/sign-up",
     element: <Signup />,
-
-    path: "*",
-    element: <NotFound />
-  },
-  {
-    path: "/search",
-    element: <ResultPage />,
   },
   {
     path: "/login",
     element: <Login />,
   },
-
   {
     path: "/home",
     element: (
@@ -81,7 +67,6 @@ export const routes = [
       </ProtectedRoute>
     ),
   },
-
   {
     path: "/baby-toys",
     element: (
@@ -158,12 +143,9 @@ export const routes = [
     path: "/favorites",
     element: <Favorites />,
   },
-  // end all category
-];
-
-
   {
     path: "*",
-    element: <Navigate to="/sign-up" replace />,
+    element: <NotFound />,
   },
 ];
+
