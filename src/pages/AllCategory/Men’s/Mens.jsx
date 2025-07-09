@@ -5,7 +5,6 @@ import { useDispatch } from "react-redux";
 import { addFavorites } from "../../../store/features/favoritesSlice";
 import { FaArrowLeft, FaArrowRight, FaStar, FaRegStar } from "react-icons/fa";
 
-
 const StarRating = ({ rating, reviews }) => {
   const filledStarUrl = "https://www.svgrepo.com/show/13695/star.svg";
   if (!Array.isArray(rating)) return null;
@@ -30,11 +29,12 @@ export const Mens = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch("http://localhost:3001/products")
+    fetch("http://localhost:3001/products?category=Men's%20Fashion")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error("Ошибка при получении данных:", error));
   }, []);
+  
 
   const ourProducts = products.filter(
     (product) => product.categoryAll === "Our Products"

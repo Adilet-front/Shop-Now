@@ -549,7 +549,319 @@
       "id": 18,
       "name": "Nike sports pants",
       "price": 890,
-      "category": "Men's Fashion ",
+      "category": "Men's Fashion",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 55,
+      "stock": "not available",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/98/71/61/987161e56cc8c3b9571d22a5d60d775b.jpg",
+        "https://i.pinimg.com/736x/c9/d7/c6/c9d7c638e4601aeaf0ad6c2be552fe6c.jpg",
+        "https://i.pinimg.com/736x/ed/43/d4/ed43d4e8c14aba800d933be3cf28fe29.jpg",
+        "https://i.pinimg.com/736x/0a/26/fa/0a26faa3a9de36fa7143cbd9441fe9ba.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
+      "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
+      "Colours": ["Green", "Black", "Blue"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 18,
+      "name": "Nike sports pants",
+      "price": 890,
+      "category": "Men's Fashion",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 55,
+      "stock": "not available",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/98/71/61/987161e56cc8c3b9571d22a5d60d775b.jpg",
+        "https://i.pinimg.com/736x/c9/d7/c6/c9d7c638e4601aeaf0ad6c2be552fe6c.jpg",
+        "https://i.pinimg.com/736x/ed/43/d4/ed43d4e8c14aba800d933be3cf28fe29.jpg",
+        "https://i.pinimg.com/736x/0a/26/fa/0a26faa3a9de36fa7143cbd9441fe9ba.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
+      "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
+      "Colours": ["Green", "Black", "Blue"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 18,
+      "name": "Nike sports pants",
+      "price": 890,
+      "category": "Men's Fashion",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 55,
+      "stock": "not available",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/98/71/61/987161e56cc8c3b9571d22a5d60d775b.jpg",
+        "https://i.pinimg.com/736x/c9/d7/c6/c9d7c638e4601aeaf0ad6c2be552fe6c.jpg",
+        "https://i.pinimg.com/736x/ed/43/d4/ed43d4e8c14aba800d933be3cf28fe29.jpg",
+        "https://i.pinimg.com/736x/0a/26/fa/0a26faa3a9de36fa7143cbd9441fe9ba.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
+      "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
+      "Colours": ["Green", "Black", "Blue"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 18,
+      "name": "Nike sports pants",
+      "price": 890,
+      "category": "Men's Fashion",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 55,
+      "stock": "not available",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/98/71/61/987161e56cc8c3b9571d22a5d60d775b.jpg",
+        "https://i.pinimg.com/736x/c9/d7/c6/c9d7c638e4601aeaf0ad6c2be552fe6c.jpg",
+        "https://i.pinimg.com/736x/ed/43/d4/ed43d4e8c14aba800d933be3cf28fe29.jpg",
+        "https://i.pinimg.com/736x/0a/26/fa/0a26faa3a9de36fa7143cbd9441fe9ba.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
+      "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
+      "Colours": ["Green", "Black", "Blue"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 18,
+      "name": "Nike sports pants",
+      "price": 890,
+      "category": "Men's Fashion",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 55,
+      "stock": "not available",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/98/71/61/987161e56cc8c3b9571d22a5d60d775b.jpg",
+        "https://i.pinimg.com/736x/c9/d7/c6/c9d7c638e4601aeaf0ad6c2be552fe6c.jpg",
+        "https://i.pinimg.com/736x/ed/43/d4/ed43d4e8c14aba800d933be3cf28fe29.jpg",
+        "https://i.pinimg.com/736x/0a/26/fa/0a26faa3a9de36fa7143cbd9441fe9ba.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
+      "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
+      "Colours": ["Green", "Black", "Blue"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 18,
+      "name": "Nike sports pants",
+      "price": 890,
+      "category": "Men's Fashion",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 55,
+      "stock": "not available",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/98/71/61/987161e56cc8c3b9571d22a5d60d775b.jpg",
+        "https://i.pinimg.com/736x/c9/d7/c6/c9d7c638e4601aeaf0ad6c2be552fe6c.jpg",
+        "https://i.pinimg.com/736x/ed/43/d4/ed43d4e8c14aba800d933be3cf28fe29.jpg",
+        "https://i.pinimg.com/736x/0a/26/fa/0a26faa3a9de36fa7143cbd9441fe9ba.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
+      "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
+      "Colours": ["Green", "Black", "Blue"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 18,
+      "name": "Nike sports pants",
+      "price": 890,
+      "category": "Men's Fashion",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 55,
+      "stock": "not available",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/98/71/61/987161e56cc8c3b9571d22a5d60d775b.jpg",
+        "https://i.pinimg.com/736x/c9/d7/c6/c9d7c638e4601aeaf0ad6c2be552fe6c.jpg",
+        "https://i.pinimg.com/736x/ed/43/d4/ed43d4e8c14aba800d933be3cf28fe29.jpg",
+        "https://i.pinimg.com/736x/0a/26/fa/0a26faa3a9de36fa7143cbd9441fe9ba.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
+      "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
+      "Colours": ["Green", "Black", "Blue"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 18,
+      "name": "Nike sports pants",
+      "price": 890,
+      "category": "Men's Fashion",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 55,
+      "stock": "not available",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/98/71/61/987161e56cc8c3b9571d22a5d60d775b.jpg",
+        "https://i.pinimg.com/736x/c9/d7/c6/c9d7c638e4601aeaf0ad6c2be552fe6c.jpg",
+        "https://i.pinimg.com/736x/ed/43/d4/ed43d4e8c14aba800d933be3cf28fe29.jpg",
+        "https://i.pinimg.com/736x/0a/26/fa/0a26faa3a9de36fa7143cbd9441fe9ba.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
+      "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
+      "Colours": ["Green", "Black", "Blue"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 18,
+      "name": "Nike sports pants",
+      "price": 890,
+      "category": "Men's Fashion",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 55,
+      "stock": "not available",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/98/71/61/987161e56cc8c3b9571d22a5d60d775b.jpg",
+        "https://i.pinimg.com/736x/c9/d7/c6/c9d7c638e4601aeaf0ad6c2be552fe6c.jpg",
+        "https://i.pinimg.com/736x/ed/43/d4/ed43d4e8c14aba800d933be3cf28fe29.jpg",
+        "https://i.pinimg.com/736x/0a/26/fa/0a26faa3a9de36fa7143cbd9441fe9ba.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
+      "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
+      "Colours": ["Green", "Black", "Blue"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 18,
+      "name": "Nike sports pants",
+      "price": 890,
+      "category": "Men's Fashion",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 55,
+      "stock": "not available",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/98/71/61/987161e56cc8c3b9571d22a5d60d775b.jpg",
+        "https://i.pinimg.com/736x/c9/d7/c6/c9d7c638e4601aeaf0ad6c2be552fe6c.jpg",
+        "https://i.pinimg.com/736x/ed/43/d4/ed43d4e8c14aba800d933be3cf28fe29.jpg",
+        "https://i.pinimg.com/736x/0a/26/fa/0a26faa3a9de36fa7143cbd9441fe9ba.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
+      "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
+      "Colours": ["Green", "Black", "Blue"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 18,
+      "name": "Nike sports pants",
+      "price": 890,
+      "category": "Men's Fashion",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 55,
+      "stock": "not available",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/98/71/61/987161e56cc8c3b9571d22a5d60d775b.jpg",
+        "https://i.pinimg.com/736x/c9/d7/c6/c9d7c638e4601aeaf0ad6c2be552fe6c.jpg",
+        "https://i.pinimg.com/736x/ed/43/d4/ed43d4e8c14aba800d933be3cf28fe29.jpg",
+        "https://i.pinimg.com/736x/0a/26/fa/0a26faa3a9de36fa7143cbd9441fe9ba.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
+      "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
+      "Colours": ["Green", "Black", "Blue"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 18,
+      "name": "Nike sports pants",
+      "price": 890,
+      "category": "Men's Fashion",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 55,
+      "stock": "not available",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/98/71/61/987161e56cc8c3b9571d22a5d60d775b.jpg",
+        "https://i.pinimg.com/736x/c9/d7/c6/c9d7c638e4601aeaf0ad6c2be552fe6c.jpg",
+        "https://i.pinimg.com/736x/ed/43/d4/ed43d4e8c14aba800d933be3cf28fe29.jpg",
+        "https://i.pinimg.com/736x/0a/26/fa/0a26faa3a9de36fa7143cbd9441fe9ba.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
+      "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
+      "Colours": ["Green", "Black", "Blue"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 18,
+      "name": "Nike sports pants",
+      "price": 890,
+      "category": "Men's Fashion",
       "rating": [
         "https://www.svgrepo.com/show/13695/star.svg",
         "https://www.svgrepo.com/show/13695/star.svg",
