@@ -2,7 +2,6 @@ header {
   .WrapperHeader {
     height: 48px;
     width: 100%;
-    max-width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,10 +58,12 @@ header {
   .downHeader {
     display: flex;
     width: 100%;
-    max-width: 1380px;
     height: 84px;
     align-items: center;
     justify-content: space-evenly;
+    margin-right: auto;
+    max-width: 1440px;
+    margin-left: auto;
     font-family: "Montserrat";
     margin-top: 10px;
     background-color: white;
@@ -83,8 +84,23 @@ header {
           text-decoration: none;
           color: black;
         }
+        .activeLink {
+          position: relative;
+          display: inline-block;
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -4px; // регулируй отступ вниз
+            height: 0.8px;
+            background-color: #000000; // или нужный цвет
+          }
+        }
       }
     }
+
     .inputWrapper {
       display: flex;
       gap: 24px;
@@ -136,5 +152,24 @@ header {
     opacity: 30%;
     height: 0.5px;
     background-color: black;
+  }
+}
+
+.wrapperFav {
+  position: relative;
+  .countFav {
+    position: absolute;
+    background-color: red;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 10px;
   }
 }

@@ -2,7 +2,16 @@
 
 import { useEffect, useState, useRef } from "react";
 import styles from "./ExploreProducts.module.scss";
-import { FaArrowLeft, FaArrowRight, FaRegHeart, FaRegEye, FaStar, FaRegStar } from 'react-icons/fa';
+import {
+  FaArrowLeft,
+  FaArrowRight,
+  FaRegHeart,
+  FaRegEye,
+  FaStar,
+  FaRegStar,
+} from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { addFavorites } from "../../store/features/favoritesSlice";
 
 // Компонент рейтинга, он работает правильно
 const StarRating = ({ rating, reviews }) => {
@@ -12,9 +21,11 @@ const StarRating = ({ rating, reviews }) => {
     <div className={styles.starRating}>
       <div className={styles.starsContainer}>
         {rating.map((starUrl, index) =>
-          starUrl === filledStarUrl
-            ? <FaStar key={index} />
-            : <FaRegStar key={index} />
+          starUrl === filledStarUrl ? (
+            <FaStar key={index} />
+          ) : (
+            <FaRegStar key={index} />
+          )
         )}
       </div>
       <span className={styles.reviews}>({reviews || 0})</span>
@@ -22,13 +33,13 @@ const StarRating = ({ rating, reviews }) => {
   );
 };
 
-
 const ExploreProducts = () => {
   const [products, setProducts] = useState([]);
-  const [page, setPage] = useState(0); 
+  const [page, setPage] = useState(0);
   const [showAll, setShowAll] = useState(false); // Состояние для кнопки View All
   const itemsPerPage = 8;
   const sectionRef = useRef(null); // Для плавного скролла
+  const dispatch = useDispatch();
 
   useEffect(() => {
     fetch("http://localhost:3001/products")
@@ -42,15 +53,19 @@ const ExploreProducts = () => {
   );
 
   const maxPage = Math.ceil(ourProducts.length / itemsPerPage) - 1;
-  const handleNext = () => { if (page < maxPage) setPage(page + 1); };
-  const handlePrev = () => { if (page > 0) setPage(page - 1); };
+  const handleNext = () => {
+    if (page < maxPage) setPage(page + 1);
+  };
+  const handlePrev = () => {
+    if (page > 0) setPage(page - 1);
+  };
 
   const handleShowLess = () => {
     setShowAll(false);
     setPage(0); // Возвращаемся на первую страницу
-    sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+    sectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
-    
+
   // --- ГЛАВНАЯ ЛОГИКА ОТОБРАЖЕНИЯ ---
   // Если `showAll` true, показываем все. Иначе - показываем страницу.
   const visibleProducts = showAll
@@ -58,7 +73,7 @@ const ExploreProducts = () => {
     : ourProducts.slice(page * itemsPerPage, (page + 1) * itemsPerPage);
 
   if (ourProducts.length === 0) return null;
-    
+
   return (
     <div className={styles.exploreProducts} ref={sectionRef}>
       <div className={styles.headerRow}>
@@ -72,8 +87,20 @@ const ExploreProducts = () => {
         {/* 👇 СТРЕЛКИ ПОКАЗЫВАЮТСЯ, ТОЛЬКО КОГДА `showAll` ВЫКЛЮЧЕН 👇 */}
         {!showAll && (
           <div className={styles.navigationArrows}>
-              <button className={styles.arrow} onClick={handlePrev} disabled={page === 0}><FaArrowLeft /></button>
-              <button className={styles.arrow} onClick={handleNext} disabled={page >= maxPage}><FaArrowRight /></button>
+            <button
+              className={styles.arrow}
+              onClick={handlePrev}
+              disabled={page === 0}
+            >
+              <FaArrowLeft />
+            </button>
+            <button
+              className={styles.arrow}
+              onClick={handleNext}
+              disabled={page >= maxPage}
+            >
+              <FaArrowRight />
+            </button>
           </div>
         )}
       </div>
@@ -81,23 +108,41 @@ const ExploreProducts = () => {
         {visibleProducts.map((product) => (
           <div key={product.id} className={styles.productCard}>
             <div className={styles.imageContainer}>
-               {product.discount && <span className={`${styles.tag} ${styles.tagDiscount}`}>-{product.discount}%</span>}
-               {product.isNew && <span className={`${styles.tag} ${styles.tagNew}`}>NEW</span>}
-               <div className={styles.icons}>
-                <button className={styles.iconBtn}><FaRegHeart /></button>
+              {product.discount && (
+                <span className={`${styles.tag} ${styles.tagDiscount}`}>
+                  -{product.discount}%
+                </span>
+              )}
+              {product.isNew && (
+                <span className={`${styles.tag} ${styles.tagNew}`}>NEW</span>
+              )}
+              <div className={styles.icons}>
+                <button
+                  onClick={() => dispatch(addFavorites(product))}
+                  className={styles.iconBtn}
+                >
+                  <FaRegHeart />
+                </button>
                 <a href="/src/modules/Detailwatch">
-                <button className={styles.iconBtn}><FaRegEye /></button>
-
+                  <button className={styles.iconBtn}>
+                    <FaRegEye />
+                  </button>
                 </a>
               </div>
-              <img src={product.imageUrl} alt={product.name} className={styles.productImage}/>
+              <img
+                src={product.imageUrl}
+                alt={product.name}
+                className={styles.productImage}
+              />
               <button className={styles.addToCart}>Add To Cart</button>
             </div>
             <div className={styles.productInfo}>
               <p className={styles.productName}>{product.name}</p>
               <div className={styles.priceRow}>
                 <span className={styles.price}>${product.price}</span>
-                {product.oldPrice && (<span className={styles.oldPrice}>${product.oldPrice}</span>)}
+                {product.oldPrice && (
+                  <span className={styles.oldPrice}>${product.oldPrice}</span>
+                )}
               </div>
               <StarRating rating={product.rating} reviews={product.Reviews} />
             </div>
@@ -112,7 +157,10 @@ const ExploreProducts = () => {
               Show Less
             </button>
           ) : (
-            <button className={styles.viewAllButton} onClick={() => setShowAll(true)}>
+            <button
+              className={styles.viewAllButton}
+              onClick={() => setShowAll(true)}
+            >
               View All Products
             </button>
           )}

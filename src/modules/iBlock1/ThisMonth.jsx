@@ -1,5 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import styles from "./ThisMonth.module.scss";
+import { useDispatch } from "react-redux";
+import { addFavorites } from "../../store/features/favoritesSlice";
 
 export const ThisMonth = () => {
   const [products, setProducts] = useState([]);
@@ -7,6 +9,7 @@ export const ThisMonth = () => {
   const [page, setPage] = useState(0);
   const itemsPerPage = 4;
   const listRef = useRef(null);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     fetch("http://localhost:3001/products?_limit=90")
@@ -77,13 +80,17 @@ export const ThisMonth = () => {
               ? `translateX(-${page * 100}%)`
               : "translateX(0)",
             width: showAll ? "100%" : "auto",
-            
           }}
         >
           {visibleProducts.map((product) => (
             <li key={product.id} className={styles.item}>
               <div className={styles.icons}>
-                <span className={styles.iconHeart}>♡</span>
+                <span
+                  onClick={() => dispatch(addFavorites(product))}
+                  className={styles.iconHeart}
+                >
+                  ♡
+                </span>
                 <span className={styles.iconEye}>👁</span>
               </div>
               <img
@@ -100,9 +107,7 @@ export const ThisMonth = () => {
               </div>
               <div className={styles.ratingRow}>
                 <span className={styles.stars}>★★★★★</span>
-                <span className={styles.reviews}>
-                  ({product.Reviews || 0})
-                </span>
+                <span className={styles.reviews}>({product.Reviews || 0})</span>
               </div>
             </li>
           ))}
