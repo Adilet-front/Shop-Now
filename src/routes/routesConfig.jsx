@@ -1,4 +1,14 @@
+import { Navigate } from "react-router-dom";
+import { ProtectedRoute } from "../components/ProtectedRoute";
+
+import { Signup } from "../pages/Auth/SignUp/SignUp";
+import { Login } from "../pages/Auth/LogIn/Login";
+
+import { HomePage } from "../pages/Home/HomePage";
+import { ResultPage } from "../pages/ResultPage/ResultPage";
+import { ContactsPage } from "../pages/Auth/Contact/ContactsPage";
 import { NewArrival } from "../modules/NewArrival/NewArrival";
+
 import { BabyToys } from "../pages/AllCategory/Baby’s & Toys/BadyToys";
 import { Electronics } from "../pages/AllCategory/Electronics/Electronics";
 import { Health } from "../pages/AllCategory/Health/Health";
@@ -17,13 +27,16 @@ import { ResultPage } from "../pages/ResultPage/ResultPage";
 import { Favorites } from "../pages/Favorites/Favorites";
 import { NotFound } from "../modules/NotFound/NotFound";
 
-
 export const routes = [
+ 
   {
     path: "/",
-    element: <HomePage />,
+    element: <Navigate to="/sign-up" replace />,
   },
   {
+    path: "/sign-up",
+    element: <Signup />,
+
     path: "*",
     element: <NotFound />
   },
@@ -35,57 +48,111 @@ export const routes = [
     path: "/login",
     element: <Login />,
   },
-  {
-    path: "/sign-up",
-    element: <Signup />,
-  },
 
   {
-    path: "/contact", 
-    element: <ContactsPage />,
+    path: "/home",
+    element: (
+      <ProtectedRoute>
+        <HomePage />
+      </ProtectedRoute>
+    ),
   },
-
+  {
+    path: "/search",
+    element: (
+      <ProtectedRoute>
+        <ResultPage />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/contact",
+    element: (
+      <ProtectedRoute>
+        <ContactsPage />
+      </ProtectedRoute>
+    ),
+  },
   {
     path: "/new_arrival",
-    element: <NewArrival />,
+    element: (
+      <ProtectedRoute>
+        <NewArrival />
+      </ProtectedRoute>
+    ),
   },
 
-  // all category
   {
     path: "/baby-toys",
-    element: <BabyToys />,
+    element: (
+      <ProtectedRoute>
+        <BabyToys />
+      </ProtectedRoute>
+    ),
   },
   {
     path: "/electronics",
-    element: <Electronics />,
+    element: (
+      <ProtectedRoute>
+        <Electronics />
+      </ProtectedRoute>
+    ),
   },
   {
     path: "/health",
-    element: <Health />,
+    element: (
+      <ProtectedRoute>
+        <Health />
+      </ProtectedRoute>
+    ),
   },
   {
     path: "/lifestyle",
-    element: <Lifestyle />,
+    element: (
+      <ProtectedRoute>
+        <Lifestyle />
+      </ProtectedRoute>
+    ),
   },
   {
     path: "/medicine",
-    element: <Medicine />,
+    element: (
+      <ProtectedRoute>
+        <Medicine />
+      </ProtectedRoute>
+    ),
   },
   {
     path: "/women",
-    element: <Women />,
+    element: (
+      <ProtectedRoute>
+        <Women />
+      </ProtectedRoute>
+    ),
   },
   {
     path: "/mens",
-    element: <Mens />,
+    element: (
+      <ProtectedRoute>
+        <Mens />
+      </ProtectedRoute>
+    ),
   },
   {
     path: "/pets",
-    element: <Pets />,
+    element: (
+      <ProtectedRoute>
+        <Pets />
+      </ProtectedRoute>
+    ),
   },
   {
     path: "/sport",
-    element: <Sport />,
+    element: (
+      <ProtectedRoute>
+        <Sport />
+      </ProtectedRoute>
+    ),
   },
   {
     path: "/favorites",
@@ -95,3 +162,8 @@ export const routes = [
 ];
 
 
+  {
+    path: "*",
+    element: <Navigate to="/sign-up" replace />,
+  },
+];

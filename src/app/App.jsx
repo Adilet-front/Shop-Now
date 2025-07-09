@@ -3,6 +3,7 @@ import styles from "./App.module.scss";
 import { routes } from "../routes/routesConfig";
 import { Header } from "../modules/Header/Header";
 import { Footer } from "../modules/Footer/Footer";
+import "../firabase/firebase";
 
 function App() {
   return (
@@ -21,3 +22,4 @@ function App() {
 }
 
 export default App;
+

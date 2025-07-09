@@ -76,7 +76,7 @@ export const ContactsPage = () => {
   return (
     <div className={styles.contactsPage}>
       <div className={styles.breadcrumb}>
-        <span className={styles.link} onClick={() => navigate("/")}>
+        <span className={styles.link} onClick={() => navigate("/home")}>
           {t("contact.home")}
         </span>
         <span> / {t("contact.contact")}</span>

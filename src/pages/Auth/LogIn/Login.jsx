@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
@@ -36,8 +37,11 @@ export const Login = () => {
         emailOrPhone,
         password
       );
-      console.log("Successful login:", userCredential.user);
-      navigate("/");
+      alert(
+        `${t("login.success")}, ${userCredential.user.email || t("login.user")}`
+      );
+      setFormData({ emailOrPhone: "", password: "" });
+      navigate("/home");
     } catch (error) {
       console.error("Login error:", error);
       alert(t("login.error") + error.message);
