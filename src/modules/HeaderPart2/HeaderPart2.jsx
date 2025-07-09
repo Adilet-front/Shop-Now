@@ -59,7 +59,7 @@ export const HeaderPart2 = () => {
 
   return (
     <section className={styles.HeaderPart2}>
-      <div class={styles.headerInner}>
+      <div className={styles.headerInner}>
         <div className={styles.HeadersLeft}>
           <nav className={styles.HeaderNav}>
             <ul>
