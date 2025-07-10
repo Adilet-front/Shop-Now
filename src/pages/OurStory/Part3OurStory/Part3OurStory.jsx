@@ -74,6 +74,11 @@ export const Part3OurStory = () => {
             <img src="/public/images/socialmedias.png" alt="приложения" />
           </div>
         </div>
+
+
+
+
+        
       </div>
     </>
   );
