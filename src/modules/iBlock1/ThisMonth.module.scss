@@ -1,0 +1,180 @@
+.ThisMonth {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #fff;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.monthLabel {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #e94545;
+  font-weight: 600;
+  margin-bottom: 8px;
+  .redDot {
+    width: 16px;
+    height: 16px;
+    background: #e94545;
+    border-radius: 4px;
+    margin-right: 8px;
+    display: inline-block;
+  }
+}
+
+.viewAll {
+  background: #e94545;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  &:hover {
+    background: #c93030;
+  }
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 16px 0 32px 0;
+  color: #222;
+}
+
+.carouselWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.arrow {
+  background: #fff;
+  border: 1px solid #e94545;
+  color: #e94545;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+  &:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+  &:hover:not(:disabled) {
+    background: #e94545;
+    color: #fff;
+  }
+}
+
+.list {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: 100px;
+  min-width: 960px; // 4 карточки по 240px + gap
+  overflow: hidden;
+}
+
+.item {
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
+  padding: 24px 16px 16px 16px;
+  width: 240px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.iconHeart, .iconEye {
+  font-size: 18px;
+  color: #222;
+  background: #fff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.08);
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.productImage {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.productName {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.price {
+  color: #e94545;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.oldPrice {
+  color: #888;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  color: #ffb21d;
+}
+
+.stars {
+  letter-spacing: 2px;
+}
+
+.reviews {
+  color: #888;
+  font-size: 14px;
+}

@@ -1,0 +1,432 @@
+
+{
+  "products": [
+    {
+      "categoryAll": "Just For You",
+      "id": 1,
+      "name": "Havic HV G-92 Gamepad",
+      "price": 192.0,
+      "category": "Electronic",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://cdn-icons-png.flaticon.com/128/69/69495.png"
+      ],
+      "Reviews": 150,
+      "stock": "In Stock",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/10/f9/69/10f96921954d1592eb7e9c3e86618bbe.jpg",
+        "https://i.pinimg.com/736x/aa/52/2f/aa522f758ddf92f38c1c0753da670d40.jpg",
+        "https://i.pinimg.com/736x/40/f5/e4/40f5e4eb8197371e121326f64f188eea.jpg",
+        "https://i.pinimg.com/736x/4a/46/0c/4a460c842c52673f51ca615a1bfaabf0.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/23/6a/ee/236aee4d24776b323a18732c641eba69.jpg",
+      "information": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+      "Colours": ["HotPink", "LightBlue"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+
+    {
+      "categoryAll": "Today's",
+      "id": 2,
+      "name": "HAVIT HV-G92 Gamepad",
+      "price": 120,
+      "oldPrice": 160,
+      "discount": 40,
+      "category": "Electronic",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 88,
+      "stock": "In Stock",
+      "watching-photo": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd5f2-a2FmuWa6jQclDqmCisDCDp1OguJCiJAEhteUfQT3TEJHUA46QVh4d7UE_JKtUwQ&usqp=CAUhttps://www.creatus.com.bd/image/cache/catalog/2022/03/g92-2-500x500-1-500x500.jpg.webp",
+        "https://www.techlandbd.com/image/cache/catalog/Gaming%20accessories/Game%20pad/Havit/hv-g92/havit-hv-g92-gamepad-2-600x315w.jpg",
+        "https://img.drz.lazcdn.com/static/bd/p/f984b046101bfb494ff8cca337813a9e.jpg_720x720q80.jpg_.webp",
+        "https://m.media-amazon.com/images/I/71A07rhdZ7L._AC_UC200,200_CACC,200,200_QL85_.jpg?aicid=community-reviews"
+      ],
+      "imageUrl": "https://www.ultratech.com.bd/image/cache/catalog/gamepad/havit/hv-g92/havit-hv-g92-gamepad-500x500.jpg",
+      "information": "The Havit HV-G92 Vibration Gamepad is a wired controller compatible with PC and PS3, featuring dual vibration feedback, ergonomic design, and responsive analog sticks for an immersive gaming experience. It connects via USB and supports plug-and-play functionality.",
+      "Colours": ["Blue", "Red"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Today's",
+      "id": 3,
+      "name": "AK-900 Wired Keyboard",
+      "price": 960,
+      "oldPrice": 1160,
+      "discount": 35,
+      "category": "Electronic",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://cdn-icons-png.flaticon.com/128/69/69495.png"
+      ],
+      "Reviews": 75,
+      "stock": "In Stock",
+      "watching-photo": [
+        "https://www.techlandbd.com/image/cache/catalog/Keyboard/IMICE/AK-900/AK-900-600x315w.jpg",
+        "https://mercular.s3.ap-southeast-1.amazonaws.com/images/products/2022/06/Product/arrowx-ydk-ak-900-gaming-keyboard-en-th-black-side-view.jpg",
+        "https://www.techlandbd.com/image/cache/catalog/Keyboard/IMICE/AK-900/AK-900-600x315w.jpg",
+        "https://potakait.com/image/cache/catalog/Keyboard-mouse%20combo/iMICE/km-760-400x400.jpg"
+      ],
+      "imageUrl": "data:image/jpeg;base64,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",
+      "Colours": ["Black"],
+      "Size": ["M"]
+    },
+    {
+      "categoryAll": "Today's",
+      "id": 4,
+      "name": "IPS LCD Gaming Monitor",
+      "price": 370,
+      "oldPrice": 400,
+      "discount": 30,
+      "category": "Electronic",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 99,
+      "stock": "In Stock",
+      "watching-photo": [
+        "https://www.clove-technology.com/cdn/shop/files/7b86b184ee0f1a7cbe847412c110ab79_200x.jpg?v=1717165463",
+        "https://i.ebayimg.com/images/g/kQEAAOSwcnBmvnmw/s-l400.jpg",
+        "https://i.ebayimg.com/images/g/ztQAAeSw1epn3Cqg/s-l1200.jpg",
+        "https://ultra.kg/upload/resize_cache/iblock/501/1200_1200_1d0e97ea46f4438969ab06dd5b311ca67/501cbfd878b6bbf533bb48d980470e74.jpg"
+      ],
+      "imageUrl": "https://m.media-amazon.com/images/I/81QhbOKkMOL.jpg",
+      "information": "The Havit HV-G92 Vibration Gamepad is a wired controller compatible with PC and PS3, featuring dual vibration feedback, ergonomic design, and responsive analog sticks for an immersive gaming experience. It connects via USB and supports plug-and-play functionality.",
+      "Colours": ["Black"],
+      "Size": ["XS", "S"]
+    },
+    {
+      "categoryAll": "Today's",
+      "id": 5,
+      "name": "S-Series Comfort Chair",
+      "price": 375,
+      "oldPrice": 400,
+      "discount": 25,
+      "category": "Home & Lifestyle",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://cdn-icons-png.flaticon.com/128/69/69495.png"
+      ],
+      "Reviews": 99,
+      "stock": "In Stock",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/fd/ad/90/fdad902247eccaffab3cf005768b8fd3.jpg",
+        "https://i.pinimg.com/736x/0d/e3/80/0de38044c183c268519a2d7096bc27ac.jpg",
+        "https://i.pinimg.com/736x/14/08/28/140828bf52ad22371d40849c4720cc27.jpg",
+        "https://i.pinimg.com/736x/28/c4/b5/28c4b50fee4f7694907ee78b44567d6b.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/fd/ad/90/fdad902247eccaffab3cf005768b8fd3.jpg",
+      "information": "Experience the perfect blend of ergonomics and style with the S-Series Comfort Chair. Designed for those who value both comfort and durability, this chair is ideal for long working hours, gaming sessions, or simply relaxing.",
+      "Colours": ["Black", "Brown", "White"],
+      "Size": ["S", "M", "L"]
+    },
+    {
+      "categoryAll": "This Month",
+      "id": 6,
+      "name": "The north coat",
+      "price": 260,
+      "oldPrice": 360,
+      "category": "Woman's Fashion",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 65,
+      "stock": "In Stock",
+      "watching-photo": [
+        "https://peeces.de/cdn/shop/products/23_b18cb4a6-1599-47ab-8607-dc8eea8dd9ce.png?v=1672859389",
+        "https://i.ebayimg.com/thumbs/images/g/~YkAAOSwolRoO45R/s-l1200.jpg",
+        "https://i.ebayimg.com/images/g/ETEAAOSwwk5h1gmN/s-l1200.jpg",
+        "https://edge.images.sidelineswap.com/production/005/136/513/09c59d1b69ff54ed_original.jpeg?height=600"
+      ],
+      "imageUrl": "https://www.ldmountaincentre.com/images/north-face-girls-resolve-reflective-jacket-xl-p42920-219110_zoom.jpg",
+      "information": "Fun Fact: The brand name refers to the north face of a mountain, typically the coldest, most challenging route to climb — symbolizing adventure and resilience.",
+      "Colours": ["Black", "Pink", "White"],
+      "Size": ["XS", "S", "M", "L"]
+    },
+
+    {
+      "categoryAll": "This Month",
+      "id": 7,
+      "name": "Gucci duffle bag",
+      "price": 960,
+      "oldPrice": 1160,
+      "category": "Woman's Fashion",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 65,
+      "stock": "In Stock",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/0f/a7/5b/0fa75b34a69daff9b233d626f5aca822.jpg",
+        "https://i.pinimg.com/736x/29/4c/fa/294cfa5be1789fa80910a4b0d067feb1.jpg",
+        "https://i.pinimg.com/736x/38/89/61/388961877d9e4fe097aaa340d620ce25.jpg",
+        "https://i.pinimg.com/736x/5e/9c/87/5e9c877ff406ee8a5e784bdf7438ecd9.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/f7/97/bd/f797bd35e27f961d5db51960c36ad6e7.jpg",
+      "information": "A Gucci duffle bag is a luxury travel or gym bag known for its high-quality materials, elegant design, and iconic branding. Often made from leather or GG Supreme canvas, it features the recognizable Gucci logo, striped webbing, and premium hardware. These bags combine fashion and function, making them popular among travelers and style-conscious individuals.",
+      "Colours": ["Beige", "Dark brown", "White", "Yellow"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 10,
+      "name": "Breed Dry Dog Food",
+      "price": 100,
+      "category": "Groceries &Pets",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://cdn-icons-png.flaticon.com/128/69/69495.png",
+        "https://cdn-icons-png.flaticon.com/128/69/69495.png"
+      ],
+      "Reviews": 35,
+      "stock": "In Stock",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/12/ab/7f/12ab7fdc7d6078c0d336eb8ff9f1c3d1.jpg",
+        "https://i.pinimg.com/736x/34/ec/57/34ec57b64e5b04034d86d7c23ef15852.jpg",
+        "https://i.pinimg.com/736x/04/7c/31/047c3115687d46f1f9152fe209281f28.jpg",
+        "https://i.pinimg.com/736x/e4/cb/24/e4cb244f38a02ef7980ba75054457cae.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/59/10/85/59108583a41319cbb6f5b3bcfc7c0811.jpg",
+      "information": "In short, Cesar is a Mars-owned brand focusing on gourmet-style dog food for small breeds, with a growing portfolio that includes dry kibble, refrigerated rolls, and microwavable meals—backed by lifestyle-driven marketing and global distribution.",
+      "Colours": ["Orange", "Purple", "Blue "],
+      "Size": ["M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 11,
+      "name": "CANON EOS DSLR Camera",
+      "price": 360,
+      "category": "Electronic",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://cdn-icons-png.flaticon.com/128/69/69495.png"
+      ],
+      "Reviews": 95,
+      "stock": "In Stock",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/49/67/bd/4967bd91d1eba80a8f8e9d2666998ef3.jpg",
+        "https://i.pinimg.com/736x/57/ed/72/57ed72feda6924ffcdc4dbec62fe612f.jpg",
+        "https://i.pinimg.com/736x/13/cd/3c/13cd3c59af2bd7103d29768675506508.jpg",
+        "https://i.pinimg.com/736x/b6/52/81/b65281df4a092248ffb237116bf20d95.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/3f/dd/99/3fdd99823bdf7bbe9eccb680522189af.jpg",
+      "information": "Interchangeable lenses – supports a wide range of Canon EF and EF-S lensesHigh-resolution sensors – from 18 MP to 30+ MP (depending on model)Optical viewfinder – uses a mirror system for real-time viewing",
+      "Colours": ["Black", "Silver", "Blue "],
+      "Size": ["XS", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 12,
+      "name": "ASUS FHD Gaming Laptop",
+      "price": 700,
+      "category": "Electronic",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 325,
+      "stock": "In Stock",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/7e/9a/1a/7e9a1a1c7b1ef3963083d545e955a5e9.jpg",
+        "https://i.pinimg.com/736x/da/8e/f6/da8ef6ded3ba7efb36de5a4a3c95cbad.jpg",
+        "https://i.pinimg.com/736x/35/fb/00/35fb009c636d82f91f6a0a8b35defe1e.jpg",
+        "https://i.pinimg.com/736x/63/96/2c/63962c0cca2b726f172efcff39ddd652.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/f2/04/95/f20495b5f99663485a9f5d88aff9519f.jpg",
+      "information": "ASUS FHD gaming laptops span from mid-range TUF models to premium ROG Strix/Zephyrus lines. They offer full HD displays with high-refresh panels, powerful CPUs and GPUs, 16 GB RAM, NVMe SSDs, customizable RGB keyboards, and advanced cooling systems—all packaged in portable, gamer‑centric builds.",
+      "Colours": ["Black", "Silver", "Blue "],
+      "Size": ["XS", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 13,
+      "name": "Curology Product Set ",
+      "price": 500,
+      "category": "Health & Beautyc",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://cdn-icons-png.flaticon.com/128/69/69495.png"
+      ],
+      "Reviews": 145,
+      "stock": "In Stock",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/74/ec/f9/74ecf9a534f8f5bdf23096391c40df04.jpg",
+        "https://i.pinimg.com/736x/52/f8/e5/52f8e56b01429e134b36e6934d621737.jpg",
+        "https://i.pinimg.com/736x/39/d4/aa/39d4aa3cf15b0934517316a2d57a5728.jpg",
+        "https://i.pinimg.com/736x/ff/44/e3/ff44e39b738ca0386e4c17c82d071fdd.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/2d/71/a0/2d71a0e6e6bfabdaa7d4052522242f18.jpg",
+      "information": "Curology is a San Francisco–based telehealth skincare brand, founded by a dermatologist in 2014. It offers customized prescription and non-prescription formulas—initially targeting acne, now expanding to anti-aging and hair care—all supported by a large team of providers. With millions of users and growing retail presence, the brand aims to make personalized, effective skincare accessible and convenient.",
+      "Colours": ["Purple", "White"],
+      "Size": ["L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 14,
+      "name": "Kids Electric Car",
+      "price": 960,
+      "category": "Baby's &Toys ",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 65,
+      "stock": "In Stock",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/7b/b5/a3/7bb5a30425f6b1a0727fbeeee8570c18.jpg",
+        "https://i.pinimg.com/736x/23/f7/1c/23f71cfcf2dab724972f58908ef696b8.jpg",
+        "https://i.pinimg.com/736x/e5/60/c8/e560c8612b4435cdba363c7444faeadb.jpg",
+        "https://i.pinimg.com/736x/aa/ce/38/aace38e2b82519d9398e8e59284a8eec.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/f7/4f/73/f74f732f91614a4dd9c4d63f9c43f957.jpg",
+      "information": "Kids' electric ride-on cars are battery-powered vehicles designed for children to drive, offering a fun and immersive experience. They come in various models, including realistic replicas of real cars, trucks, and even go-karts, catering to different age groups and preferences.",
+      "Colours": ["Red", "White", "Black"],
+      "Size": ["XS", "M"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 15,
+      "name": "Jr. Zoom Soccer Cleats",
+      "price": 1160,
+      "category": "Sports &Qutdoor",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 35,
+      "stock": "In Stock",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/29/d8/2f/29d82f1e7ddf0e2ee8d96d8b7045bb9c.jpg",
+        "https://i.pinimg.com/736x/07/f6/3d/07f63dd1ec7577f293cc25f2a80f8fde.jpg",
+        "https://i.pinimg.com/736x/68/63/e8/6863e821a66e8c098a0d7e2113fe78b4.jpg",
+        "https://i.pinimg.com/736x/58/18/9e/58189e803ea77588ebda759618bbeb0a.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/d6/3c/1f/d63c1f56b8e918ab9427abe1d0f29cf1.jpg",
+      "information": "The Nike Jr. Zoom Superfly 9 Pro FG soccer cleats are priced at approximately $65.00, offering premium features at an accessible price point.",
+      "Colours": ["Red", "White", "Black", "Green"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 16,
+      "name": "GP11 Shooter USB Gamepad",
+      "price": 660,
+      "category": "Electronic",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 55,
+      "stock": "In Stock",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/14/f0/46/14f0469b96bcb6154a11dbfa43673a23.jpg",
+        "https://i.pinimg.com/736x/eb/a8/d8/eba8d8e50885bf10f9b8794e9459f7a2.jpg",
+        "https://i.pinimg.com/736x/76/d4/8e/76d48e1b9e50207f949f04fc6481d15c.jpg",
+        "https://i.pinimg.com/736x/37/5b/d8/375bd8680c4a0bb0cfc25f1e15c17d30.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/d7/f2/a2/d7f2a21a958348053fd94b999b29c7e2.jpg",
+      "information": "TConnectivity: USB 2.0 wired connection for stable performance.Compatibility: Designed for PC and PS3 platforms.Buttons: Equipped with 14 buttons, including dual analog sticks and trigger buttons.",
+      "Colours": ["Black"],
+      "Size": ["M"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 17,
+      "name": "Quilted Satin Jacket",
+      "price": 660,
+      "category": "Men's Fashion ",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 55,
+      "stock": "In Stock",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/98/71/61/987161e56cc8c3b9571d22a5d60d775b.jpg",
+        "https://i.pinimg.com/736x/c9/d7/c6/c9d7c638e4601aeaf0ad6c2be552fe6c.jpg",
+        "https://i.pinimg.com/736x/ed/43/d4/ed43d4e8c14aba800d933be3cf28fe29.jpg",
+        "https://i.pinimg.com/736x/0a/26/fa/0a26faa3a9de36fa7143cbd9441fe9ba.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/b6/4a/96/b64a96d442d5b0ed300372fed3da9d4e.jpg",
+      "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
+      "Colours": ["Green", "Black", "Blue"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+      "categoryAll": "Our Products",
+      "id": 18,
+      "name": "Nike sports pants",
+      "price": 890,
+      "category": "Men's Fashion ",
+      "rating": [
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg",
+        "https://www.svgrepo.com/show/13695/star.svg"
+      ],
+      "Reviews": 55,
+      "stock": "not available",
+      "watching-photo": [
+        "https://i.pinimg.com/736x/98/71/61/987161e56cc8c3b9571d22a5d60d775b.jpg",
+        "https://i.pinimg.com/736x/c9/d7/c6/c9d7c638e4601aeaf0ad6c2be552fe6c.jpg",
+        "https://i.pinimg.com/736x/ed/43/d4/ed43d4e8c14aba800d933be3cf28fe29.jpg",
+        "https://i.pinimg.com/736x/0a/26/fa/0a26faa3a9de36fa7143cbd9441fe9ba.jpg"
+      ],
+      "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
+      "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
+      "Colours": ["Green", "Black", "Blue"],
+      "Size": ["XS", "S", "M", "L", "XL"]
+    }
+  ]
+}

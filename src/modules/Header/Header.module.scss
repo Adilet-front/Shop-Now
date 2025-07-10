@@ -1,0 +1,138 @@
+header {
+  .WrapperHeader {
+    height: 48px;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: "Montserrat";
+
+    .upHeader {
+      font-size: 14px;
+      font-weight: 400;
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      gap: 231px;
+
+      .text {
+        .text1 {
+          display: flex;
+          gap: 11px;
+
+          a {
+            color: white;
+            display: flex;
+          }
+        }
+      }
+      .languageSelector {
+        .enSvg {
+          width: 78px;
+          height: 24px;
+          display: flex;
+          background-color: black;
+          color: white;
+          cursor: pointer;
+          gap: 10px;
+        }
+        .langDropDown {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          flex-direction: column;
+          z-index: 10;
+          button {
+            display: flex;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .downHeader {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+
+    height: 84px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Montserrat";
+    margin-top: 10px;
+    background-color: white;
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 367px;
+      height: 24px;
+      gap: 40px;
+      li {
+        list-style: none;
+        white-space: nowrap;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+    .inputWrapper {
+      display: flex;
+      gap: 24px;
+      .InInputWrapper {
+        width: 243px;
+        height: 38px;
+        background-color: #f5f5f5;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+        border-radius: 4px;
+
+        input {
+          width: 100%;
+          height: 100%;
+          opacity: 50%;
+          font-size: 12px;
+          background-color: #f5f5f5;
+          border-radius: 4px;
+          padding-left: 20px;
+          transition: all 0.2s ease;
+          font-weight: 400;
+        }
+        .searchSvg {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 9px;
+          right: 9px;
+        }
+      }
+
+      .LastImages {
+        width: 80px;
+        height: 32px;
+        display: flex;
+        gap: 16px;
+        img {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+  .line {
+    width: 100%;
+    border: 0.5;
+    opacity: 30%;
+    height: 0.5px;
+    background-color: black;
+  }
+}

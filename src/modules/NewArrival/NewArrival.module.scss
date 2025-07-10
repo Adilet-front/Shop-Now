@@ -1,0 +1,226 @@
+.NewArrivalGen {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1440px;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  margin-top: 4%;
+
+  h1 {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 3%;
+    color: white;
+  }
+  p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+  }
+
+  a {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+  }
+}
+
+.NewArrivalUp {
+  display: flex;
+  flex-direction: column;
+
+  .newArrivalStart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1.5%;
+
+    .NewArrivalH1 {
+      display: flex;
+
+      h1 {
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 4%;
+        color: #0d0d0d;
+      }
+    }
+
+    .NewArrivalBox {
+      width: 20px;
+      height: 40px;
+      border-radius: 4px;
+      background-color: #db4444;
+    }
+    h2 {
+      color: #db4444;
+      font-family: "Inter";
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      top: 10px;
+    }
+  }
+}
+
+.NewArrivalLeft {
+  position: relative;
+  width: 570px;
+  height: 600px;
+  background: #0d0d0d;
+  border-radius: 4px;
+  overflow: hidden;
+  .NewArrivalLeftImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    margin-top: 90px;
+    img {
+      transition: transform 1s ease, box-shadow 0.3s ease;
+    }
+  }
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+  }
+  .NewArrivalLeftText {
+    width: 300px;
+    top: 70%;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 30px;
+  }
+}
+
+.NewArrivalRight {
+  .NewArrivalRightTop {
+    position: relative;
+    width: 570px;
+    height: 600px;
+    background: #0d0d0d;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 570px;
+    height: 284px;
+    border-radius: 4px;
+    .NewArrivalRightTopImg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      margin-left: 100px;
+      img {
+        transition: transform 1s ease, box-shadow 0.3s ease;
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
+    .NewArrivalRightToptext {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 2;
+      color: white;
+      padding: 30px;
+      width: 300px;
+      gap: 16px;
+      top: 30%;
+    }
+  }
+
+  .NewArrivalRightUnder {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    .NewArrivalRightOne {
+      background: #0d0d0d;
+      width: 270px;
+      height: 284px;
+      border-radius: 4px;
+      .NewArrivalRightOneImg {
+        position: absolute;
+        object-fit: cover;
+        z-index: 1;
+        margin-top: 3%;
+        margin-left: 2.5%;
+        img {
+          transition: transform 1s ease, box-shadow 0.3s ease;
+        }
+      }
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+      .NewArrivalRightOneText {
+        top: 50%;
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        color: white;
+        padding: 30px;
+      }
+    }
+  }
+  .NewArrivalRightTwo {
+    display: flex;
+    width: 270px;
+    height: 284px;
+    border-radius: 4px;
+    background: #0d0d0d;
+    .NewArrivalRightTwoImg {
+      position: absolute;
+      object-fit: cover;
+      z-index: 1;
+      margin-top: 3%;
+      margin-left: 2.5%;
+      img {
+        transition: transform 1s ease, box-shadow 0.3s ease;
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
+    .NewArrivalRightTwoText {
+      top: 50%;
+      gap: 8px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 2;
+      color: white;
+      padding: 30px;
+    }
+  }
+}

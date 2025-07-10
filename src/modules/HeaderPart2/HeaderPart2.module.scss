@@ -1,0 +1,105 @@
+:global(.swiper-pagination-bullet-active) {
+  border: 2px solid white;
+}
+
+.HeadersLeft,
+.HeadersMostRight,
+.HeaderText,
+.HeadersMostRightRight img {
+  transition: all 0.3s ease-in-out;
+}
+.HeaderPart2 {
+  display: flex;
+  padding: 40px 45px;
+  font-family: "Montserrat";
+
+  .HeadersLeft {
+    .HeaderNav {
+      padding-left: 47%;
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        font-family: "Montserrat";
+        width: 227px;
+        list-style: none;
+        gap: 21px;
+      }
+
+      li {
+        padding: 0;
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+        display: block;
+      }
+    }
+  }
+
+  .line2 {
+    border: 0.5;
+    opacity: 30%;
+    width: 0.5px;
+    height: 384px;
+    margin-top: -40px;
+    background-color: black;
+    margin-left: 75px;
+  }
+
+  .emptySpace {
+    width: 215px;
+  }
+
+  .HeadersMostRight {
+    background-color: black;
+    color: white;
+    width: 892px;
+    position: relative;
+    height: 344px;
+
+    display: flex;
+    justify-content: space-between; // текст слева, картинка справа
+    align-items: center;
+    padding: 40px 60px;
+
+    .HeaderText {
+      position: static; // УБИРАЕМ абсолют
+      width: 45%;
+      .HeadersLogoApple {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .headertext2H1 {
+        font-size: 48px;
+        margin: 20px 0;
+      }
+
+      p {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+    }
+
+    .HeadersMostRightRight {
+      img {
+        position: static; // УБРАТЬ абсолют
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+}

@@ -1,0 +1,191 @@
+.foter {
+  background-color: black;
+  margin-top: 200px;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Montserrat";
+  .foterNavigation {
+    display: flex;
+    flex-wrap: wrap; // Добавь!
+    margin: 80px clamp(16px, 8vw, 135px) 60px clamp(16px, 8vw, 136px); // адаптивные отступы
+    justify-content: center;
+    align-items: flex-start;
+    gap: clamp(24px, 6vw, 80px); // адаптивный gap
+    .foterNavigationFirst {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 217px;
+      gap: 16px;
+      h2 {
+        font-weight: 700;
+        font-size: 24px;
+        color: #fafafa;
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #fafafa;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        color: #fafafa;
+      }
+      .foterNavigationFirstInput {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        input {
+          width: 217px;
+          height: 48px;
+          gap: 32px;
+          border: solid #fafafa;
+          border-width: 1.5px;
+          border-radius: 4px;
+          padding-top: 12px;
+          padding-bottom: 12px;
+          padding-left: 16px;
+          background-color: black;
+          color: gray;
+          font-weight: 400;
+          font-size: 16px;
+        }
+        button {
+          position: absolute;
+          right: 12px;
+          width: 24px;
+          height: 24px;
+          background-color: black;
+        }
+      }
+    }
+    .foterNavigationTwo {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 175px;
+      gap: 24px;
+      h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #fafafa;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        color: #fafafa;
+      }
+    }
+    .foterNavigationThree {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 123px;
+      gap: 24px;
+      h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #fafafa;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+      }
+      li {
+        font-weight: 400;
+        font-size: 16px;
+        list-style: none;
+        color: #fafafa;
+      }
+    }
+    .foterNavigationFour {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 123px;
+      gap: 24px;
+      h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #fafafa;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+      }
+      li {
+        font-weight: 400;
+        font-size: 16px;
+        list-style: none;
+        color: #fafafa;
+      }
+    }
+    .foterNavigationFive {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 198px;
+      gap: 24px;
+      h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #fafafa;
+      }
+      .foterNavigationFivePrice {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        flex-direction: column;
+        p {
+          font-weight: 500;
+          font-size: 12px;
+          color: gray;
+        }
+        .foterNavigationFiveQr {
+          display: flex;
+          gap: 8px;
+          .foterNavigationFiveDovland {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 4px;
+          }
+        }
+      }
+      .foterNavigationFiveSoshelMedia {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+    }
+  }
+  .copyright {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    gap: 6px;
+    img {
+      fill: gray;
+    }
+    p {
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      color: gray;
+    }
+  }
+}
