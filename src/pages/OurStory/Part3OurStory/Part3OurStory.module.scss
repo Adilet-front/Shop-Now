@@ -6,7 +6,7 @@
   overflow-x: auto;
   overflow-y: hidden;
   padding-left: 7%;
- transition: transform 0.7s ease;
+  transition: transform 0.7s ease;
   .People1 {
     display: flex;
     flex-direction: column;
@@ -16,9 +16,16 @@
     transition: transform 0.7s ease;
     &:hover {
       transform: scale(1.05);
-      
     }
-  
+    .People1Img {
+      img {
+        width: 370px;
+        height: 430px;
+      }
+      width: 370px;
+      height: 430px;
+      background-color: #f5f5f5;
+    }
     .people1text {
       display: flex;
       flex-direction: column;
@@ -58,6 +65,15 @@
     &:hover {
       transform: scale(1.05);
     }
+    .People2Img {
+      width: 370px;
+      height: 430px;
+      background-color: #f5f5f5;
+      img {
+        width: 370px;
+        height: 430px;
+      }
+    }
     .people2text {
       display: flex;
       flex-direction: column;
@@ -96,6 +112,15 @@
     &:hover {
       transform: scale(1.05);
     }
+    .People3Img {
+      img {
+        width: 370px;
+        height: 430px;
+      }
+      width: 370px;
+      height: 430px;
+      background-color: #f5f5f5;
+    }
     .people3text {
       display: flex;
       flex-direction: column;
@@ -133,6 +158,15 @@
     transition: transform 0.7s ease;
     &:hover {
       transform: scale(1.05);
+    }
+    .People4Img {
+      img {
+        width: 370px;
+        height: 430px;
+      }
+      width: 370px;
+      height: 430px;
+      background-color: #f5f5f5;
     }
     .people4text {
       display: flex;
@@ -214,13 +248,12 @@
     height: 564px;
     gap: 10px;
     transition: transform 0.7s ease;
-&:hover {
+    &:hover {
       transform: scale(1.05);
     }
     .photoPeople6 {
       img {
         width: 370px;
-
         height: 430px;
         background-color: #f5f5f5;
       }

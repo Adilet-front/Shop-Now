@@ -9,7 +9,10 @@ export const Part3OurStory = () => {
     <>
       <div className={styles.Part3OurStoryGen}>
         <div className={styles.People1}>
-          <img src="/public/images/AboutUsPhoto1.png" alt="чел1" />
+          <div className={styles.People1Img}>
+            <img src="/public/images/AboutUsPeople11.png" alt="чел1" />
+          </div>
+
           <div className={styles.people1text}>
             <h1>{t("About_Us.about_us_text9")}</h1>
             <p>{t("About_Us.about_us_text9a")}</p>
@@ -17,7 +20,10 @@ export const Part3OurStory = () => {
           </div>
         </div>
         <div className={styles.People2}>
-          <img src="/public/images/AboutUsPhoto2.png" alt="чел2" />
+          <div className={styles.People2Img}>
+            <img src="/public/images/AboutUsPeople2.png" alt="чел2" />
+          </div>
+
           <div className={styles.people2text}>
             <h1>{t("About_Us.about_us_text10")}</h1>
             <p>{t("About_Us.about_us_text10a")}</p>
@@ -26,7 +32,10 @@ export const Part3OurStory = () => {
         </div>
 
         <div className={styles.People3}>
-          <img src="/public/images/AboutUsPhoto3.png" alt="чел3" />
+          <div className={styles.People3Img}>
+            <img src="/public/images/AboutUsPeople3.png" alt="чел3" />
+          </div>
+
           <div className={styles.people3text}>
             <h1>{t("About_Us.about_us_text11")}</h1>
             <p>{t("About_Us.about_us_text11a")}</p>
@@ -35,7 +44,10 @@ export const Part3OurStory = () => {
         </div>
 
         <div className={styles.People4}>
-          <img src="/public/images/AboutUsPhoto3.png" alt="чел4" />
+          <div className={styles.People4Img}>
+            <img src="/public/images/AboutUsPeople4.png" alt="чел4" />
+          </div>
+
           <div className={styles.people4text}>
             <h1>{t("About_Us.about_us_text12")}</h1>
             <p>{t("About_Us.about_us_text12a")}</p>
@@ -74,11 +86,6 @@ export const Part3OurStory = () => {
             <img src="/public/images/socialmedias.png" alt="приложения" />
           </div>
         </div>
-
-
-
-
-        
       </div>
     </>
   );
