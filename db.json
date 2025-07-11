@@ -1,4 +1,3 @@
-
 {
   "products": [
     {
@@ -79,11 +78,11 @@
         "https://www.techlandbd.com/image/cache/catalog/Keyboard/IMICE/AK-900/AK-900-600x315w.jpg",
         "https://potakait.com/image/cache/catalog/Keyboard-mouse%20combo/iMICE/km-760-400x400.jpg"
       ],
-      "imageUrl": "./public/images/Frame612.svg",
+      "imageUrl": "http://localhost:5173/public/images/Frame612.svg",
       "Colours": ["Black"],
       "Size": ["M"]
     },
-    
+
     {
       "categoryAll": "Today's",
       "id": 4,
@@ -168,7 +167,7 @@
       "Colours": ["Black", "Brown", "White"],
       "Size": ["S", "M", "L"]
     },
-    
+
     {
       "categoryAll": "ThisMonth",
       "id": 6,
@@ -223,7 +222,7 @@
       "information": "A Gucci duffle bag is a luxury travel or gym bag known for its high-quality materials, elegant design, and iconic branding. Often made from leather or GG Supreme canvas, it features the recognizable Gucci logo, striped webbing, and premium hardware. These bags combine fashion and function, making them popular among travelers and style-conscious individuals.",
       "Colours": ["Beige", "Dark brown", "White", "Yellow"],
       "Size": ["XS", "S", "M", "L", "XL"]
-    },  
+    },
 
     {
       "categoryAll": "ThisMonth",
@@ -466,6 +465,7 @@
       "Colours": ["Red", "White", "Black"],
       "Size": ["XS", "M"]
     },
+
     {
       "categoryAll": "Our Products",
       "id": 15,
