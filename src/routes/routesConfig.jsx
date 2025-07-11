@@ -21,6 +21,7 @@ import { Women } from "../pages/AllCategory/Women’s Fashion/Women";
 
 import { Favorites } from "../pages/Favorites/Favorites";
 import { NotFound } from "../modules/NotFound/NotFound";
+import { OurStory } from "../pages/OurStory/OurStory";
 
 export const routes = [
   {
@@ -67,6 +68,15 @@ export const routes = [
       </ProtectedRoute>
     ),
   },
+  {
+    path: "/our-story",
+    element: (
+      <ProtectedRoute>
+        <OurStory />
+      </ProtectedRoute>
+    ),
+  },
+
   {
     path: "/baby-toys",
     element: (
@@ -148,4 +158,3 @@ export const routes = [
     element: <NotFound />,
   },
 ];
-

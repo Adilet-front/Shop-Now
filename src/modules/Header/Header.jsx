@@ -51,12 +51,12 @@ export const Header = () => {
         <h2>{t("start_block.Exclusive")}</h2>
         <nav>
           <li>
-<NavLink
-  to="/home"
-  className={({ isActive }) => (isActive ? styles.activeLink : "")}
->
-  {t("start_block.main")}
-</NavLink>
+            <NavLink
+              to="/home"
+              className={({ isActive }) => (isActive ? styles.activeLink : "")}
+            >
+              {t("start_block.main")}
+            </NavLink>
           </li>
           <li>
             <NavLink
@@ -68,7 +68,8 @@ export const Header = () => {
           </li>
           <li>
             <NavLink
-            //to="about"
+              className={({ isActive }) => (isActive ? styles.activeLink : "")}
+              to="/our-story"
             >
               {t("start_block.About")}
             </NavLink>
