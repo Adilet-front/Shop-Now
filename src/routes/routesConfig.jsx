@@ -45,7 +45,7 @@ export const routes = [
     ),
   },
   {
-    path: "/search",
+    path: "/product/:id",
     element: (
       <ProtectedRoute>
         <ResultPage />
