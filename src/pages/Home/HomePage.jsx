@@ -19,8 +19,10 @@ export const HomePage = () => {
       {/* 👇 ВОТ ГЛАВНЫЙ КОНТЕЙНЕР ДЛЯ ВСЕГО КОНТЕНТА 👇 */}
       {/* Все, что внутри него, будет идеально ровным по бокам */}
       <main className="container">
+        
         <FlashSales />
         <ByCategory />
+        
         <ThisMonth />
         <ExploreProducts />
         <NewArrival />
