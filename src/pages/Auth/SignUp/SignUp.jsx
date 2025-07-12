@@ -14,6 +14,8 @@ import {
   signInWithPopup,
   createUserWithEmailAndPassword,
   updateProfile,
+  doc,
+  setDoc,
   collection,
   addDoc,
 } from "../../../../firebase";
@@ -25,7 +27,9 @@ export const Signup = () => {
     name: "",
     emailOrPhone: "",
     password: "",
+    address: "",
   });
+
   const [isLoadingForm, setIsLoadingForm] = useState(false);
   const [isLoadingGoogleAuth, setIsLoadingGoogleAuth] = useState(false);
 
@@ -37,9 +41,9 @@ export const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoadingForm(true);
-    const { name, emailOrPhone, password } = formData;
+    const { name, emailOrPhone, password, address } = formData;
 
-    if (!name || !emailOrPhone || !password) {
+    if (!name || !emailOrPhone || !password || !address) {
       alert(t("sign-up.fillAllFields"));
       setIsLoadingForm(false);
       return;
@@ -65,8 +69,22 @@ export const Signup = () => {
         password
       );
       const user = userCredential.user;
-      await updateProfile(user, { displayName: name });
 
+      const [firstName, ...rest] = name.trim().split(" ");
+      const lastName = rest.join(" ");
+
+   
+      await updateProfile(user, {
+        displayName: `${firstName} ${lastName}`,
+      });
+
+     
+      await setDoc(doc(db, "users", user.uid), {
+        address,
+        createdAt: new Date(),
+      });
+
+    
       await addDoc(collection(db, "mail"), {
         to: user.email,
         message: {
@@ -82,7 +100,7 @@ export const Signup = () => {
           "sign-up.successMessage"
         )}`
       );
-      setFormData({ name: "", emailOrPhone: "", password: "" });
+      setFormData({ name: "", emailOrPhone: "", password: "", address: "" });
       navigate("/home");
     } catch (error) {
       console.error("Ошибка регистрации:", error);
@@ -105,6 +123,17 @@ export const Signup = () => {
       const result = await signInWithPopup(auth, googleProvider);
       const user = result.user;
 
+     
+      const userRef = doc(db, "users", user.uid);
+      await setDoc(
+        userRef,
+        {
+          address: "",
+          createdAt: new Date(),
+        },
+        { merge: true }
+      );
+
       await addDoc(collection(db, "mail"), {
         to: user.email,
         message: {
@@ -116,7 +145,7 @@ export const Signup = () => {
       });
 
       alert(`${t("sign-up.welcomeTitle")}, ${user.displayName || user.email}!`);
-      setFormData({ name: "", emailOrPhone: "", password: "" });
+      setFormData({ name: "", emailOrPhone: "", password: "", address: "" });
       navigate("/home");
     } catch (error) {
       console.error("Ошибка входа через Google:", error);
@@ -170,6 +199,14 @@ export const Signup = () => {
           onChange={handleChange}
           disabled={isLoadingForm || isLoadingGoogleAuth}
         />
+        <InputField
+          type="text"
+          name="address"
+          placeholder={t("sign-up.address")}
+          value={formData.address}
+          onChange={handleChange}
+          disabled={isLoadingForm || isLoadingGoogleAuth}
+        />
         <AuthButton
           type="submit"
           fullWidth
@@ -192,3 +229,4 @@ export const Signup = () => {
     </Form>
   );
 };
+  
