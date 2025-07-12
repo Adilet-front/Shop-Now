@@ -22,6 +22,7 @@ import { Women } from "../pages/AllCategory/Women’s Fashion/Women";
 import { Favorites } from "../pages/Favorites/Favorites";
 import { NotFound } from "../modules/NotFound/NotFound";
 import { OurStory } from "../pages/OurStory/OurStory";
+import { Cart } from "../pages/Cart/Cart";
 
 export const routes = [
   {
@@ -67,6 +68,14 @@ export const routes = [
         <NewArrival />
       </ProtectedRoute>
     ),
+  },
+  {
+    path: "/Cart",
+    element: (
+      <ProtectedRoute>
+        <Cart />
+      </ProtectedRoute>
+    )
   },
   {
     path: "/our-story",

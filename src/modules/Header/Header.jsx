@@ -78,7 +78,9 @@ export const Header = () => {
               <img src="/public/images/Wishlist.svg" alt="wish" />
               <p className={styles.countFav}>{data?.length}</p>
             </NavLink>
-            <NavLink>
+            <NavLink
+            to={"Cart"}
+            >
               <img src="/public/images/Cart1.svg" alt="cart" />
             </NavLink>
           </div>

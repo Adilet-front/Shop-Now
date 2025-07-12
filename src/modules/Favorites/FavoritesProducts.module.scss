@@ -11,6 +11,35 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  .High {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding: 0 16px;
+
+    .countFav {
+      font-size: 24px;
+      font-weight: 600;
+      color: #000;
+    }
+
+    .MoveAllToBag {
+      padding: 10px 20px;
+      background-color: white;
+      color: black;
+      font-size: 14px;
+      font-weight: 300;
+      border: 1px solid black;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+
+      &:hover {
+        background-color: #b83636;
+      }
+    }
+  }
 }
 
 /* --- Заголовок с красным квадратом --- */
