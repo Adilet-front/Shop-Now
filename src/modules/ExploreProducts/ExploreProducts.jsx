@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { addFavorites } from "../../store/features/favoritesSlice";
+import { addToCartAPI } from "../../constants/fetchProducts"; // Убедитесь, что путь к вашему api.js правильный!
 
 // Компонент рейтинга, он работает правильно
 const StarRating = ({ rating, reviews }) => {
@@ -73,6 +74,20 @@ const ExploreProducts = () => {
     : ourProducts.slice(page * itemsPerPage, (page + 1) * itemsPerPage);
 
   if (ourProducts.length === 0) return null;
+  const handleAddToCart = async (product) => {
+    try {
+      await addToCartAPI(product);
+      alert(`${product.name} добавлен в корзину!`);
+      // Здесь можно добавить логику для обновления состояния корзины в UI,
+      // например, через Redux или контекст, чтобы обновить иконку корзины
+      // или данные на самой странице корзины.
+      // Если у вас есть глобальное состояние корзины (например, Redux),
+      // вы можете вызвать экшн типа `dispatch(cartActions.addItem(product))`
+    } catch (error) {
+      console.error("Ошибка при добавлении в корзину:", error);
+      alert("Не удалось добавить товар в корзину.");
+    }
+  };
 
   return (
     <div className={styles.exploreProducts} ref={sectionRef}>
@@ -134,7 +149,12 @@ const ExploreProducts = () => {
                 alt={product.name}
                 className={styles.productImage}
               />
-              <button className={styles.addToCart}>Add To Cart</button>
+              <button
+                onClick={() => handleAddToCart(product)}
+                className={styles.addToCart}
+              >
+                Add To Cart
+              </button>
             </div>
             <div className={styles.productInfo}>
               <p className={styles.productName}>{product.name}</p>
