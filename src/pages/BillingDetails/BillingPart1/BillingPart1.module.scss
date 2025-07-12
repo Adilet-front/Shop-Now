@@ -1,0 +1,152 @@
+.BillingPart1Gen {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin-top: 5%;
+  .BillingStart {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    span {
+      font-family: "Poppins";
+      font-size: 12px;
+      line-height: 21px;
+      opacity: 50%;
+      color: black;
+    }
+    a {
+      text-decoration: none;
+    }
+    span:nth-child(9) {
+      opacity: 1;
+    }
+  }
+  .BillingMid {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    h1 {
+      font-family: "Inter";
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 36px;
+      line-height: 30px;
+      letter-spacing: 4%;
+    }
+    .BillingInputs {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      input {
+        width: 470px;
+        height: 50px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        opacity: 50%;
+        background-color: #f5f5f5;
+        padding-left: 20px;
+      }
+      input:focus {
+        border: 2px solid grey;
+        outline: none;
+        text-align: center;
+        font-size: 16px;
+        color: rgb(22, 19, 19);
+      }
+
+      span {
+        font-family: "Poppins";
+        font-style: "Regular";
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 40%;
+      }
+      .Binput1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span:nth-child(2) {
+          color: red;
+        }
+      }
+      .Binput2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .Binput3 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span:nth-child(2) {
+          color: red;
+        }
+      }
+      .Binput4 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .Binput5 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span:nth-child(2) {
+          color: red;
+        }
+      }
+      .Binput6 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span:nth-child(2) {
+          color: red;
+        }
+      }
+      .Binput7 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span:nth-child(2) {
+          color: red;
+        }
+      }
+    }
+  }
+  .BillingEnd {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    p {
+      font-family: "Poppins";
+      font-style: "Regular";
+      font-size: 16px;
+      line-height: 24px;
+      cursor: pointer;
+    }
+    button {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      background-color: white;
+      border: 1px solid black;
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
+      &.active {
+        background-color: red;
+      }
+      img {
+        width: 14px;
+        height: 10px;
+        opacity: 1;
+        top: 7px;
+        left: 5px;
+        border-width: 1.5px;
+      }
+    }
+  }
+}

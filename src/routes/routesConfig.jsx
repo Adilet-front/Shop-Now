@@ -12,6 +12,7 @@ import { Login } from "../pages/Auth/LogIn/LogIn";
 import { Signup } from "../pages/Auth/SignUp/SignUp";
 import { HomePage } from "../pages/Home/HomePage";
 import { OurStory } from "../pages/OurStory/OurStory";
+import { BillingDetails } from "../pages/BillingDetails/BillingDetails";
 
 export const routes = [
   {
@@ -30,6 +31,10 @@ export const routes = [
   {
     path: "/new_arrival",
     element: <NewArrival />,
+  },
+  { 
+    path: "/billing-details", 
+    element: <BillingDetails /> 
   },
   {
     path: "/our-story",
@@ -73,5 +78,6 @@ export const routes = [
     path: "/sport",
     element: <Sport />,
   },
+
   // end all category
 ];
