@@ -23,7 +23,6 @@ import { Favorites } from "../pages/Favorites/Favorites";
 import { NotFound } from "../modules/NotFound/NotFound";
 
 import ProfileEditPage from "../pages/ProofileEdit/ProfileEditPage"; 
-=======
 import { OurStory } from "../pages/OurStory/OurStory";
 import { Cart } from "../pages/Cart/Cart";
 

@@ -198,7 +198,7 @@ const ProfileEditPage = () => {
 
   return (
     <div className="profile-edit-page">
-      <header className="page-header">
+      <section className="page-header">
         <nav className="breadcrumbs">
           <span onClick={() => navigate("/home")}>{t("Home")}</span> /{" "}
           <span>{t("myAccount")}</span>
@@ -206,7 +206,7 @@ const ProfileEditPage = () => {
         <div className="welcome-message">
           {t("welcome")} {currentUser?.displayName || "User"}
         </div>
-      </header>
+      </section>
 
       <div className="main-content">
         <aside className="sidebar">
