@@ -180,11 +180,16 @@ aQ
             <p>${total}</p>
           </div>
 
+          <NavLink to="/billing-details"> <button className="ProceesToCheckout">Process to Checkout</button></NavLink>
+         
+
+
           <button className={styles.ProceesToCheckout}>
             {t("cart.checkout")} 
           </button>
 
           <button className="ProceesToCheckout">Process to Checkout</button>
+
         </div>
       </div>
     </div>

@@ -23,9 +23,10 @@ import { Favorites } from "../pages/Favorites/Favorites";
 import { NotFound } from "../modules/NotFound/NotFound";
 
 import ProfileEditPage from "../pages/ProofileEdit/ProfileEditPage"; 
+
 import { OurStory } from "../pages/OurStory/OurStory";
 import { Cart } from "../pages/Cart/Cart";
-
+import { BillingDetails } from "../pages/BillingDetails/BillingDetails";
 
 export const routes = [
   {
@@ -88,7 +89,10 @@ export const routes = [
       </ProtectedRoute>
     ),
   },
-
+{ 
+    path: "/billing-details", 
+    element: <BillingDetails/> 
+  },
   {
     path: "/baby-toys",
     element: (

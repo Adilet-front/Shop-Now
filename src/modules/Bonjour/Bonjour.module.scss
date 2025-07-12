@@ -1,6 +1,5 @@
-
 .bonjourGen {
-  margin-top: 15%;
+  margin-top: 10%;
   display: flex;
   flex-direction: row;
   gap: 10%;
@@ -11,6 +10,14 @@
   max-width: 1440px;
   height: 161px;
   flex: 1;
+   &:hover {
+    img {
+      transform: scale(1.2);
+      transition: transform 1s ease
+    }
+    h1{transform: scale(1.05);}
+    p{transform: scale(1.05);}
+  }
   h1 {
     font-family: "Montserrat";
     font-weight: 600;
@@ -18,6 +25,7 @@
     line-height: 28px;
     text-align: center;
     color: #000000;
+    transition: transform 0.5s ease
   }
   p {
     font-family: "Montserrat";
@@ -25,5 +33,7 @@
     line-height: 21px;
     text-align: center;
     color: #000000;
+    transition: transform 0.7s ease
   }
 }
+
