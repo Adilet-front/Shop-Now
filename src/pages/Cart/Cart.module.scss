@@ -245,7 +245,9 @@
         cursor: pointer;
         align-self: center; // Center the button
         transition: background-color 0.3s ease;
-
+        white-space: nowrap; // Запрещает перенос текста на новую строку
+        text-align: center; // Центрирует текст внутри кнопки (хотя nowrap может сделать его неактуальным, но для порядка)
+        min-width: 200px;
         &:hover {
           background-color: #a02c2c;
         }
@@ -277,6 +279,5 @@
     font-style: Medium;
     font-size: 16px;
     line-height: 24px;
-
   }
 }
