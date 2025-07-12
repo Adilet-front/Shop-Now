@@ -10,7 +10,13 @@ export const BillingPart2 = () => {
     <>
       <div className={styles.BillingPart2}>
         <div className={styles.Billing2Start}>
-          <div className={styles.Bstart1}></div>
+          <div className={styles.Bstart1}>
+            <div className={styles.Tovar1}>
+              <img src="" alt="" />
+              <p></p>
+              <span></span>
+            </div>
+          </div>
           <div className={styles.Bstart2}>
             <div className={styles.BilPay1}>
               <div className={styles.B1text}>
@@ -54,8 +60,6 @@ export const BillingPart2 = () => {
     <p>{t("Billing.Billing_card2")}</p>
   </div>
 </div>
-
-
         <div className={styles.Billing2End}>
           <div className={styles.Bend1}>
             <input placeholder={t("Billing.Billing_card3")} type="text" />
@@ -74,3 +78,9 @@ export const BillingPart2 = () => {
     </>
   );
 };
+
+
+
+
+
+
