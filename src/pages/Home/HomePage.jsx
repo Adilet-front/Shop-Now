@@ -7,6 +7,7 @@ import { HeaderPart2 } from "../../modules/HeaderPart2/HeaderPart2";
 import { ThisMonth } from "../../modules/iBlock1/ThisMonth";
 import ExploreProducts from "../../modules/ExploreProducts/ExploreProducts.jsx";
 import FlashSales from "../../modules/FlashSales/FlashSales.jsx";
+import { ByCategory } from "../../modules/ByCategory/ByCategory.jsx";
 
 // 👇 Мы импортируем стили для контейнера
 import "./HomePage.scss";
@@ -19,6 +20,7 @@ export const HomePage = () => {
       {/* Все, что внутри него, будет идеально ровным по бокам */}
       <main className="container">
         <FlashSales />
+        <ByCategory />
         <ThisMonth />
         <ExploreProducts />
         <NewArrival />

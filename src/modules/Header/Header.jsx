@@ -36,14 +36,14 @@ export const Header = () => {
         </div>
       </div>
       <div className={styles.downHeader}>
-        <NavLink to="/">
+        <NavLink to="/home">
           <h2>{t("start_block.Exclusive")}</h2>
         </NavLink>
 
         <nav>
           <li>
             <NavLink
-              to="/"
+              to="/home"
               className={({ isActive }) => (isActive ? styles.activeLink : "")}
             >
               {t("start_block.main")}
