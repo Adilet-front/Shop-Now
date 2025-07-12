@@ -251,5 +251,33 @@
       "weakPassword": "Пароль слишком слабый.",
       "saveErrorGeneric": "Произошла ошибка при сохранении изменений. Пожалуйста, попробуйте снова."
     }
-  }
+  },
+  
+  "Billing": {
+    "Billing_start": "Главная",
+    "Billing_start2": "Профиль",
+    "Billing_start3": "Регистрация",
+    "Billing_start4": "Корзина",
+    "Billing_start5": "Оформление заказа",
+    "Billing_h1": "Платёжная информация",
+    "Billing_input1": "Имя",
+    "Billing_input2": "Фамилия",
+    "Billing_input3": "Электронная почта",
+    "Billing_input4": "Адрес",
+    "Billing_input5": "Город",
+    "Billing_input6": "Почтовый индекс",
+    "Billing_input7": "Телефон",
+    "Billing_text": "Я согласен с условиями и положениями",
+    "Billing_card": "Банковская карта",
+    "Billing_card2": "Оплата при доставке",
+    "Billing_card5": "Оформить заказ",
+    "Billng_pay": "Промежуточный итог",
+    "Billng_pay2": "Доставка",
+    "Billng_pay3": "Итого",
+    "no_items_in_cart": "В корзине нет товаров.",
+    "fill_required": "Пожалуйста, заполните все обязательные поля.",
+    "order_success": "Куплено!"
+  } 
+
+
 }
