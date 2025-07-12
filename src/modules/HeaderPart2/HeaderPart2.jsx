@@ -20,7 +20,7 @@ const phones = [
   },
   {
     id: 2,
-    title: "iPhone 14 Series",
+    title: "iPhone 15 Series",
     description: "Buy Now",
     logo: "/images/appleLogo.svg",
     arrow: "/images/lineInright.svg",
@@ -28,7 +28,7 @@ const phones = [
   },
   {
     id: 3,
-    title: "iPhone 14 Series",
+    title: "iPhone 16 Series",
     description: "Buy Now",
     logo: "/images/appleLogo.svg",
     arrow: "/images/lineInright.svg",
@@ -36,7 +36,7 @@ const phones = [
   },
   {
     id: 4,
-    title: "iPhone 14 Series",
+    title: "iPhone 17 Series",
     description: "Buy Now",
     logo: "/images/appleLogo.svg",
     arrow: "/images/lineInright.svg",
@@ -44,7 +44,7 @@ const phones = [
   },
   {
     id: 5,
-    title: "iPhone 14 Series",
+    title: "iPhone 18 Series",
     description: "Buy Now",
     logo: "/images/appleLogo.svg",
     arrow: "/images/lineInright.svg",
@@ -64,31 +64,33 @@ export const HeaderPart2 = () => {
           <nav className={styles.HeaderNav}>
             <ul>
               <li>
-                <NavLink to={"/women"}>Women's Fashion</NavLink>
+                <NavLink to="/women">{t("categories.women")}</NavLink>
               </li>
               <li>
-                <NavLink to={"/mens"}>Men's Fashion</NavLink>
+                <NavLink to="/mens">{t("categories.men")}</NavLink>
               </li>
               <li>
-                <NavLink to={"/electronics"}>Electronics</NavLink>
+                <NavLink to="/electronics">
+                  {t("categories.electronics")}
+                </NavLink>
               </li>
               <li>
-                <NavLink to={"/lifestyle"}>Home & Lifestyle</NavLink>
+                <NavLink to="/lifestyle">{t("categories.lifestyle")}</NavLink>
               </li>
               <li>
-                <NavLink to={"medicine"}>Medicine</NavLink>
+                <NavLink to="/medicine">{t("categories.medicine")}</NavLink>
               </li>
               <li>
-                <NavLink to={"/sport"}>Sports & Outdoor</NavLink>
+                <NavLink to="/sport">{t("categories.sport")}</NavLink>
               </li>
               <li>
-                <NavLink to={"/baby-toys"}>Baby’s & Toys</NavLink>
+                <NavLink to="/baby-toys">{t("categories.toys")}</NavLink>
               </li>
               <li>
-                <NavLink to={"/pets"}>Groceries & Pets</NavLink>
+                <NavLink to="/pets">{t("categories.pets")}</NavLink>
               </li>
               <li>
-                <NavLink to={"/health"}>Health & Beauty</NavLink>
+                <NavLink to="/health">{t("categories.health")}</NavLink>
               </li>
             </ul>
           </nav>
