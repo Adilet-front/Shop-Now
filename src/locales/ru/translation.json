@@ -11,6 +11,27 @@
     "SignUp": "Регистрация",
     "lookFor": "Что вы ищете?"
   },
+
+  "cart": {
+    "home": "Главная /",
+    "cart": "Корзина",
+    "product": "Товар",
+    "price": "Цена",
+    "quantity": "Количество",
+    "subtotal": "Промежуточный итог",
+    "empty": "Ваша корзина пуста.",
+    "return": "Вернуться в магазин",
+    "update": "Обновить корзину",
+    "coupon_placeholder": "Купон",
+    "apply_coupon": "Применить купон",
+    "cart_total": "Итого по корзине",
+    "subtotal_label": "Промежуточный итог:",
+    "shipping": "Доставка:",
+    "total": "Общая сумма:",
+    "free": "Бесплатно",
+    "checkout": "Перейти к оформлению"
+  },
+
   "HeaderPart2": {
     "iphoneTitle": "iPhone 14 Series",
     "samsungTitle": "Samsung Galaxy S23",

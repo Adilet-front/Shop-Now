@@ -11,6 +11,27 @@
     "SignUp": "Sign Up",
     "lookFor": "What are you looking for?"
   },
+
+  "cart": {
+    "home": "Home /",
+    "cart": "Cart",
+    "product": "Product",
+    "price": "Price",
+    "quantity": "Quantity",
+    "subtotal": "Subtotal",
+    "empty": "Your cart is empty.",
+    "return": "Return To Shop",
+    "update": "Update Cart",
+    "coupon_placeholder": "Coupon Code",
+    "apply_coupon": "Apply Coupon",
+    "cart_total": "Cart Total",
+    "subtotal_label": "Subtotal:",
+    "shipping": "Shipping:",
+    "total": "Total:",
+    "free": "Free",
+    "checkout": "Process to Checkout"
+  },
+
   "HeaderPart2": {
     "iphoneTitle": "iPhone 14 Series",
     "samsungTitle": "Samsung Galaxy S23",
