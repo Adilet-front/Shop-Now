@@ -1177,17 +1177,31 @@
   ],
   "cart": [
     {
-      "id": "b35e",
+      "id": "b88e",
       "productId": "2",
       "name": "HAVIT HV-G92 Gamepad",
       "price": 120,
       "quantity": 1
     },
     {
-      "id": "0fd2",
+      "id": "71db",
       "productId": "3",
       "name": "AK-900 Wired Keyboard",
       "price": 960,
+      "quantity": 1
+    },
+    {
+      "id": "c7e4",
+      "productId": "4",
+      "name": "IPS LCD Gaming Monitor",
+      "price": 370,
+      "quantity": 1
+    },
+    {
+      "id": "9f57",
+      "productId": "5",
+      "name": "S-Series Comfort Chair",
+      "price": 375,
       "quantity": 1
     }
   ]

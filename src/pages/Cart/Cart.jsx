@@ -156,7 +156,10 @@ export const Cart = () => {
             <p>${total.toFixed(2)}</p>
           </div>
 
-          <NavLink to="/billing-details">
+          <NavLink
+            to="/billing-details"
+            state={{ cartItems, subtotal, total, shippingCost }}
+          >
             <button className={styles.ProceesToCheckout}>
               {t("cart.checkout")}
             </button>

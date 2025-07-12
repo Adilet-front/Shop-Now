@@ -1,154 +1,287 @@
-.Billing2Start {
-  display: flex;
-  flex-direction: column;
-  margin-top: 140px;
-  .Bstart2 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    span {
-      font-family: "Poppins";
-      font-style: "Regular";
-      font-size: 16px;
-      line-height: 24px;
-    }
-    .BilPay1 {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      .B1Text {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 422px;
-      }
-      img {
-        opacity: 30%;
-      }
-    }
+/* src/components/BillingPart2/BillingPart2.module.scss */
+
+$primary-red: #DB4444;
+$text-black: #000000;
+$text-gray: #C0C0C0;
+$background-white: #FFFFFF;
+$shadow-light: rgba(0, 0, 0, 0.05);
+
+@mixin poppins-font($weight: 400, $size: 16px, $line-height: 24px) {
+  font-family: "Poppins", sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin button-base($bg-color: $primary-red, $text-color: $background-white) {
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  background-color: $bg-color;
+  color: $text-color;
+  cursor: pointer;
+  @include poppins-font(500, 16px, 24px);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+  &:active {
+    transform: translateY(0);
+    filter: brightness(0.9);
   }
 }
 
-.BillingPart2 {
+.BillingPart2Wrapper {
   display: flex;
-  flex-direction: column;
-  gap: 3%;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  background-color: $background-white;
+  margin-top: 100px;
 }
 
-.Billing2Mid {
+.BillingPart2Container {
+  background-color: $background-white;
+  box-shadow: 0 4px 10px $shadow-light;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+
+  @media (max-width: 560px) {
+    padding: 20px;
+  }
+}
+
+.OrderSummary {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+}
 
-  overflow: hidden;
-  .Bimid1 {
+.emptyCartMessage {
+  @include poppins-font(400, 16px, 24px);
+  text-align: center;
+  color: $text-gray;
+  padding: 20px 0;
+  font-style: italic;
+}
+
+.ProductItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  height: 40px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .ProductInfo {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    width: 427px;
-    height: 28px;
-    text-align: center;
-    cursor: pointer;
-    button {
-      width: 24px;
-      height: 24px;
-      border: 2px solid black;
-      background-color: white;
-      border-radius: 50%;
-      cursor: pointer;
-    }
+    align-items: center;
+    gap: 16px;
 
-    p {
-      font-family: "Poppins";
-      font-style: "Regular";
-      font-size: 16px;
-      line-height: 24px;
-    }
     img {
-      padding-left: 120px;
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      flex-shrink: 0;
     }
-  }
-  .Bimid2 {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    cursor: pointer;
-    button {
-      width: 24px;
-      height: 24px;
-      border: 2px solid black;
-      background-color: white;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-    p {
-      font-family: "Poppins";
-      font-style: "Regular";
-      font-size: 16px;
-      line-height: 24px;
-    }
-  }
-  .circleButton {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: white;
-    border: 1px solid black;
-    position: relative;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
 
-    &.active::after {
-      content: "";
-      width: 18px;
-      height: 18px;
-      background-color: #db4444;
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    p {
+      @include poppins-font(400, 16px, 24px);
+      color: $text-black;
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .ProductPrice {
+    @include poppins-font(400, 16px, 24px);
+    color: $text-black;
+    white-space: nowrap;
+  }
+}
+
+.DividerLine {
+  width: 100%;
+  height: 1px;
+  background-color: $text-gray;
+  margin: 24px 0;
+}
+
+.TotalsBlock {
+  display: flex;
+  flex-direction: column;
+
+  .TotalRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    span {
+      @include poppins-font(400, 16px, 24px);
+      color: $text-black;
+    }
+
+    .FinalTotal {
+      @include poppins-font(500, 16px, 24px);
+      color: $text-black;
     }
   }
 }
-.Billing2End {
+
+.PaymentMethods {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  button {
-    width: 190px;
-    height: 56px;
-    gap: 10px;
-    border-radius: 4px;
+  gap: 16px;
+  margin-top: 24px;
+}
 
-    background-color: #db4444;
-    color: white;
-    cursor: pointer;
-    font-family: "Poppins";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+.PaymentOption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  .CustomRadio {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+      pointer-events: none;
+    }
+
+    .RadioButton {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid $text-gray;
+      flex-shrink: 0;
+      position: relative;
+      background-color: transparent;
+      transition: border-color 0.2s ease;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: $primary-red;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 0.2s ease;
+      }
+    }
+
+    input[type="radio"]:checked + .RadioButton {
+      border-color: $primary-red;
+      &::before {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+
+    label {
+      @include poppins-font(400, 16px, 24px);
+      color: $text-black;
+      cursor: pointer;
+    }
   }
 
-  .Bend1 {
-    display: flex;
+  .CardIcons {
+    height: 20px;
+    object-fit: contain;
+  }
+}
+
+.ActionsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+
+  @media (min-width: 380px) {
     flex-direction: row;
-    gap: 15px;
-    input {
-      width: 300px;
-      height: 56px;
-      border-radius: 4px;
-      border: 2px solid black;
-      text-align: center;
-      font-family: "Poppins";
-      font-weight: 400;
-      font-style: "Regular";
-      font-size: 16px;
-      line-height: 24px;
-      font-family: "Poppins";
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+.ActionsCupon{
+  display:flex;
+}
+    .CouponInput {
+      margin-right: 16px;
+      min-width: 150px;
+     border: #000000;
     }
+
+    .ApplyCouponButton {
+      flex-shrink: 0;
+      width: 154px;
+      padding: 0 24px;
+    }
+
+    .PlaceOrderButton {
+      width: 100%;
+      margin-top: 16px;
+      padding: 0 48px;
+    }
+  }
+
+  @media (max-width: 379px) {
+    .CouponInput,
+    .ApplyCouponButton,
+    .PlaceOrderButton {
+      width: 100%;
+      margin-right: 0;
+    }
+    .CouponInput {
+      margin-bottom: 0;
+    }
+  }
+
+  .CouponInput {
+    padding: 14px 20px;
+    height: 56px;
+    border: none;
+    background-color: transparent;
+    @include poppins-font(400, 16px, 24px);
+    color: $text-black;
+
+    &::placeholder {
+      color: $text-gray;
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .ApplyCouponButton {
+    @include button-base($primary-red);
+  }
+
+  .PlaceOrderButton {
+    @include button-base($primary-red);
   }
 }
