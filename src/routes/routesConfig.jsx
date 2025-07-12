@@ -21,7 +21,12 @@ import { Women } from "../pages/AllCategory/Women’s Fashion/Women";
 
 import { Favorites } from "../pages/Favorites/Favorites";
 import { NotFound } from "../modules/NotFound/NotFound";
+
 import ProfileEditPage from "../pages/ProofileEdit/ProfileEditPage"; 
+=======
+import { OurStory } from "../pages/OurStory/OurStory";
+import { Cart } from "../pages/Cart/Cart";
+
 
 export const routes = [
   {
@@ -45,7 +50,7 @@ export const routes = [
     ),
   },
   {
-    path: "/search",
+    path: "/product/:id",
     element: (
       <ProtectedRoute>
         <ResultPage />
@@ -68,6 +73,23 @@ export const routes = [
       </ProtectedRoute>
     ),
   },
+  {
+    path: "/Cart",
+    element: (
+      <ProtectedRoute>
+        <Cart />
+      </ProtectedRoute>
+    )
+  },
+  {
+    path: "/our-story",
+    element: (
+      <ProtectedRoute>
+        <OurStory />
+      </ProtectedRoute>
+    ),
+  },
+
   {
     path: "/baby-toys",
     element: (

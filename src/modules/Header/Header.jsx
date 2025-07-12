@@ -1,9 +1,9 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./Header.module.scss";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
 import UserMenu from "./components/UserMenu/UserMenu";
 import { useSelector } from "react-redux";
+import SearchWithAutoComplete from "./components/SearchWithAutoComplete/SearchWithAutoComplete";
 
 export const Header = () => {
   const { t, i18n } = useTranslation();
@@ -11,18 +11,6 @@ export const Header = () => {
 
   const changeLanguage = (Language) => {
     i18n.changeLanguage(Language);
-  };
-  const [query, setQuery] = useState("");
-  const navigate = useNavigate();
-
-  const handleSearch = () => {
-    if (query.trim()) {
-      navigate(`/search?q=${encodeURIComponent(query)}`);
-    }
-  };
-
-  const handleKeyDown = (e) => {
-    if (e.key === "Enter") handleSearch();
   };
 
   return (
@@ -51,12 +39,12 @@ export const Header = () => {
         <h2>{t("start_block.Exclusive")}</h2>
         <nav>
           <li>
-<NavLink
-  to="/home"
-  className={({ isActive }) => (isActive ? styles.activeLink : "")}
->
-  {t("start_block.main")}
-</NavLink>
+            <NavLink
+              to="/home"
+              className={({ isActive }) => (isActive ? styles.activeLink : "")}
+            >
+              {t("start_block.main")}
+            </NavLink>
           </li>
           <li>
             <NavLink
@@ -68,7 +56,8 @@ export const Header = () => {
           </li>
           <li>
             <NavLink
-            //to="about"
+              className={({ isActive }) => (isActive ? styles.activeLink : "")}
+              to="/our-story"
             >
               {t("start_block.About")}
             </NavLink>
@@ -83,29 +72,15 @@ export const Header = () => {
           </li>
         </nav>
         <div className={styles.inputWrapper}>
-          <div className={styles.InInputWrapper}>
-            <input
-              type="text"
-              placeholder={t("start_block.lookFor")}
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              onKeyDown={handleKeyDown}
-            />
-            <button onClick={handleSearch} className={styles.searchButton}>
-              <img
-                className={styles.searchSvg}
-                src="/images/Search.svg"
-                alt="Search"
-              />
-            </button>
-          </div>
-
+          <SearchWithAutoComplete />
           <div className={styles.LastImages}>
             <NavLink className={styles.wrapperFav} to={"favorites"}>
               <img src="/public/images/Wishlist.svg" alt="wish" />
               <p className={styles.countFav}>{data?.length}</p>
             </NavLink>
-            <NavLink>
+            <NavLink
+            to={"Cart"}
+            >
               <img src="/public/images/Cart1.svg" alt="cart" />
             </NavLink>
           </div>

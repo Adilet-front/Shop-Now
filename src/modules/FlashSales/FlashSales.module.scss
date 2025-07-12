@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat";
   font-size: 16px;
   font-weight: 600;
   color: #db4444;
@@ -94,6 +94,7 @@
 
 /* --- Карточка товара --- */
 .productCard {
+  font-family: "Montserrat";
   .imageContainer {
     position: relative;
     height: 250px;

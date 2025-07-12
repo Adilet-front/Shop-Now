@@ -1,11 +1,10 @@
-
 {
   "products": [
     {
       "categoryAll": "Just For You",
-      "id": 1,
+      "id": "1",
       "name": "Havic HV G-92 Gamepad",
-      "price": 192.0,
+      "price": 192,
       "category": "Electronic",
       "rating": [
         "https://www.svgrepo.com/show/13695/star.svg",
@@ -24,13 +23,21 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/23/6a/ee/236aee4d24776b323a18732c641eba69.jpg",
       "information": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
-      "Colours": ["HotPink", "LightBlue"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "HotPink",
+        "LightBlue"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
-
     {
       "categoryAll": "Today's",
-      "id": 2,
+      "id": "2",
       "name": "HAVIT HV-G92 Gamepad",
       "price": 120,
       "oldPrice": 160,
@@ -53,12 +60,21 @@
       ],
       "imageUrl": "https://www.ultratech.com.bd/image/cache/catalog/gamepad/havit/hv-g92/havit-hv-g92-gamepad-500x500.jpg",
       "information": "The Havit HV-G92 Vibration Gamepad is a wired controller compatible with PC and PS3, featuring dual vibration feedback, ergonomic design, and responsive analog sticks for an immersive gaming experience. It connects via USB and supports plug-and-play functionality.",
-      "Colours": ["Blue", "Red"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Blue",
+        "Red"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Today's",
-      "id": 3,
+      "id": "3",
       "name": "AK-900 Wired Keyboard",
       "price": 960,
       "oldPrice": 1160,
@@ -79,14 +95,17 @@
         "https://www.techlandbd.com/image/cache/catalog/Keyboard/IMICE/AK-900/AK-900-600x315w.jpg",
         "https://potakait.com/image/cache/catalog/Keyboard-mouse%20combo/iMICE/km-760-400x400.jpg"
       ],
-      "imageUrl": "./public/images/Frame612.svg",
-      "Colours": ["Black"],
-      "Size": ["M"]
+      "imageUrl": "http://localhost:5173/public/images/Frame612.svg",
+      "Colours": [
+        "Black"
+      ],
+      "Size": [
+        "M"
+      ]
     },
-    
     {
       "categoryAll": "Today's",
-      "id": 4,
+      "id": "4",
       "name": "IPS LCD Gaming Monitor",
       "price": 370,
       "oldPrice": 400,
@@ -109,12 +128,17 @@
       ],
       "imageUrl": "https://m.media-amazon.com/images/I/81QhbOKkMOL.jpg",
       "information": "The Havit HV-G92 Vibration Gamepad is a wired controller compatible with PC and PS3, featuring dual vibration feedback, ergonomic design, and responsive analog sticks for an immersive gaming experience. It connects via USB and supports plug-and-play functionality.",
-      "Colours": ["Black"],
-      "Size": ["XS", "S"]
+      "Colours": [
+        "Black"
+      ],
+      "Size": [
+        "XS",
+        "S"
+      ]
     },
     {
       "categoryAll": "Today's",
-      "id": 5,
+      "id": "5",
       "name": "S-Series Comfort Chair",
       "price": 375,
       "oldPrice": 400,
@@ -137,12 +161,20 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/fd/ad/90/fdad902247eccaffab3cf005768b8fd3.jpg",
       "information": "Experience the perfect blend of ergonomics and style with the S-Series Comfort Chair. Designed for those who value both comfort and durability, this chair is ideal for long working hours, gaming sessions, or simply relaxing.",
-      "Colours": ["Black", "Brown", "White"],
-      "Size": ["S", "M", "L"]
+      "Colours": [
+        "Black",
+        "Brown",
+        "White"
+      ],
+      "Size": [
+        "S",
+        "M",
+        "L"
+      ]
     },
     {
       "categoryAll": "Today's",
-      "id": 5,
+      "id": "5",
       "name": "S-Series Comfort Chair",
       "price": 375,
       "oldPrice": 400,
@@ -165,13 +197,20 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/fd/ad/90/fdad902247eccaffab3cf005768b8fd3.jpg",
       "information": "Experience the perfect blend of ergonomics and style with the S-Series Comfort Chair. Designed for those who value both comfort and durability, this chair is ideal for long working hours, gaming sessions, or simply relaxing.",
-      "Colours": ["Black", "Brown", "White"],
-      "Size": ["S", "M", "L"]
+      "Colours": [
+        "Black",
+        "Brown",
+        "White"
+      ],
+      "Size": [
+        "S",
+        "M",
+        "L"
+      ]
     },
-    
     {
       "categoryAll": "ThisMonth",
-      "id": 6,
+      "id": "6",
       "name": "The north coat",
       "price": 260,
       "oldPrice": 360,
@@ -193,13 +232,21 @@
       ],
       "imageUrl": "https://www.ldmountaincentre.com/images/north-face-girls-resolve-reflective-jacket-xl-p42920-219110_zoom.jpg",
       "information": "Fun Fact: The brand name refers to the north face of a mountain, typically the coldest, most challenging route to climb — symbolizing adventure and resilience.",
-      "Colours": ["Black", "Pink", "White"],
-      "Size": ["XS", "S", "M", "L"]
+      "Colours": [
+        "Black",
+        "Pink",
+        "White"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ]
     },
-
     {
       "categoryAll": "ThisMonth",
-      "id": 7,
+      "id": "7",
       "name": "Gucci duffle bag",
       "price": 960,
       "oldPrice": 1160,
@@ -221,13 +268,23 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/f7/97/bd/f797bd35e27f961d5db51960c36ad6e7.jpg",
       "information": "A Gucci duffle bag is a luxury travel or gym bag known for its high-quality materials, elegant design, and iconic branding. Often made from leather or GG Supreme canvas, it features the recognizable Gucci logo, striped webbing, and premium hardware. These bags combine fashion and function, making them popular among travelers and style-conscious individuals.",
-      "Colours": ["Beige", "Dark brown", "White", "Yellow"],
-      "Size": ["XS", "S", "M", "L", "XL"]
-    },  
-
+      "Colours": [
+        "Beige",
+        "Dark brown",
+        "White",
+        "Yellow"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
     {
       "categoryAll": "ThisMonth",
-      "id": 7,
+      "id": "7",
       "name": "Gucci duffle bag",
       "price": 960,
       "oldPrice": 1160,
@@ -249,12 +306,23 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/f7/97/bd/f797bd35e27f961d5db51960c36ad6e7.jpg",
       "information": "A Gucci duffle bag is a luxury travel or gym bag known for its high-quality materials, elegant design, and iconic branding. Often made from leather or GG Supreme canvas, it features the recognizable Gucci logo, striped webbing, and premium hardware. These bags combine fashion and function, making them popular among travelers and style-conscious individuals.",
-      "Colours": ["Beige", "Dark brown", "White", "Yellow"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Beige",
+        "Dark brown",
+        "White",
+        "Yellow"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "ThisMonth",
-      "id": 7,
+      "id": "7",
       "name": "Gucci duffle bag",
       "price": 960,
       "oldPrice": 1160,
@@ -276,13 +344,23 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/f7/97/bd/f797bd35e27f961d5db51960c36ad6e7.jpg",
       "information": "A Gucci duffle bag is a luxury travel or gym bag known for its high-quality materials, elegant design, and iconic branding. Often made from leather or GG Supreme canvas, it features the recognizable Gucci logo, striped webbing, and premium hardware. These bags combine fashion and function, making them popular among travelers and style-conscious individuals.",
-      "Colours": ["Beige", "Dark brown", "White", "Yellow"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Beige",
+        "Dark brown",
+        "White",
+        "Yellow"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
-
     {
       "categoryAll": "ThisMonth",
-      "id": 7,
+      "id": "7",
       "name": "Gucci duffle bag",
       "price": 960,
       "oldPrice": 1160,
@@ -304,13 +382,23 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/f7/97/bd/f797bd35e27f961d5db51960c36ad6e7.jpg",
       "information": "A Gucci duffle bag is a luxury travel or gym bag known for its high-quality materials, elegant design, and iconic branding. Often made from leather or GG Supreme canvas, it features the recognizable Gucci logo, striped webbing, and premium hardware. These bags combine fashion and function, making them popular among travelers and style-conscious individuals.",
-      "Colours": ["Beige", "Dark brown", "White", "Yellow"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Beige",
+        "Dark brown",
+        "White",
+        "Yellow"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
-
     {
       "categoryAll": "ThisMonth",
-      "id": 7,
+      "id": "7",
       "name": "Gucci duffle bag",
       "price": 960,
       "oldPrice": 1160,
@@ -332,13 +420,23 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/f7/97/bd/f797bd35e27f961d5db51960c36ad6e7.jpg",
       "information": "A Gucci duffle bag is a luxury travel or gym bag known for its high-quality materials, elegant design, and iconic branding. Often made from leather or GG Supreme canvas, it features the recognizable Gucci logo, striped webbing, and premium hardware. These bags combine fashion and function, making them popular among travelers and style-conscious individuals.",
-      "Colours": ["Beige", "Dark brown", "White", "Yellow"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Beige",
+        "Dark brown",
+        "White",
+        "Yellow"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
-
     {
       "categoryAll": "Our Products",
-      "id": 10,
+      "id": "10",
       "name": "Breed Dry Dog Food",
       "price": 100,
       "category": "Groceries &Pets",
@@ -359,12 +457,20 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/59/10/85/59108583a41319cbb6f5b3bcfc7c0811.jpg",
       "information": "In short, Cesar is a Mars-owned brand focusing on gourmet-style dog food for small breeds, with a growing portfolio that includes dry kibble, refrigerated rolls, and microwavable meals—backed by lifestyle-driven marketing and global distribution.",
-      "Colours": ["Orange", "Purple", "Blue "],
-      "Size": ["M", "L", "XL"]
+      "Colours": [
+        "Orange",
+        "Purple",
+        "Blue "
+      ],
+      "Size": [
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 11,
+      "id": "11",
       "name": "CANON EOS DSLR Camera",
       "price": 360,
       "category": "Electronic",
@@ -385,12 +491,21 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/3f/dd/99/3fdd99823bdf7bbe9eccb680522189af.jpg",
       "information": "Interchangeable lenses – supports a wide range of Canon EF and EF-S lensesHigh-resolution sensors – from 18 MP to 30+ MP (depending on model)Optical viewfinder – uses a mirror system for real-time viewing",
-      "Colours": ["Black", "Silver", "Blue "],
-      "Size": ["XS", "M", "L", "XL"]
+      "Colours": [
+        "Black",
+        "Silver",
+        "Blue "
+      ],
+      "Size": [
+        "XS",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 12,
+      "id": "12",
       "name": "ASUS FHD Gaming Laptop",
       "price": 700,
       "category": "Electronic",
@@ -411,12 +526,21 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/f2/04/95/f20495b5f99663485a9f5d88aff9519f.jpg",
       "information": "ASUS FHD gaming laptops span from mid-range TUF models to premium ROG Strix/Zephyrus lines. They offer full HD displays with high-refresh panels, powerful CPUs and GPUs, 16 GB RAM, NVMe SSDs, customizable RGB keyboards, and advanced cooling systems—all packaged in portable, gamer‑centric builds.",
-      "Colours": ["Black", "Silver", "Blue "],
-      "Size": ["XS", "M", "L", "XL"]
+      "Colours": [
+        "Black",
+        "Silver",
+        "Blue "
+      ],
+      "Size": [
+        "XS",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 13,
+      "id": "13",
       "name": "Curology Product Set ",
       "price": 500,
       "category": "Health & Beautyc",
@@ -437,12 +561,18 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/2d/71/a0/2d71a0e6e6bfabdaa7d4052522242f18.jpg",
       "information": "Curology is a San Francisco–based telehealth skincare brand, founded by a dermatologist in 2014. It offers customized prescription and non-prescription formulas—initially targeting acne, now expanding to anti-aging and hair care—all supported by a large team of providers. With millions of users and growing retail presence, the brand aims to make personalized, effective skincare accessible and convenient.",
-      "Colours": ["Purple", "White"],
-      "Size": ["L", "XL"]
+      "Colours": [
+        "Purple",
+        "White"
+      ],
+      "Size": [
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 14,
+      "id": "14",
       "name": "Kids Electric Car",
       "price": 960,
       "category": "Baby's &Toys ",
@@ -463,12 +593,19 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/f7/4f/73/f74f732f91614a4dd9c4d63f9c43f957.jpg",
       "information": "Kids' electric ride-on cars are battery-powered vehicles designed for children to drive, offering a fun and immersive experience. They come in various models, including realistic replicas of real cars, trucks, and even go-karts, catering to different age groups and preferences.",
-      "Colours": ["Red", "White", "Black"],
-      "Size": ["XS", "M"]
+      "Colours": [
+        "Red",
+        "White",
+        "Black"
+      ],
+      "Size": [
+        "XS",
+        "M"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 15,
+      "id": "15",
       "name": "Jr. Zoom Soccer Cleats",
       "price": 1160,
       "category": "Sports &Qutdoor",
@@ -489,12 +626,23 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/d6/3c/1f/d63c1f56b8e918ab9427abe1d0f29cf1.jpg",
       "information": "The Nike Jr. Zoom Superfly 9 Pro FG soccer cleats are priced at approximately $65.00, offering premium features at an accessible price point.",
-      "Colours": ["Red", "White", "Black", "Green"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Red",
+        "White",
+        "Black",
+        "Green"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 16,
+      "id": "16",
       "name": "GP11 Shooter USB Gamepad",
       "price": 660,
       "category": "Electronic",
@@ -515,12 +663,16 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/d7/f2/a2/d7f2a21a958348053fd94b999b29c7e2.jpg",
       "information": "TConnectivity: USB 2.0 wired connection for stable performance.Compatibility: Designed for PC and PS3 platforms.Buttons: Equipped with 14 buttons, including dual analog sticks and trigger buttons.",
-      "Colours": ["Black"],
-      "Size": ["M"]
+      "Colours": [
+        "Black"
+      ],
+      "Size": [
+        "M"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 17,
+      "id": "17",
       "name": "Quilted Satin Jacket",
       "price": 660,
       "category": "Men's Fashion",
@@ -541,12 +693,22 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/b6/4a/96/b64a96d442d5b0ed300372fed3da9d4e.jpg",
       "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
-      "Colours": ["Green", "Black", "Blue"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Green",
+        "Black",
+        "Blue"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 18,
+      "id": "18",
       "name": "Nike sports pants",
       "price": 890,
       "category": "Men's Fashion",
@@ -567,12 +729,22 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
       "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
-      "Colours": ["Green", "Black", "Blue"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Green",
+        "Black",
+        "Blue"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 18,
+      "id": "18",
       "name": "Nike sports pants",
       "price": 890,
       "category": "Men's Fashion",
@@ -593,12 +765,22 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
       "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
-      "Colours": ["Green", "Black", "Blue"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Green",
+        "Black",
+        "Blue"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 18,
+      "id": "18",
       "name": "Nike sports pants",
       "price": 890,
       "category": "Men's Fashion",
@@ -619,12 +801,22 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
       "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
-      "Colours": ["Green", "Black", "Blue"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Green",
+        "Black",
+        "Blue"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 18,
+      "id": "18",
       "name": "Nike sports pants",
       "price": 890,
       "category": "Men's Fashion",
@@ -645,12 +837,22 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
       "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
-      "Colours": ["Green", "Black", "Blue"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Green",
+        "Black",
+        "Blue"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 18,
+      "id": "18",
       "name": "Nike sports pants",
       "price": 890,
       "category": "Men's Fashion",
@@ -671,12 +873,22 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
       "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
-      "Colours": ["Green", "Black", "Blue"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Green",
+        "Black",
+        "Blue"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 18,
+      "id": "18",
       "name": "Nike sports pants",
       "price": 890,
       "category": "Men's Fashion",
@@ -697,12 +909,22 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
       "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
-      "Colours": ["Green", "Black", "Blue"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Green",
+        "Black",
+        "Blue"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 18,
+      "id": "18",
       "name": "Nike sports pants",
       "price": 890,
       "category": "Men's Fashion",
@@ -723,12 +945,22 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
       "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
-      "Colours": ["Green", "Black", "Blue"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Green",
+        "Black",
+        "Blue"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 18,
+      "id": "18",
       "name": "Nike sports pants",
       "price": 890,
       "category": "Men's Fashion",
@@ -749,12 +981,22 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
       "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
-      "Colours": ["Green", "Black", "Blue"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Green",
+        "Black",
+        "Blue"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 18,
+      "id": "18",
       "name": "Nike sports pants",
       "price": 890,
       "category": "Men's Fashion",
@@ -775,12 +1017,22 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
       "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
-      "Colours": ["Green", "Black", "Blue"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Green",
+        "Black",
+        "Blue"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 18,
+      "id": "18",
       "name": "Nike sports pants",
       "price": 890,
       "category": "Men's Fashion",
@@ -801,12 +1053,22 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
       "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
-      "Colours": ["Green", "Black", "Blue"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Green",
+        "Black",
+        "Blue"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 18,
+      "id": "18",
       "name": "Nike sports pants",
       "price": 890,
       "category": "Men's Fashion",
@@ -827,12 +1089,22 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
       "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
-      "Colours": ["Green", "Black", "Blue"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Green",
+        "Black",
+        "Blue"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 18,
+      "id": "18",
       "name": "Nike sports pants",
       "price": 890,
       "category": "Men's Fashion",
@@ -853,12 +1125,22 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
       "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
-      "Colours": ["Green", "Black", "Blue"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Green",
+        "Black",
+        "Blue"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "categoryAll": "Our Products",
-      "id": 18,
+      "id": "18",
       "name": "Nike sports pants",
       "price": 890,
       "category": "Men's Fashion",
@@ -879,8 +1161,41 @@
       ],
       "imageUrl": "https://i.pinimg.com/736x/cc/3e/bc/cc3ebc31a5be4ae97014c3603decd884.jpg",
       "information": "A quilted satin jacket combines the luxurious sheen of satin fabric with quilted stitching, creating a visually appealing and textured outerwear piece. The quilting not only adds to the aesthetic but also provides additional warmth and structure.",
-      "Colours": ["Green", "Black", "Blue"],
-      "Size": ["XS", "S", "M", "L", "XL"]
+      "Colours": [
+        "Green",
+        "Black",
+        "Blue"
+      ],
+      "Size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    }
+  ],
+  "cart": [
+    {
+      "id": "e5b1",
+      "productId": "3",
+      "name": "AK-900 Wired Keyboard",
+      "price": 960,
+      "quantity": 1
+    },
+    {
+      "id": "dc1f",
+      "productId": "2",
+      "name": "HAVIT HV-G92 Gamepad",
+      "price": 120,
+      "quantity": 1
+    },
+    {
+      "id": "c265",
+      "productId": "4",
+      "name": "IPS LCD Gaming Monitor",
+      "price": 370,
+      "quantity": 1
     }
   ]
 }

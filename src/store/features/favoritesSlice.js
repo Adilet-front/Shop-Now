@@ -9,18 +9,21 @@ const favoritesSlice = createSlice({
   initialState,
   reducers: {
     addFavorites: (state, actions) => {
-      const exe = state.data.filter((el) => el.id === actions.payload.id);
-      console.log(exe);
+      const exists = state.data.find((el) => el.id === actions.payload.id);
 
-      if (exe.length <= 0) {
+      if (!exists) {
         state.data = [...state.data, actions.payload];
       } else {
         state.data = state.data.filter((el) => el.id !== actions.payload.id);
       }
-      console.log(state.data);
+    },
+
+    // ✅ Новый экшен для очистки
+    clearFavorites: (state) => {
+      state.data = [];
     },
   },
 });
 
 export default favoritesSlice.reducer;
-export const { addFavorites } = favoritesSlice.actions;
+export const { addFavorites, clearFavorites } = favoritesSlice.actions;

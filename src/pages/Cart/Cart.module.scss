@@ -1,0 +1,266 @@
+.CartWrapper {
+  padding: 40px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif; // Assuming Poppins or a similar sans-serif font
+  .Navi {
+    text-decoration: none;
+    color: #000000;
+    opacity: 50%;
+  }
+  .HomeCart {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 80px;
+
+    span:first-child {
+      color: #929292; // Lighter color for "Home"
+    }
+
+    span:last-child {
+      color: #000; // Black for "Cart"
+      font-weight: 600;
+    }
+  }
+
+  .Products {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr; // Adjust column widths as needed
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff; // Assuming white background for the header
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); // Subtle shadow for the header
+    margin-bottom: 20px;
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      color: #000;
+      text-align: left; // Default alignment
+
+      &:nth-child(2), // Price
+      &:nth-child(3), // Quantity
+      &:nth-child(4) {
+        // Subtotal
+        text-align: center;
+      }
+    }
+  }
+
+  // --- Product Rows (add this section to render individual products) ---
+  .ProductRow {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 16px;
+    border: 1px solid #e0e0e0; // Light border for each product row
+
+    .ProductInfo {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      img {
+        width: 50px; // Adjust size as needed
+        height: 50px;
+        object-fit: contain;
+      }
+
+      span {
+        font-size: 16px;
+        color: #000;
+        font-weight: 500;
+      }
+    }
+
+    .ProductPrice,
+    .ProductQuantity,
+    .ProductSubtotal {
+      font-size: 16px;
+      color: #000;
+      text-align: center;
+    }
+
+    .ProductQuantity {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      button {
+        background: none;
+        border: 1px solid #ccc;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 18px;
+        color: #555;
+        border-radius: 4px;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+      }
+
+      span {
+        font-size: 16px;
+        color: #000;
+      }
+    }
+  }
+  // --- End of Product Rows section ---
+
+  .CartShopButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    button {
+      padding: 16px 48px;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      background-color: transparent;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #db4444; // Red from the screenshot
+        color: #fff;
+        border-color: #db4444;
+      }
+    }
+
+    .UpdateCart {
+      background-color: #db4444;
+      color: #fff;
+      border-color: #db4444;
+
+      &:hover {
+        background-color: #a02c2c;
+      }
+    }
+  }
+
+  .LastDown {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; // Align top of the two sections
+    gap: 30px; // Space between coupon and cart total
+
+    .couponscodeLeft {
+      display: flex;
+      gap: 16px;
+
+      #coupons {
+        padding: 16px 24px;
+        border: 1px solid #000; // Black border for input
+        border-radius: 4px;
+        font-size: 16px;
+        outline: none;
+
+        &::placeholder {
+          color: #929292;
+        }
+      }
+
+      .applyCode {
+        padding: 16px 48px;
+        background-color: #db4444;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #a02c2c;
+        }
+      }
+    }
+
+    .CartTotalRight {
+      border: 1px solid #000; // Black border for the cart total box
+      border-radius: 4px;
+      padding: 32px 24px;
+      width: 470px; // Fixed width from screenshot
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 24px;
+      }
+
+      .Price1,
+      .Price2,
+      .Price3 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px; // Space before lines
+
+        p {
+          font-size: 16px;
+          color: #000;
+
+          &:first-child {
+            font-weight: 400;
+          }
+
+          &:last-child {
+            font-weight: 500;
+          }
+        }
+      }
+
+      .line2,
+      .line3 {
+        border-top: 1px solid #e0e0e0; // Light gray line
+        margin-bottom: 16px; // Space after lines
+      }
+
+      .ProceesToCheckout {
+        margin-top: 24px;
+        padding: 16px 48px;
+        background-color: #db4444;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        align-self: center; // Center the button
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #a02c2c;
+        }
+      }
+    }
+  }
+}
+
+// Global styles for elements not in module for simplicity, or if you prefer them here
+.returnToShop {
+  // Shared styles with other buttons or specific
+  // Defined within CartShopButtons in module, but if it needs global, define here
+}
+
+.ProceesToCheckout {
+  // Shared styles with other buttons or specific
+  // Defined within CartTotalRight in module, but if it needs global, define here
+}

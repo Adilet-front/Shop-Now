@@ -1,4 +1,4 @@
-// src/modules/ExploreProducts/ExploreProducts.jsx
+// src/modules/ExploreProducts/ExploreProducts.jsx (ранее FlashSales.jsx)
 
 import { useEffect, useState, useRef } from "react";
 import styles from "./FlashSales.module.scss";
@@ -15,6 +15,9 @@ import { useDispatch } from "react-redux";
 import { addFavorites } from "../../store/features/favoritesSlice";
 
 import FlashSalesTimer from "./components/FlashSalesTimer";
+
+// Import the addToCartAPI function
+import { addToCartAPI } from "../../constants/fetchProducts"; // Убедитесь, что путь к вашему api.js правильный!
 
 // Компонент рейтинга, он работает правильно
 const StarRating = ({ rating, reviews }) => {
@@ -67,6 +70,22 @@ const FlashSales = () => {
     setShowAll(false);
     setPage(0); // Возвращаемся на первую страницу
     sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  // --- Функция для добавления товара в корзину ---
+  const handleAddToCart = async (product) => {
+    try {
+      await addToCartAPI(product);
+      alert(`${product.name} добавлен в корзину!`);
+      // Здесь можно добавить логику для обновления состояния корзины в UI,
+      // например, через Redux или контекст, чтобы обновить иконку корзины
+      // или данные на самой странице корзины.
+      // Если у вас есть глобальное состояние корзины (например, Redux),
+      // вы можете вызвать экшн типа `dispatch(cartActions.addItem(product))`
+    } catch (error) {
+      console.error("Ошибка при добавлении в корзину:", error);
+      alert("Не удалось добавить товар в корзину.");
+    }
   };
 
   // --- ГЛАВНАЯ ЛОГИКА ОТОБРАЖЕНИЯ ---
@@ -142,7 +161,13 @@ const FlashSales = () => {
                 alt={product.name}
                 className={styles.productImage}
               />
-              <button className={styles.addToCart}>Add To Cart</button>
+              {/* Добавляем обработчик onClick к кнопке Add To Cart */}
+              <button
+                className={styles.addToCart}
+                onClick={() => handleAddToCart(product)}
+              >
+                Add To Cart
+              </button>
             </div>
             <div className={styles.productInfo}>
               <p className={styles.productName}>{product.name}</p>
