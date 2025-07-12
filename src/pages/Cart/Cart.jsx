@@ -143,7 +143,7 @@ export const Cart = () => {
             <p>Total:</p>
             <p>${total}</p>
           </div>
-          <button className="ProceesToCheckout">Process to Checkout</button>
+          <button className={styles.ProceesToCheckout}>Process to Checkout</button>
         </div>
       </div>
     </div>

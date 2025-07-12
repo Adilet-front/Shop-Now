@@ -72,7 +72,10 @@ header {
     font-family: "Montserrat";
     margin-top: 10px;
     background-color: white;
-
+    a {
+      text-decoration: none;
+      color: black;
+    }
     h2 {
     }
     nav {

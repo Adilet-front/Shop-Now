@@ -1181,7 +1181,7 @@
       "productId": "3",
       "name": "AK-900 Wired Keyboard",
       "price": 960,
-      "quantity": 1
+      "quantity": 2
     },
     {
       "id": "dc1f",
@@ -1195,6 +1195,13 @@
       "productId": "4",
       "name": "IPS LCD Gaming Monitor",
       "price": 370,
+      "quantity": 1
+    },
+    {
+      "id": "b43c",
+      "productId": "11",
+      "name": "CANON EOS DSLR Camera",
+      "price": 360,
       "quantity": 1
     }
   ]

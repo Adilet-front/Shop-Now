@@ -36,11 +36,14 @@ export const Header = () => {
         </div>
       </div>
       <div className={styles.downHeader}>
-        <h2>{t("start_block.Exclusive")}</h2>
+        <NavLink to="/">
+          <h2>{t("start_block.Exclusive")}</h2>
+        </NavLink>
+
         <nav>
           <li>
             <NavLink
-              to="/home"
+              to="/"
               className={({ isActive }) => (isActive ? styles.activeLink : "")}
             >
               {t("start_block.main")}
@@ -78,9 +81,7 @@ export const Header = () => {
               <img src="/public/images/Wishlist.svg" alt="wish" />
               <p className={styles.countFav}>{data?.length}</p>
             </NavLink>
-            <NavLink
-            to={"Cart"}
-            >
+            <NavLink to={"Cart"}>
               <img src="/public/images/Cart1.svg" alt="cart" />
             </NavLink>
           </div>
