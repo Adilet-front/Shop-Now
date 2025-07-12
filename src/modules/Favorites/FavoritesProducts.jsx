@@ -1,7 +1,10 @@
 import styles from "./FavoritesProducts.module.scss";
 import { FaRegHeart, FaRegEye, FaStar, FaRegStar } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { addFavorites } from "../../store/features/favoritesSlice";
+import {
+  addFavorites,
+  clearFavorites,
+} from "../../store/features/favoritesSlice";
 
 // Компонент рейтинга, он работает правильно
 const StarRating = ({ rating, reviews }) => {
@@ -24,11 +27,22 @@ const StarRating = ({ rating, reviews }) => {
 };
 
 export const FavoritesProducts = () => {
+  const { data } = useSelector((s) => s.favorites);
   const { data: products } = useSelector((s) => s.favorites);
   const dispatch = useDispatch();
 
   return (
     <div className={styles.exploreProducts}>
+      <div className={styles.High}>
+        <h2 className={styles.countFav}>Wishlist ({data?.length})</h2>
+        <button
+          onClick={() => dispatch(clearFavorites())}
+          className={styles.MoveAllToBag}
+        >
+          Move All To Bag
+        </button>
+      </div>
+
       <div className={styles.productGrid}>
         {products.map((product) => (
           <div key={product.id} className={styles.productCard}>
@@ -46,9 +60,8 @@ export const FavoritesProducts = () => {
                   onClick={() => dispatch(addFavorites(product))}
                   className={styles.iconBtn}
                 >
-                 <img src="images/icon-delete.svg" alt="" />
+                  <img src="images/icon-delete.svg" alt="" />
                 </button>
-           
               </div>
               <img
                 src={product.imageUrl}
