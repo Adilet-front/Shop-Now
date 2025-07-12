@@ -1,0 +1,14 @@
+.BillingDetailsMain {
+  width: 100%;
+  margin-left: 10%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+ 
+  .DetailsPay{
+    display: flex;
+    flex-direction: row;
+     gap: 150px;
+  }
+}

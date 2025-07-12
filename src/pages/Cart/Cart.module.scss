@@ -256,11 +256,27 @@
 
 // Global styles for elements not in module for simplicity, or if you prefer them here
 .returnToShop {
+  gap: 0;
   // Shared styles with other buttons or specific
   // Defined within CartShopButtons in module, but if it needs global, define here
 }
 
 .ProceesToCheckout {
-  // Shared styles with other buttons or specific
-  // Defined within CartTotalRight in module, but if it needs global, define here
+  gap: 0;
+}
+.CartTotalRight {
+  button {
+    width: 260px;
+    height: 56px;
+    gap: 10px;
+    border-radius: 4px;
+    background-color: #db4444;
+    color: white;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+
+  }
 }

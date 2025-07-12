@@ -9,7 +9,7 @@ export const Part1OurStory = () => {
   return (
     <div className={styles.aboutUsGen}>
       <div className={styles.aboutUsNav}>
-        <NavLink to="/">
+        <NavLink to="/home">
           <span>{t("About_Us.about_us_text1")}</span>
           </NavLink>
         <span>/</span>

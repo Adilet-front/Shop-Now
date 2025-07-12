@@ -36,8 +36,7 @@
 .NewArrivalUp {
   display: flex;
   flex-direction: column;
-  font-family: "Montserrat";
- 
+
   .newArrivalStart {
     display: flex;
     flex-direction: row;
@@ -92,8 +91,15 @@
     object-fit: cover;
     z-index: 1;
     margin-top: 90px;
+    img {
+      transition: transform 1s ease, box-shadow 0.3s ease;
+    }
   }
-
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+  }
   .NewArrivalLeftText {
     width: 300px;
     top: 70%;
@@ -125,6 +131,14 @@
       object-fit: cover;
       z-index: 1;
       margin-left: 100px;
+      img {
+        transition: transform 1s ease, box-shadow 0.3s ease;
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
     }
     .NewArrivalRightToptext {
       display: flex;
@@ -156,6 +170,14 @@
         z-index: 1;
         margin-top: 3%;
         margin-left: 2.5%;
+        img {
+          transition: transform 1s ease, box-shadow 0.3s ease;
+        }
+      }
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
       }
       .NewArrivalRightOneText {
         top: 50%;
@@ -177,11 +199,18 @@
     background: #0d0d0d;
     .NewArrivalRightTwoImg {
       position: absolute;
-
       object-fit: cover;
       z-index: 1;
       margin-top: 3%;
       margin-left: 2.5%;
+      img {
+        transition: transform 1s ease, box-shadow 0.3s ease;
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
     }
     .NewArrivalRightTwoText {
       top: 50%;

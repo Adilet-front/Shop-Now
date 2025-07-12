@@ -143,7 +143,8 @@ export const Cart = () => {
             <p>Total:</p>
             <p>${total}</p>
           </div>
-          <button className="ProceesToCheckout">Process to Checkout</button>
+          <NavLink to="/billing-details"> <button className="ProceesToCheckout">Process to Checkout</button></NavLink>
+         
         </div>
       </div>
     </div>
