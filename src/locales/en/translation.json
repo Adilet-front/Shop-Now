@@ -148,30 +148,7 @@
     "about_us_text15": "Nogai Arthur",
     "about_us_text15a": "K-pop idol"
   },
-"Billing":{
-    "Billing_start":"Account",
-    "Billing_start2":"My Account",
-    "Billing_start3":"Product",
-    "Billing_start4":"View Cart",
-    "Billing_start5":"CheckOut",
-    "Billing_h1":"Billing Details",
-    "Billing_input1":"First Name",
-    "Billing_input2":"Company Name ",
-    "Billing_input3":"Street Address",
-    "Billing_input4":"Apartment, floor, etc. (optional)",
-    "Billing_input5":"Town/City",
-    "Billing_input6":"Phone Number",
-    "Billing_input7":"Email Address",
-    "Billing_text":"Save this information for faster check-out next time",
-     "Billing_card":"Bank",
-     "Billing_card2":"Cash on Delivery",
-     "Billing_card3":"Coupon Code",
-     "Billing_card4":"Apply Coupon",
-     "Billing_card5":"Place Order",
-     "Billng_pay":"Subtotal:",
-     "Billng_pay2":"Shipping:",
-     "Billng_pay3":"Total:"
-  },
+
   "contact": {
     "home": "Home",
     "contact": "Contact",
@@ -250,5 +227,33 @@
       "weakPassword": "The password is too weak.",
       "saveErrorGeneric": "An error occurred while saving changes. Please try again."
     }
+  },
+  
+  "Billing": {
+    "Billing_start": "Home",
+    "Billing_start2": "Profile",
+    "Billing_start3": "Sign Up",
+    "Billing_start4": "Cart",
+    "Billing_start5": "Checkout",
+    "Billing_h1": "Billing Information",
+    "Billing_input1": "First Name",
+    "Billing_input2": "Last Name",
+    "Billing_input3": "Email",
+    "Billing_input4": "Address",
+    "Billing_input5": "City",
+    "Billing_input6": "ZIP Code",
+    "Billing_input7": "Phone",
+    "Billing_text": "I agree to the terms and conditions",
+    "Billing_card": "Credit/Debit Card",
+    "Billing_card2": "Cash on Delivery",
+    "Billing_card5": "Place Order",
+    "Billng_pay": "Subtotal",
+    "Billng_pay2": "Shipping",
+    "Billng_pay3": "Total",
+    "no_items_in_cart": "No items in cart.",
+    "fill_required": "Please fill in all required fields.",
+    "order_success": "Order placed successfully!"
   }
+
+
 }
