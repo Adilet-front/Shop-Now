@@ -1,7 +1,9 @@
 // src/Cart.jsx (Modified to include cart logic)
 import React, { useState, useEffect, useCallback } from "react";
 import styles from "./Cart.module.scss";
+
 import { useTranslation } from "react-i18next";
+
 import {
   fetchCartItems,
   updateCartItemQuantity,
@@ -10,7 +12,8 @@ import {
 import { NavLink } from "react-router";
 
 export const Cart = () => {
-  const { t } = useTranslation();
+
+
   const [cartItems, setCartItems] = useState([]);
   const [subtotal, setSubtotal] = useState(0);
   const [total, setTotal] = useState(0);
@@ -68,6 +71,7 @@ export const Cart = () => {
   return (
     <div className={styles.CartWrapper}>
       <div className={styles.HomeCart}>
+
         <NavLink className={styles.Navi} to={"/"}>
           Home /
         </NavLink>
@@ -78,11 +82,24 @@ export const Cart = () => {
         <p>{t("cart.price")}</p>
         <p>{t("cart.quantity")}</p>
         <p>{t("cart.subtotal")}</p>
+
+        <NavLink className={styles.Navi}  to={"/"}>Home /</NavLink>
+        <span>Cart</span>
+      </div>
+      <div className={styles.Products}>
+        <p>Product</p>
+        <p>Price</p>
+        <p>Quantity</p>
+        <p>Subtotal</p>
       </div>
 
       {cartItems.length === 0 ? (
         <p style={{ textAlign: "center", padding: "40px 0" }}>
+
           {t("cart.empty")}
+
+          Your cart is empty.
+
         </p>
       ) : (
         cartItems.map((item) => (
@@ -113,9 +130,15 @@ export const Cart = () => {
       )}
 
       <div className={styles.CartShopButtons}>
+
         <button className={styles.returnToShop}>{t("cart.return")}</button>
         <button className={styles.UpdateCart} onClick={loadCartItems}>
           {t("cart.update")}
+
+        <button className="returnToShop">Return To Shop</button>
+        <button className={styles.UpdateCart} onClick={loadCartItems}>
+          Update Cart
+aQ
         </button>{" "}
         {/* Update button reloads cart */}
       </div>
@@ -125,12 +148,21 @@ export const Cart = () => {
             type="text"
             name="code"
             id={styles.coupons}
+
             placeholder={t("cart.coupon_placeholder")}
           />
           <button className={styles.applyCode}>{t("cart.apply_coupon")}</button>
         </div>
         <div className={styles.CartTotalRight}>
           <h3>{t("cart.cart_total")}</h3>
+
+            placeholder="Coupon Code"
+          />
+          <button className={styles.applyCode}>Apply Coupon</button>
+        </div>
+        <div className={styles.CartTotalRight}>
+          <h3>Cart Total</h3>
+
           <div className={styles.Price1}>
             <p>Subtotal:</p>
             <p>${subtotal}</p>
@@ -151,6 +183,8 @@ export const Cart = () => {
           <button className={styles.ProceesToCheckout}>
             {t("cart.checkout")} 
           </button>
+
+          <button className="ProceesToCheckout">Process to Checkout</button>
         </div>
       </div>
     </div>

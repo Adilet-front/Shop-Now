@@ -179,5 +179,53 @@
       "emailInvalid": "Invalid email format.",
       "message": "Please enter your message."
     }
+  },
+
+  "profileEdit": {
+    "manageMyAccount": "Manage My Account",
+    "myProfile": "My Profile",
+    "addressBook": "Address Book",
+    "myPaymentOptions": "My Payment Options",
+    "myOrders": "My Orders",
+    "myReturns": "My Returns",
+    "myCancellations": "My Cancellations",
+    "myWishList": "My WishList",
+    "editYourProfile": "Edit Your Profile",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "address": "Address",
+    "passwordChanges": "Password Changes",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "cancel": "Cancel",
+    "saveChanges": "Save Changes",
+    "saving": "Saving...",
+    "loadingProfileData": "Loading profile data...",
+    "validation": {
+      "firstNameRequired": "First Name is required",
+      "lastNameRequired": "Last Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Email address is invalid",
+      "addressRequired": "Address is required",
+      "currentPasswordRequired": "Current Password is required",
+      "newPasswordRequired": "New Password is required",
+      "newPasswordLength": "New Password must be at least 6 characters",
+      "passwordsMismatch": "Passwords do not match"
+    },
+    "alerts": {
+      "savedSuccess": "Changes saved successfully!",
+      "cancelled": "Changes cancelled.",
+      "notAuthenticated": "You are not authenticated. Please log in.",
+      "reauthRequired": "Please re-login to update sensitive information.",
+      "reauthRequiredEmail": "Please provide your current password to change email.",
+      "reauthRequiredPassword": "Please provide your current password to change password.",
+      "wrongPassword": "Current password is incorrect.",
+      "emailUsed": "This email is already in use by another account.",
+      "invalidEmail": "The email address is invalid.",
+      "weakPassword": "The password is too weak.",
+      "saveErrorGeneric": "An error occurred while saving changes. Please try again."
+    }
   }
 }

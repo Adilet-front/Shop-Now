@@ -1196,6 +1196,7 @@
       "name": "IPS LCD Gaming Monitor",
       "price": 370,
       "quantity": 1
+
     },
     {
       "id": "b43c",
@@ -1203,6 +1204,8 @@
       "name": "CANON EOS DSLR Camera",
       "price": 360,
       "quantity": 1
+
+
     }
   ]
 }

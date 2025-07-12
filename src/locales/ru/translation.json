@@ -180,5 +180,52 @@
       "emailInvalid": "Некорректный формат email.",
       "message": "Пожалуйста, введите сообщение."
     }
+  },
+  "profileEdit": {
+    "manageMyAccount": "Управление аккаунтом",
+    "myProfile": "Мой профиль",
+    "addressBook": "Адресная книга",
+    "myPaymentOptions": "Мои способы оплаты",
+    "myOrders": "Мои заказы",
+    "myReturns": "Мои возвраты",
+    "myCancellations": "Мои отмены",
+    "myWishList": "Мой список желаний",
+    "editYourProfile": "Редактировать профиль",
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "email": "Email",
+    "address": "Адрес",
+    "passwordChanges": "Смена пароля",
+    "currentPassword": "Текущий пароль",
+    "newPassword": "Новый пароль",
+    "confirmNewPassword": "Подтвердите новый пароль",
+    "cancel": "Отмена",
+    "saveChanges": "Сохранить изменения",
+    "saving": "Сохранение...",
+    "loadingProfileData": "Загрузка данных профиля...",
+    "validation": {
+      "firstNameRequired": "Имя обязательно",
+      "lastNameRequired": "Фамилия обязательна",
+      "emailRequired": "Email обязателен",
+      "emailInvalid": "Неверный формат Email",
+      "addressRequired": "Адрес обязателен",
+      "currentPasswordRequired": "Текущий пароль обязателен",
+      "newPasswordRequired": "Новый пароль обязателен",
+      "newPasswordLength": "Новый пароль должен содержать не менее 6 символов",
+      "passwordsMismatch": "Пароли не совпадают"
+    },
+    "alerts": {
+      "savedSuccess": "Изменения успешно сохранены!",
+      "cancelled": "Изменения отменены.",
+      "notAuthenticated": "Вы не авторизованы. Пожалуйста, войдите.",
+      "reauthRequired": "Пожалуйста, войдите снова, чтобы обновить конфиденциальную информацию.",
+      "reauthRequiredEmail": "Пожалуйста, введите текущий пароль для изменения email.",
+      "reauthRequiredPassword": "Пожалуйста, введите текущий пароль для изменения пароля.",
+      "wrongPassword": "Текущий пароль неверный.",
+      "emailUsed": "Этот email уже используется другим аккаунтом.",
+      "invalidEmail": "Недействительный адрес электронной почты.",
+      "weakPassword": "Пароль слишком слабый.",
+      "saveErrorGeneric": "Произошла ошибка при сохранении изменений. Пожалуйста, попробуйте снова."
+    }
   }
 }

@@ -7,7 +7,7 @@ export const NotFound = () => {
   return (
     <div className={styles.NotFound}>
       <div className={styles.breadcrumb}>
-        <span className={styles.link} onClick={() => navigate("/")}>
+        <span className={styles.link} onClick={() => navigate("/home")}>
           Home
         </span>
         <span>
@@ -18,7 +18,7 @@ export const NotFound = () => {
       <div className={styles.Not404}>
         <h1>404 Not Found</h1>
         <p>Your visited page not found. You may go home page.</p>
-        <button>Back to home page</button>
+        <button onClick={() => navigate("/home")}>Back to home page</button>
       </div>
     </div>
   );
