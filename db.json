@@ -1177,35 +1177,18 @@
   ],
   "cart": [
     {
-      "id": "e5b1",
-      "productId": "3",
-      "name": "AK-900 Wired Keyboard",
-      "price": 960,
-      "quantity": 1
-    },
-    {
-      "id": "dc1f",
+      "id": "b35e",
       "productId": "2",
       "name": "HAVIT HV-G92 Gamepad",
       "price": 120,
       "quantity": 1
     },
     {
-      "id": "c265",
-      "productId": "4",
-      "name": "IPS LCD Gaming Monitor",
-      "price": 370,
+      "id": "0fd2",
+      "productId": "3",
+      "name": "AK-900 Wired Keyboard",
+      "price": 960,
       "quantity": 1
-
-    },
-    {
-      "id": "b43c",
-      "productId": "11",
-      "name": "CANON EOS DSLR Camera",
-      "price": 360,
-      "quantity": 1
-
-
     }
   ]
 }
