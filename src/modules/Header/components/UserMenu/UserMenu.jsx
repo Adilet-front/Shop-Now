@@ -1,10 +1,13 @@
 // components/UserMenu.js
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./UserMenu.module.scss"; // SCSS стили, опишем ниже
+import { useNavigate } from "react-router-dom";
 
 const UserMenu = () => {
   const [open, setOpen] = useState(false);
   const menuRef = useRef();
+
+ const navigate = useNavigate();
 
   useEffect(() => {
     const closeMenu = (e) => {
@@ -27,7 +30,7 @@ const UserMenu = () => {
       {open && (
         <div className={styles.dropdown}>
           <ul>
-            <li>
+            <li onClick={() => navigate("/profile")}>
               <img src="images/userElseWhite.svg" alt="user" /> Manage My
               Account
             </li>
@@ -35,12 +38,14 @@ const UserMenu = () => {
               <img src="images/icon-mallbag.svg" alt="mallbag" /> My Order
             </li>
             <li>
-              <img src="images/icon-cancel.svg" alt="icon-cancel" /> My Cancellations
+              <img src="images/icon-cancel.svg" alt="icon-cancel" /> My
+              Cancellations
             </li>
             <li>
-              <img src="images/Icon-Reviews.svg" alt="" />My Reviews
+              <img src="images/Icon-Reviews.svg" alt="" />
+              My Reviews
             </li>
-            <li>
+            <li onClick={() => navigate("/sign-up")}>
               <img src="images/Icon-logout.svg" alt="" /> Logout
             </li>
           </ul>

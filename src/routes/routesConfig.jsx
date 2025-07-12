@@ -21,6 +21,7 @@ import { Women } from "../pages/AllCategory/Women’s Fashion/Women";
 
 import { Favorites } from "../pages/Favorites/Favorites";
 import { NotFound } from "../modules/NotFound/NotFound";
+import ProfileEditPage from "../pages/ProofileEdit/ProfileEditPage"; 
 
 export const routes = [
   {
@@ -143,9 +144,17 @@ export const routes = [
     path: "/favorites",
     element: <Favorites />,
   },
+
+  {
+    path: "/profile",
+    element: (
+      <ProtectedRoute>
+        <ProfileEditPage />
+      </ProtectedRoute>
+    ),
+  },
   {
     path: "*",
     element: <NotFound />,
   },
 ];
-
