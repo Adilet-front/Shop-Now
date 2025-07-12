@@ -7,9 +7,11 @@
   justify-content: center;
   flex-direction: column;
   font-family: "Montserrat";
+  a{
+    text-decoration: none;
+  }
   .foterNavigation {
     display: flex;
-    flex-wrap: wrap; // Добавь!
     margin: 80px clamp(16px, 8vw, 135px) 60px clamp(16px, 8vw, 136px); // адаптивные отступы
     justify-content: center;
     align-items: flex-start;
