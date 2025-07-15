@@ -18,6 +18,7 @@ import FlashSalesTimer from "./components/FlashSalesTimer";
 
 // Import the addToCartAPI function
 import { addToCartAPI } from "../../constants/fetchProducts"; // Убедитесь, что путь к вашему api.js правильный!
+import { t } from "i18next";
 
 // Компонент рейтинга, он работает правильно
 const StarRating = ({ rating, reviews }) => {
@@ -106,7 +107,7 @@ const FlashSales = () => {
       </div>
       <div className={styles.titleRow}>
         <h2 className={styles.title1}>
-          Flash Sales
+          {t("home.flash_sales")}
           <FlashSalesTimer />
         </h2>
 
