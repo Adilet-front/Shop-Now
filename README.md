@@ -1,12 +1,51 @@
-# React + Vite
+  Русский
+Shop-Now — это современное веб-приложение электронной коммерции, созданное с использованием React и Vite.
+Оно включает просмотр товаров, корзину, аутентификацию и мультиязычность.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔧 Возможности
+🛒 Каталог товаров и корзина
 
-Currently, two official plugins are available:
+🔐 Аутентификация (регистрация / вход)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌐 Интернационализация (i18n)
 
-## Expanding the ESLint configuration
+📦 Интеграция с Firebase
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📁 Модульная архитектура
+
+⚡ Быстрая разработка с Vite + React
+
+🚀 Быстрый старт
+
+```
+git clone https://github.com/Adilet-front/Shop-Now.git
+cd Shop-Now
+npm install
+npm run dev
+
+```
+
+# 🛍️ Shop-Now
+
+##  English
+
+**Shop-Now** is a modern e-commerce web application built with React + Vite.  
+It includes functionality for product browsing, cart management, authentication, and localization.
+
+### 🔧 Features
+
+- 🛒 Product catalog & cart
+- 🔐 Authentication (sign-up / login)
+- 🌐 Internationalization (i18n)
+- 📦 Firebase integration
+- 📁 Modular architecture
+- ⚡ Vite + React for fast development
+
+### 🚀 Getting Started
+```
+git clone https://github.com/Adilet-front/Shop-Now.git
+cd Shop-Now
+npm install
+npm run dev
+
+```
