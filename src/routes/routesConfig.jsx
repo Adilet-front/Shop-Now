@@ -9,7 +9,6 @@ import { ResultPage } from "../pages/ResultPage/ResultPage";
 import { ContactsPage } from "../pages/Auth/Contact/ContactsPage";
 import { NewArrival } from "../modules/NewArrival/NewArrival";
 
-import { BabyToys } from "../pages/AllCategory/Baby’s & Toys/BadyToys";
 import { Electronics } from "../pages/AllCategory/Electronics/Electronics";
 import { Health } from "../pages/AllCategory/Health/Health";
 import { Lifestyle } from "../pages/AllCategory/Lifestyle/Lifestyle";
@@ -22,7 +21,7 @@ import { Women } from "../pages/AllCategory/Women’s Fashion/Women";
 import { Favorites } from "../pages/Favorites/Favorites";
 import { NotFound } from "../modules/NotFound/NotFound";
 
-import ProfileEditPage from "../pages/ProofileEdit/ProfileEditPage"; 
+import ProfileEditPage from "../pages/ProofileEdit/ProfileEditPage";
 
 import { OurStory } from "../pages/OurStory/OurStory";
 import { Cart } from "../pages/Cart/Cart";
@@ -79,7 +78,7 @@ export const routes = [
       <ProtectedRoute>
         <Cart />
       </ProtectedRoute>
-    )
+    ),
   },
   {
     path: "/our-story",
@@ -89,17 +88,9 @@ export const routes = [
       </ProtectedRoute>
     ),
   },
-{ 
-    path: "/billing-details", 
-    element: <BillingDetails/> 
-  },
   {
-    path: "/baby-toys",
-    element: (
-      <ProtectedRoute>
-        <BabyToys />
-      </ProtectedRoute>
-    ),
+    path: "/billing-details",
+    element: <BillingDetails />,
   },
   {
     path: "/electronics",
